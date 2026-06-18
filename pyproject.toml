@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gauge-core"
+version = "1.4.0"
+description = "GAUGE: state-adaptive knowledge-graph gating for cancer drug-response prediction (inference engine + software)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Jing Xu" }, { name = "Luonan Chen" }]
+dependencies = [
+    "torch>=2.1",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "scipy>=1.10",
+    "rdkit>=2022.9",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.40", "plotly>=5.20", "networkx>=3.0", "statsmodels>=0.14", "umap-learn>=0.5", "openpyxl>=3.1"]
+agent = ["openai>=1.50"]
+dev = ["pytest>=8.0"]
+demo-data = ["anndata>=0.10"]
+
+[tool.setuptools.packages.find]
+include = ["gauge_core", "gauge_core.*"]

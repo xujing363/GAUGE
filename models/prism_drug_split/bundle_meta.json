@@ -1,0 +1,72 @@
+{
+  "mode": "prism_drug_split",
+  "display_name": "PRISM Repurposing Secondary Screen \u2014 large compound library (novel-compound mode)",
+  "source_run_dir": "/mnt/raid5/xujing/KG/benchmarking/02_drug_split/HVG2000/results/seed/full_20260526_014336_pid2160191_seed5",
+  "split_type": "drug_held_out",
+  "state_dim": 2003,
+  "n_known_cell_lines": 477,
+  "n_known_drugs": 1434,
+  "kg_sources": [
+    "ChEMBL",
+    "DRKG",
+    "PrimeKG"
+  ],
+  "selected_fusion_weight": 1.0,
+  "reported_metrics_this_seed": [
+    {
+      "metric_source": "gdsc",
+      "split": "test",
+      "n": 136167,
+      "raw_auc_rmse": 0.2721063237271972,
+      "raw_auc_mae": 0.203218807803342,
+      "overall_pcc": 0.3738816974293941,
+      "within_drug_spearman_mean": 0.2343066750632713,
+      "within_drug_spearman_n_drugs": 298.0,
+      "within_drug_pcc_mean": 0.2286717690252021,
+      "within_drug_pcc_n_drugs": 298.0,
+      "within_cell_pcc_mean": 0.3546582495254042,
+      "within_cell_pcc_n_cells": 477.0,
+      "value_rmse": 0.2834513910942984,
+      "value_spearman": 0.2503693355634293,
+      "within_drug_value_spearman": 0.243387250838107,
+      "within_drug_value_n_drugs": 298.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "train",
+      "n": 475906,
+      "raw_auc_rmse": 0.1140413917118677,
+      "raw_auc_mae": 0.0822580823318957,
+      "overall_pcc": 0.9157293619352704,
+      "within_drug_spearman_mean": 0.6765021906538246,
+      "within_drug_spearman_n_drugs": 1040.0,
+      "within_drug_pcc_mean": 0.7499372430163403,
+      "within_drug_pcc_n_drugs": 1040.0,
+      "within_cell_pcc_mean": 0.9102110056653632,
+      "within_cell_pcc_n_cells": 477.0,
+      "value_rmse": 0.2304595049225526,
+      "value_spearman": 0.6732702454953567,
+      "within_drug_value_spearman": 0.6844288759985864,
+      "within_drug_value_n_drugs": 1040.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "val",
+      "n": 67309,
+      "raw_auc_rmse": 0.2882476080682095,
+      "raw_auc_mae": 0.2161957287506054,
+      "overall_pcc": 0.1987867002073579,
+      "within_drug_spearman_mean": 0.2370678738101366,
+      "within_drug_spearman_n_drugs": 149.0,
+      "within_drug_pcc_mean": 0.2339770072372012,
+      "within_drug_pcc_n_drugs": 149.0,
+      "within_cell_pcc_mean": 0.1452783111310282,
+      "within_cell_pcc_n_cells": 477.0,
+      "value_rmse": 0.2838592378132343,
+      "value_spearman": 0.2533039852060041,
+      "within_drug_value_spearman": 0.2467372054209158,
+      "within_drug_value_n_drugs": 149.0
+    }
+  ],
+  "notes": "Same dataset as prism_cell_split, evaluated under a held-out-drug split instead (seed5, not seed7 -- the seed7 drug-split run for PRISM was not available with a saved checkpoint)."
+}

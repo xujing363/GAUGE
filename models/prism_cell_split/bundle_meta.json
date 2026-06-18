@@ -1,0 +1,72 @@
+{
+  "mode": "prism_cell_split",
+  "display_name": "PRISM Repurposing Secondary Screen \u2014 large compound library (cell-line split, recommended for PRISM)",
+  "source_run_dir": "/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/PRISM_secondary_seed/full_terminal_specificity_20260525_040830/seed7",
+  "split_type": "random_cell_line_held_out",
+  "state_dim": 2003,
+  "n_known_cell_lines": 477,
+  "n_known_drugs": 1487,
+  "kg_sources": [
+    "ChEMBL",
+    "DRKG",
+    "PrimeKG"
+  ],
+  "selected_fusion_weight": 1.0,
+  "reported_metrics_this_seed": [
+    {
+      "metric_source": "gdsc",
+      "split": "test",
+      "n": 135589,
+      "raw_auc_rmse": 0.2392877752162238,
+      "raw_auc_mae": 0.1771193608418437,
+      "overall_pcc": 0.73850771097645,
+      "within_drug_spearman_mean": 0.1327280975058609,
+      "within_drug_spearman_n_drugs": 1487.0,
+      "within_drug_pcc_mean": 0.1167660839798337,
+      "within_drug_pcc_n_drugs": 1487.0,
+      "within_cell_pcc_mean": 0.773155888644649,
+      "within_cell_pcc_n_cells": 96.0,
+      "value_rmse": 0.2920743145415146,
+      "value_spearman": 0.1516443758157965,
+      "within_drug_value_spearman": 0.1366091536794678,
+      "within_drug_value_n_drugs": 1487.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "train",
+      "n": 474495,
+      "raw_auc_rmse": 0.1644814273459255,
+      "raw_auc_mae": 0.1243041135571435,
+      "overall_pcc": 0.9198757797925314,
+      "within_drug_spearman_mean": 0.6968437176779696,
+      "within_drug_spearman_n_drugs": 1487.0,
+      "within_drug_pcc_mean": 0.7585142749765194,
+      "within_drug_pcc_n_drugs": 1487.0,
+      "within_cell_pcc_mean": 0.9145148443131556,
+      "within_cell_pcc_n_cells": 333.0,
+      "value_rmse": 0.2202820182143615,
+      "value_spearman": 0.6997035499630287,
+      "within_drug_value_spearman": 0.7089372010898062,
+      "within_drug_value_n_drugs": 1487.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "val",
+      "n": 69298,
+      "raw_auc_rmse": 0.2384464291369107,
+      "raw_auc_mae": 0.1786036043974843,
+      "overall_pcc": 0.7426963167315516,
+      "within_drug_spearman_mean": 0.1320538566259133,
+      "within_drug_spearman_n_drugs": 1486.0,
+      "within_drug_pcc_mean": 0.1108544607025954,
+      "within_drug_pcc_n_drugs": 1487.0,
+      "within_cell_pcc_mean": 0.7736215945541085,
+      "within_cell_pcc_n_cells": 48.0,
+      "value_rmse": 0.2960555443075766,
+      "value_spearman": 0.1099862376036333,
+      "within_drug_value_spearman": 0.0992422213426081,
+      "within_drug_value_n_drugs": 1486.0
+    }
+  ],
+  "notes": "Broad Institute Drug Repurposing Hub PRISM secondary screen (~1,400+ compounds incl. approved/investigational drugs), DepMap (ACH-id) cell lines and expression (OmicsExpressionTPMLogp1HumanProteinCodingGenes), real-valued AUC (not bounded to [0,1] the way GDSC's is). Held-out-cell-line split."
+}

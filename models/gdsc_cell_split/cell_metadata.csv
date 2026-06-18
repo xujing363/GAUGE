@@ -1,0 +1,945 @@
+SANGER_MODEL_ID,model_name,tissue,cancer_type,COSMIC_ID
+SIDM00194,SNU-61,Large Intestine,Colorectal Carcinoma,1660035
+SIDM00217,SNU-1040,Large Intestine,Colorectal Carcinoma,1659823
+SIDM00799,A172,Central Nervous System,Glioblastoma,687563
+SIDM00993,AMO-1,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1295741
+SIDM01229,BE2-M17,Peripheral Nervous System,Neuroblastoma,753616
+SIDM00990,BEN,Lung,Non-Small Cell Lung Carcinoma,753534
+SIDM00946,DND-41,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,1297446
+SIDM00216,SNU-175,Large Intestine,Colorectal Carcinoma,1659928
+SIDM00422,SUP-HD1,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,1331039
+SIDM00046,H3255,Lung,Non-Small Cell Lung Carcinoma,1247873
+SIDM01069,HCC-44,Lung,Non-Small Cell Lung Carcinoma,1240145
+SIDM00128,JHU-011,Head and Neck,Head and Neck Carcinoma,1240161
+SIDM01037,JIMT-1,Breast,Breast Carcinoma,1298157
+SIDM00296,LU-134-A,Lung,Small Cell Lung Carcinoma,753588
+SIDM00455,PA-TU-8902,Pancreas,Pancreatic Carcinoma,1298526
+SIDM00454,RH-18,Soft Tissue,Rhabdomyosarcoma,971774
+SIDM01163,SW1573,Lung,Non-Small Cell Lung Carcinoma,724878
+SIDM01168,SW626,Large Intestine,Colorectal Carcinoma,909753
+SIDM00234,TC-YIK,Cervix,Other Solid Cancers,946357
+SIDM01183,UMC-11,Lung,Other Solid Cancers,909779
+SIDM00984,BONNA-12,Haematopoietic and Lymphoid,Other Blood Cancers,906695
+SIDM00980,23132-87,Stomach,Gastric Carcinoma,910924
+SIDM01240,451Lu,Skin,Melanoma,1287706
+SIDM00849,A704,Kidney,Kidney Carcinoma,910920
+SIDM00826,COLO-205,Large Intestine,Colorectal Carcinoma,905961
+SIDM00951,CTV-1,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,753548
+SIDM00887,Daoy,Central Nervous System,Other Solid Cancers,906833
+SIDM00964,BPH-1,Prostate,Non-Cancerous,924105
+SIDM00486,EBC-1,Lung,Squamous Cell Lung Carcinoma,753554
+SIDM01044,EPLC-272H,Lung,Other Solid Cancers,753556
+SIDM00538,ESO51,Esophagus,Esophageal Carcinoma,1503367
+SIDM00205,EW-1,Bone,Ewing's Sarcoma,949163
+SIDM00596,HEC-1,Endometrium,Endometrial Carcinoma,907051
+SIDM00594,HEL,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,907053
+SIDM00133,HOP-62,Lung,Non-Small Cell Lung Carcinoma,905972
+SIDM00668,Hs-445,Haematopoietic and Lymphoid,Non-Cancerous,1322218
+SIDM00690,JHU-029,Head and Neck,Head and Neck Carcinoma,1298156
+SIDM00312,L-363,Haematopoietic and Lymphoid,Plasma Cell Myeloma,924239
+SIDM00387,MHH-NB-11,Peripheral Nervous System,Neuroblastoma,908135
+SIDM00504,MOG-G-UVW,Central Nervous System,Glioma,908145
+SIDM00257,NB13,Peripheral Nervous System,Neuroblastoma,949177
+SIDM00724,NCI-H2405,Lung,Non-Small Cell Lung Carcinoma,687821
+SIDM00719,NCI-H345,Lung,Small Cell Lung Carcinoma,688021
+SIDM00445,OACp4C,Esophagus,Esophageal Carcinoma,1503362
+SIDM00847,RD,Soft Tissue,Rhabdomyosarcoma,909264
+SIDM00370,TALL-1,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,909762
+SIDM00252,TGBC1TKB,Biliary Tract,Biliary Tract Carcinoma,909769
+SIDM00662,Hs-940-T,Skin,Melanoma,1298145
+SIDM00646,NCI-H1341,Lung,Small Cell Lung Carcinoma,1330964
+SIDM00396,SIG-M5,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,909715
+SIDM01139,PANC-02-03,Pancreas,Pancreatic Carcinoma,1298475
+SIDM00866,HCC1143,Breast,Breast Carcinoma,749710
+SIDM00078,BICR31,Head and Neck,Oral Cavity Carcinoma,1290725
+SIDM00389,SU-DHL-10,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331033
+SIDM00791,K-562,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,905940
+SIDM00461,OCI-AML5,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330983
+SIDM00340,LP-1,Haematopoietic and Lymphoid,Plasma Cell Myeloma,907791
+SIDM00338,ME-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330942
+SIDM00944,CL-11,Large Intestine,Colorectal Carcinoma,1290769
+SIDM01058,GRANTA-519,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1303897
+SIDM00135,Hs-578-T,Breast,Breast Carcinoma,905957
+SIDM01006,KARPAS-620,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1327775
+SIDM00994,ALL-SIL,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,1295740
+SIDM00930,CAL-72,Bone,Osteosarcoma,906827
+SIDM00300,LC-1-sq,Lung,Squamous Cell Lung Carcinoma,1298223
+SIDM00083,SF539,Central Nervous System,Glioblastoma,905984
+SIDM00077,BICR10,Head and Neck,Oral Cavity Carcinoma,1290724
+SIDM00049,DiFi,Large Intestine,Colorectal Carcinoma,1789883
+SIDM00118,HCC2998,Large Intestine,Colorectal Carcinoma,905971
+SIDM00052,HCE-4,Esophagus,Esophageal Squamous Cell Carcinoma,753559
+SIDM00064,HLE,Liver,Hepatocellular Carcinoma,907057
+SIDM00056,K5,Thyroid,Thyroid Gland Carcinoma,924238
+SIDM00053,MZ1-PC,Pancreas,Pancreatic Carcinoma,753595
+SIDM00090,OVCAR-8,Ovary,Ovarian Carcinoma,905991
+SIDM00087,RPMI-8226,Haematopoietic and Lymphoid,Plasma Cell Myeloma,905964
+SIDM00086,RXF393,Kidney,Kidney Carcinoma,905978
+SIDM00085,SF268,Central Nervous System,Glioma,905986
+SIDM00084,SF295,Central Nervous System,Glioblastoma,905985
+SIDM00081,SK-MEL-28,Skin,Melanoma,905954
+SIDM00080,SK-MEL-5,Skin,Melanoma,905956
+SIDM00094,SN12C,Kidney,Kidney Carcinoma,905979
+SIDM00095,SNB75,Central Nervous System,Glioblastoma,905982
+SIDM00097,T47D,Breast,Breast Carcinoma,905945
+SIDM00112,U031,Kidney,Kidney Carcinoma,905981
+SIDM00107,UACC-62,Skin,Melanoma,905976
+SIDM00130,CFPAC-1,Pancreas,Pancreatic Carcinoma,906821
+SIDM00125,786-0,Kidney,Kidney Carcinoma,905947
+SIDM00123,ACHN,Kidney,Kidney Carcinoma,905950
+SIDM00174,BB49-HNC,Head and Neck,Head and Neck Carcinoma,753532
+SIDM00191,BB65-RCC,Kidney,Kidney Carcinoma,753533
+SIDM00122,BT-549,Breast,Breast Carcinoma,905951
+SIDM00132,BxPC-3,Pancreas,Pancreatic Carcinoma,906693
+SIDM00212,CAS-1,Central Nervous System,Glioblastoma,910943
+SIDM00143,COLO-668,Lung,Small Cell Lung Carcinoma,910692
+SIDM00140,COLO-792,Skin,Melanoma,906814
+SIDM00190,CP66-MEL,Skin,Melanoma,753546
+SIDM00199,CS1,Bone,Chondrosarcoma,1290795
+SIDM00209,D-423MG,Central Nervous System,Glioblastoma,946372
+SIDM00207,D-542MG,Central Nervous System,Glioblastoma,753549
+SIDM00206,D-566MG,Central Nervous System,Glioblastoma,946377
+SIDM00203,EW-11,Bone,Ewing's Sarcoma,684062
+SIDM00198,EW-16,Bone,Ewing's Sarcoma,949165
+SIDM00202,EW-3,Bone,Ewing's Sarcoma,949161
+SIDM00201,EW-7,Bone,Ewing's Sarcoma,949160
+SIDM00136,HT-29,Large Intestine,Colorectal Carcinoma,905939
+SIDM00127,JHU-022,Head and Neck,Oral Cavity Carcinoma,1240162
+SIDM00157,KP-N-YS,Peripheral Nervous System,Neuroblastoma,946363
+SIDM00184,LB373-MEL-D,Skin,Melanoma,753581
+SIDM00182,LB771-HNC,Head and Neck,Head and Neck Carcinoma,753583
+SIDM00180,LB996-RCC,Kidney,Kidney Carcinoma,753585
+SIDM00146,MDA-MB-231,Breast,Breast Carcinoma,905960
+SIDM00179,MZ2-MEL,Skin,Melanoma,971777
+SIDM00137,NCI-H3122,Lung,Non-Small Cell Lung Carcinoma,1240190
+SIDM00117,NCI-H322M,Lung,Non-Small Cell Lung Carcinoma,905967
+SIDM00116,NCI-H522,Lung,Non-Small Cell Lung Carcinoma,905944
+SIDM00105,OVCAR-3,Ovary,Ovarian Carcinoma,905933
+SIDM00115,PCI-6A,Head and Neck,Head and Neck Carcinoma,1240206
+SIDM00113,TK10,Kidney,Kidney Carcinoma,905980
+SIDM00111,U251,Central Nervous System,Glioma,905983
+SIDM00108,UACC-257,Skin,Melanoma,905977
+SIDM00172,BB30-HNC,Head and Neck,Head and Neck Carcinoma,753531
+SIDM00176,CHSA8926,Bone,Chondrosarcoma,1303912
+SIDM00175,CP50-MEL-B,Skin,Melanoma,753545
+SIDM00283,CTB-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,949088
+SIDM00208,D-502MG,Central Nervous System,Glioblastoma,946373
+SIDM00278,EC-GI-10,Esophagus,Esophageal Squamous Cell Carcinoma,753555
+SIDM00279,ECC12,Stomach,Gastric Carcinoma,906849
+SIDM00266,ES1,Bone,Ewing's Sarcoma,949158
+SIDM00264,ES4,Bone,Ewing's Sarcoma,949156
+SIDM00262,ES6,Bone,Ewing's Sarcoma,949157
+SIDM00269,ES7,Bone,Ewing's Sarcoma,684059
+SIDM00261,ES8,Bone,Ewing's Sarcoma,949155
+SIDM00276,ETK-1,Biliary Tract,Biliary Tract Carcinoma,906861
+SIDM00197,EW-18,Bone,Ewing's Sarcoma,949164
+SIDM00196,EW-22,Bone,Ewing's Sarcoma,949167
+SIDM00195,EW-24,Bone,Ewing's Sarcoma,949168
+SIDM00277,EoL-1-cell,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,906856
+SIDM00213,FTC-133,Thyroid,Thyroid Gland Carcinoma,906864
+SIDM00274,GCIY,Stomach,Gastric Carcinoma,906869
+SIDM00227,GI-ME-N,Peripheral Nervous System,Neuroblastoma,906872
+SIDM00188,HA7-RCC,Kidney,Kidney Carcinoma,753558
+SIDM00134,HOP-92,Lung,Non-Small Cell Lung Carcinoma,905973
+SIDM00223,IST-SL1,Lung,Small Cell Lung Carcinoma,753564
+SIDM00186,LB2241-RCC,Kidney,Kidney Carcinoma,753578
+SIDM00185,LB2518-MEL,Skin,Melanoma,753579
+SIDM00183,LB647-SCLC,Lung,Small Cell Lung Carcinoma,753582
+SIDM00181,LB831-BLC,Bladder,Bladder Carcinoma,753584
+SIDM00149,LOXIMVI,Skin,Melanoma,905974
+SIDM00260,MKN28,Stomach,Gastric Carcinoma,908139
+SIDM00247,MKN45,Stomach,Gastric Carcinoma,925340
+SIDM00222,MPP-89,Lung,Mesothelioma,908150
+SIDM00245,MS-1,Lung,Small Cell Lung Carcinoma,753594
+SIDM00255,NB17,Peripheral Nervous System,Neuroblastoma,949175
+SIDM00254,NB5,Peripheral Nervous System,Neuroblastoma,949176
+SIDM00156,NB7,Peripheral Nervous System,Neuroblastoma,949174
+SIDM00139,NCI-H226,Lung,Mesothelioma,905941
+SIDM00138,NCI-H23,Lung,Non-Small Cell Lung Carcinoma,905942
+SIDM00243,NEC8,Testis,Other Solid Cancers,910942
+SIDM00239,OS-RC-2,Kidney,Kidney Carcinoma,909250
+SIDM00237,PC-14,Lung,Non-Small Cell Lung Carcinoma,753608
+SIDM00270,PCI-15A,Head and Neck,Head and Neck Carcinoma,1240204
+SIDM00235,RCC10RGB,Kidney,Kidney Carcinoma,909974
+SIDM00218,RO82-W-1,Thyroid,Thyroid Gland Carcinoma,930083
+SIDM00193,SNU-81,Large Intestine,Colorectal Carcinoma,1660036
+SIDM00267,TGBC24TKB,Biliary Tract,Biliary Tract Carcinoma,910695
+SIDM00233,ATN-1,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,910687
+SIDM00287,BALL-1,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,910705
+SIDM00286,CHP-126,Peripheral Nervous System,Neuroblastoma,910567
+SIDM00285,CHP-134,Peripheral Nervous System,Neuroblastoma,910941
+SIDM00284,COLO-679,Skin,Melanoma,906818
+SIDM00281,DJM-1,Skin,Other Solid Cancers,906841
+SIDM00263,ES5,Bone,Ewing's Sarcoma,684057
+SIDM00273,GI-1,Central Nervous System,Glioblastoma,906871
+SIDM00289,HAL-01,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,949153
+SIDM00290,HGC-27,Stomach,Gastric Carcinoma,907055
+SIDM00291,HMV-II,Skin,Melanoma,907058
+SIDM00306,IA-LM,Lung,Non-Small Cell Lung Carcinoma,910779
+SIDM00225,IST-MEL1,Skin,Melanoma,907172
+SIDM00230,IST-SL2,Lung,Small Cell Lung Carcinoma,753565
+SIDM00304,JHOS-3,Ovary,Ovarian Carcinoma,1480358
+SIDM00302,KGN,Ovary,Other Solid Cancers,924186
+SIDM00301,KP-4,Pancreas,Pancreatic Carcinoma,753572
+SIDM00329,L-540,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,907323
+SIDM00346,LAMA-84,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,907783
+SIDM00330,LAN-6,Peripheral Nervous System,Neuroblastoma,949170
+SIDM00341,LOU-NH91,Lung,Squamous Cell Lung Carcinoma,1298226
+SIDM00342,LOUCY,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,907789
+SIDM00294,LU-135,Lung,Small Cell Lung Carcinoma,713899
+SIDM00292,LU-165,Lung,Small Cell Lung Carcinoma,753589
+SIDM00272,MDA-MB-453,Breast,Breast Carcinoma,908122
+SIDM00337,MEL-HO,Skin,Melanoma,908124
+SIDM00336,MEL-JUSO,Skin,Melanoma,908125
+SIDM00335,MFE-280,Endometrium,Endometrial Carcinoma,908129
+SIDM00299,MFH-ino,Soft Tissue,Other Sarcomas,925343
+SIDM00271,MKN1,Stomach,Gastric Carcinoma,908138
+SIDM00259,NB10,Peripheral Nervous System,Neuroblastoma,949171
+SIDM00231,NCC010,Kidney,Kidney Carcinoma,1509073
+SIDM00232,NCC021,Kidney,Kidney Carcinoma,1509074
+SIDM00242,NOS-1,Bone,Osteosarcoma,925345
+SIDM00240,OMC-1,Cervix,Cervical Carcinoma,949154
+SIDM00348,TE-11,Esophagus,Esophageal Squamous Cell Carcinoma,946354
+SIDM00250,TE-4,Esophagus,Esophageal Squamous Cell Carcinoma,1503371
+SIDM00347,TE-5,Esophagus,Esophageal Squamous Cell Carcinoma,735784
+SIDM00328,TE-6,Esophagus,Esophageal Squamous Cell Carcinoma,946355
+SIDM00326,TE-8,Esophagus,Esophageal Squamous Cell Carcinoma,753623
+SIDM00325,TE-9,Esophagus,Esophageal Squamous Cell Carcinoma,946353
+SIDM00324,TGW,Peripheral Nervous System,Neuroblastoma,910780
+SIDM00323,TK,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331045
+SIDM00319,VMRC-MELG,Skin,Melanoma,930301
+SIDM00318,VMRC-RCW,Kidney,Kidney Carcinoma,1240224
+SIDM00317,VMRC-RCZ,Kidney,Kidney Carcinoma,909781
+SIDM00316,YH-13,Central Nervous System,Glioblastoma,909905
+SIDM00303,JHOS-4,Ovary,Ovarian Carcinoma,1480359
+SIDM00371,SUIT-2,Pancreas,Pancreatic Carcinoma,1240219
+SIDM00352,RMG-I,Ovary,Ovarian Carcinoma,909699
+SIDM00411,YAPC,Pancreas,Pancreatic Carcinoma,909904
+SIDM00349,TE-10,Esophagus,Esophageal Squamous Cell Carcinoma,753622
+SIDM00308,KU812,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,907311
+SIDM00402,RT-112,Bladder,Bladder Carcinoma,909704
+SIDM00297,LC-2-ad,Lung,Non-Small Cell Lung Carcinoma,907786
+SIDM00050,CHSA0108,Bone,Chondrosarcoma,1290768
+SIDM00119,EKVX,Lung,Non-Small Cell Lung Carcinoma,905970
+SIDM00305,JHOS-2,Ovary,Ovarian Carcinoma,1479995
+SIDM00313,L-1236,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,1330935
+SIDM00339,LXF-289,Lung,Non-Small Cell Lung Carcinoma,753592
+SIDM00332,MFM-223,Breast,Breast Carcinoma,910948
+SIDM00362,P32-ISH,Haematopoietic and Lymphoid,Burkitt's Lymphoma,1330987
+SIDM00360,QGP-1,Pancreas,Other Solid Cancers,1298534
+SIDM00359,RCM-1,Large Intestine,Colorectal Carcinoma,909263
+SIDM00358,RERF-GC-1B,Stomach,Gastric Carcinoma,1240209
+SIDM00356,RERF-LC-KJ,Lung,Non-Small Cell Lung Carcinoma,1298537
+SIDM00354,RERF-LC-Sq1,Lung,Squamous Cell Lung Carcinoma,1298538
+SIDM00353,RKN,Soft Tissue,Other Sarcomas,1298539
+SIDM00415,ROS-50,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331025
+SIDM00403,RPMI-8402,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,909702
+SIDM00401,RVH-421,Skin,Melanoma,909706
+SIDM00351,SAS,Head and Neck,Oral Cavity Carcinoma,909708
+SIDM00350,SAT,Head and Neck,Head and Neck Carcinoma,1299050
+SIDM00365,SBC-1,Lung,Small Cell Lung Carcinoma,713885
+SIDM00384,SCC-3,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,910930
+SIDM00383,SCH,Stomach,Gastric Carcinoma,909711
+SIDM00394,SISO,Cervix,Cervical Carcinoma,1240212
+SIDM00393,SK-GT-2,Stomach,Gastric Carcinoma,1503364
+SIDM00392,SK-MEL-30,Skin,Melanoma,909726
+SIDM00379,SK-MG-1,Central Nervous System,Glioma,909729
+SIDM00391,SK-MM-2,Haematopoietic and Lymphoid,Plasma Cell Myeloma,753612
+SIDM00381,SKG-IIIa,Cervix,Cervical Carcinoma,930298
+SIDM00380,SKM-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,909722
+SIDM00375,SKN-3,Head and Neck,Head and Neck Carcinoma,1299059
+SIDM00377,SKN,Uterus,Other Sarcomas,1240215
+SIDM00374,SLVL,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331032
+SIDM00405,SU-DHL-4,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331035
+SIDM00322,T-T,Esophagus,Esophageal Squamous Cell Carcinoma,1299064
+SIDM00418,TT2609-C02,Thyroid,Thyroid Gland Carcinoma,1240223
+SIDM00413,WSU-DLCL2,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331050
+SIDM00315,YKG-1,Central Nervous System,Glioblastoma,687592
+SIDM00483,SK-GT-4,Esophagus,Esophageal Carcinoma,1503365
+SIDM00458,OCI-M1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330985
+SIDM00469,PSN1,Pancreas,Pancreatic Carcinoma,910546
+SIDM00420,SW1710,Bladder,Bladder Carcinoma,909749
+SIDM00421,SUP-M2,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,1331040
+SIDM00479,OE19,Esophagus,Esophageal Carcinoma,910079
+SIDM00424,U-698-M,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,909777
+SIDM00491,ASH-3,Thyroid,Thyroid Gland Carcinoma,1290722
+SIDM00485,BICR22,Head and Neck,Oral Cavity Carcinoma,1240121
+SIDM00490,Becker,Central Nervous System,Glioma,906746
+SIDM00489,Ca9-22,Head and Neck,Oral Cavity Carcinoma,753538
+SIDM00488,CaR-1,Large Intestine,Colorectal Carcinoma,924108
+SIDM00386,MHH-ES-1,Bone,Ewing's Sarcoma,908134
+SIDM00442,ML-1,Thyroid,Thyroid Gland Carcinoma,1240178
+SIDM00441,ML-2,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,908141
+SIDM00428,NB4,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1323913
+SIDM00443,NU-DUL-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1330982
+SIDM00481,OAW-28,Ovary,Ovarian Carcinoma,946360
+SIDM00446,OCI-AML2,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,910947
+SIDM00462,OCI-AML3,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1290455
+SIDM00460,OCI-LY-19,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1330984
+SIDM00478,OE21,Esophagus,Esophageal Squamous Cell Carcinoma,1298359
+SIDM00477,OE33,Esophagus,Esophageal Carcinoma,910549
+SIDM00457,OPM-2,Haematopoietic and Lymphoid,Plasma Cell Myeloma,909249
+SIDM00475,OV-56,Ovary,Ovarian Carcinoma,1480362
+SIDM00474,OV-7,Ovary,Ovarian Carcinoma,1480360
+SIDM00466,OVKATE,Ovary,Ovarian Carcinoma,1240199
+SIDM00465,OVMIU,Ovary,Ovarian Carcinoma,1240200
+SIDM00463,P12-ICHIKAWA,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,909251
+SIDM00453,PA-TU-8988T,Pancreas,Pancreatic Carcinoma,1240201
+SIDM00472,PEO1,Ovary,Ovarian Carcinoma,1480372
+SIDM00451,PF-382,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,909260
+SIDM00450,PL-21,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330991
+SIDM00467,QIMR-WIL,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,910545
+SIDM00448,RC-K8,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1330995
+SIDM00427,RH-1,Bone,Ewing's Sarcoma,971773
+SIDM00395,SIMA,Peripheral Nervous System,Neuroblastoma,753620
+SIDM00390,SU-DHL-1,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,909742
+SIDM00423,SU-DHL-8,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331038
+SIDM00419,TC-71,Bone,Ewing's Sarcoma,1240221
+SIDM00369,TE-1,Esophagus,Esophageal Squamous Cell Carcinoma,753621
+SIDM00484,TT,Thyroid,Thyroid Gland Carcinoma,930299
+SIDM00416,VAL,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331048
+SIDM00410,YT,Haematopoietic and Lymphoid,Other Blood Cancers,946358
+SIDM00495,A3-KAW,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,910935
+SIDM00502,A4-Fuk,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,910934
+SIDM00494,ABC-1,Lung,Non-Small Cell Lung Carcinoma,906791
+SIDM00492,AM-38,Central Nervous System,Glioblastoma,910933
+SIDM00501,BICR78,Head and Neck,Oral Cavity Carcinoma,1240122
+SIDM00515,COLO-800,Skin,Melanoma,906813
+SIDM00513,COR-L105,Lung,Non-Small Cell Lung Carcinoma,906805
+SIDM00512,COR-L23,Lung,Non-Small Cell Lung Carcinoma,687780
+SIDM00510,COR-L303,Lung,Small Cell Lung Carcinoma,1297438
+SIDM00507,COR-L321,Lung,Other Solid Cancers,1322213
+SIDM00508,COR-L32,Lung,Squamous Cell Lung Carcinoma,1322212
+SIDM00506,COR-L88,Lung,Small Cell Lung Carcinoma,906808
+SIDM00542,D-392MG,Central Nervous System,Glioblastoma,946370
+SIDM00522,DMS-273,Lung,Small Cell Lung Carcinoma,687985
+SIDM00523,DMS-53,Lung,Small Cell Lung Carcinoma,907295
+SIDM00540,DOK,Head and Neck,Oral Cavity Carcinoma,910936
+SIDM00503,FU97,Stomach,Gastric Carcinoma,1290806
+SIDM00543,GAK,Skin,Melanoma,910932
+SIDM00544,GOTO,Peripheral Nervous System,Neuroblastoma,906875
+SIDM00496,HTC-C3,Thyroid,Thyroid Gland Carcinoma,924151
+SIDM00533,HuP-T3,Pancreas,Pancreatic Carcinoma,907285
+SIDM00531,HuP-T4,Pancreas,Pancreatic Carcinoma,907286
+SIDM00556,KP-N-YN,Peripheral Nervous System,Neuroblastoma,907314
+SIDM00555,KS-1,Central Nervous System,Glioblastoma,907313
+SIDM00554,KURAMOCHI,Ovary,Ovarian Carcinoma,909975
+SIDM00553,KY821,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,907300
+SIDM00530,KYAE-1,Esophagus,Esophageal Carcinoma,1503368
+SIDM00552,KYM-1,Soft Tissue,Rhabdomyosarcoma,1240166
+SIDM00551,KYSE-220,Esophagus,Esophageal Squamous Cell Carcinoma,1240167
+SIDM00549,LC4-1,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,907787
+SIDM00548,LK-2,Lung,Squamous Cell Lung Carcinoma,687787
+SIDM00547,LU-65,Lung,Non-Small Cell Lung Carcinoma,724863
+SIDM00529,MDA-MB-157,Breast,Breast Carcinoma,925338
+SIDM00528,MDA-MB-361,Breast,Breast Carcinoma,908121
+SIDM00527,MDST8,Large Intestine,Colorectal Carcinoma,1240173
+SIDM00526,MEG-01,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,908126
+SIDM00525,MG-63,Bone,Osteosarcoma,908131
+SIDM00505,MIA-PaCa-2,Pancreas,Pancreatic Carcinoma,724870
+SIDM00561,MLMA,Haematopoietic and Lymphoid,Other Blood Cancers,908142
+SIDM00532,MOG-G-CCM,Central Nervous System,Glioma,908144
+SIDM00562,MRK-nu-1,Breast,Breast Carcinoma,908151
+SIDM00545,Mewo,Skin,Melanoma,908128
+SIDM00476,OV-17R,Ovary,Ovarian Carcinoma,1480361
+SIDM01185,U-CH2,Bone,Other Solid Cancers,1503373
+SIDM00574,no-10,Central Nervous System,Glioblastoma,908452
+SIDM00569,NY,Bone,Osteosarcoma,910849
+SIDM00581,GB-1,Central Nervous System,Glioblastoma,687568
+SIDM00521,COR-L95,Lung,Small Cell Lung Carcinoma,1297439
+SIDM00598,HARA,Lung,Squamous Cell Lung Carcinoma,1240142
+SIDM00591,HO-1-u-1,Head and Neck,Oral Cavity Carcinoma,753561
+SIDM00590,HSC-2,Head and Neck,Oral Cavity Carcinoma,753562
+SIDM00589,HSC-3,Head and Neck,Oral Cavity Carcinoma,907061
+SIDM00587,HuCCT1,Biliary Tract,Biliary Tract Carcinoma,907069
+SIDM00585,HuH-7,Liver,Hepatocellular Carcinoma,907071
+SIDM00584,HuO-3N1,Bone,Osteosarcoma,909977
+SIDM00599,HuO9,Bone,Osteosarcoma,907072
+SIDM00600,IHH-4,Thyroid,Thyroid Gland Carcinoma,1240154
+SIDM00617,JHH-2,Liver,Hepatocellular Carcinoma,1240157
+SIDM00616,JHH-4,Liver,Hepatocellular Carcinoma,1240158
+SIDM00615,JHH-6,Liver,Hepatocellular Carcinoma,1240159
+SIDM00612,KINGS-1,Central Nervous System,Glioma,907279
+SIDM00611,KMRC-1,Kidney,Kidney Carcinoma,1298168
+SIDM00609,KMRC-20,Kidney,Kidney Carcinoma,1298169
+SIDM00607,KNS-42,Central Nervous System,Glioblastoma,907282
+SIDM00606,KNS-62,Lung,Squamous Cell Lung Carcinoma,753569
+SIDM00604,KON,Head and Neck,Oral Cavity Carcinoma,1298215
+SIDM00583,KP-1N,Pancreas,Pancreatic Carcinoma,1298216
+SIDM00571,KP-3,Pancreas,Pancreatic Carcinoma,1298219
+SIDM00579,NB(TU)1-10,Peripheral Nervous System,Neuroblastoma,1240181
+SIDM00577,NH-12,Peripheral Nervous System,Neuroblastoma,908447
+SIDM00576,NKM-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,908448
+SIDM00575,NMC-G1,Central Nervous System,Glioma,908449
+SIDM00580,NOMO-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,908451
+SIDM00570,NUGC-4,Stomach,Gastric Carcinoma,1298357
+SIDM00567,ONS-76,Central Nervous System,Other Solid Cancers,909248
+SIDM00566,OSC-19,Head and Neck,Oral Cavity Carcinoma,1298362
+SIDM00565,OSC-20,Head and Neck,Oral Cavity Carcinoma,1240196
+SIDM00564,OVISE,Ovary,Ovarian Carcinoma,1240198
+SIDM00586,huH-1,Liver,Hepatocellular Carcinoma,1298146
+SIDM00573,no-11,Central Nervous System,Glioblastoma,908450
+SIDM00653,NCI-H1092,Lung,Small Cell Lung Carcinoma,687997
+SIDM00881,HCC1428,Breast,Breast Carcinoma,1290905
+SIDM00622,D-247MG,Central Nervous System,Glioblastoma,946367
+SIDM00620,D-336MG,Central Nervous System,Glioblastoma,946369
+SIDM00621,EW-13,Bone,Ewing's Sarcoma,949166
+SIDM00858,G-292-Clone-A141B1,Bone,Osteosarcoma,1290807
+SIDM00675,HCC38,Breast,Breast Carcinoma,749717
+SIDM00673,HCC70,Breast,Breast Carcinoma,907048
+SIDM00671,HH,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,907056
+SIDM00670,HPAC,Pancreas,Pancreatic Carcinoma,1298136
+SIDM00669,HPAF-II,Pancreas,Pancreatic Carcinoma,724869
+SIDM00676,HT-1197,Bladder,Bladder Carcinoma,907065
+SIDM00678,HT-1376,Bladder,Bladder Carcinoma,907066
+SIDM00667,Hs-633T,Soft Tissue,Other Sarcomas,1240149
+SIDM00666,Hs-683,Central Nervous System,Glioma,1240150
+SIDM00665,Hs-746T,Stomach,Gastric Carcinoma,1240151
+SIDM00688,JSC-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1327769
+SIDM00619,KMH-2,Thyroid,Thyroid Gland Carcinoma,1298167
+SIDM00681,LS1034,Large Intestine,Colorectal Carcinoma,917486
+SIDM00677,LS-513,Large Intestine,Colorectal Carcinoma,907795
+SIDM00659,M059J,Central Nervous System,Glioblastoma,949094
+SIDM00637,MC116,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,907799
+SIDM00631,MDA-MB-330,Breast,Breast Carcinoma,1330941
+SIDM00628,MDA-MB-468,Breast,Breast Carcinoma,908123
+SIDM00627,ME-180,Cervix,Cervical Carcinoma,687514
+SIDM00625,MES-SA,Uterus,Other Sarcomas,908127
+SIDM00638,MS751,Cervix,Cervical Carcinoma,1240179
+SIDM00640,MSTO-211H,Lung,Mesothelioma,908152
+SIDM00657,MV-4-11,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,908156
+SIDM00623,Mo-T,Haematopoietic and Lymphoid,Other Blood Cancers,908149
+SIDM00578,NB1,Peripheral Nervous System,Neuroblastoma,949179
+SIDM00652,NCI-H1105,Lung,Small Cell Lung Carcinoma,908468
+SIDM00651,NCI-H1155,Lung,Non-Small Cell Lung Carcinoma,908467
+SIDM00649,NCI-H1299,Lung,Non-Small Cell Lung Carcinoma,724831
+SIDM00645,NCI-H1355,Lung,Non-Small Cell Lung Carcinoma,724866
+SIDM00658,NCI-H1435,Lung,Non-Small Cell Lung Carcinoma,1298347
+SIDM00698,NCI-H146,Lung,Small Cell Lung Carcinoma,910899
+SIDM00744,NCI-H1651,Lung,Non-Small Cell Lung Carcinoma,910900
+SIDM00742,NCI-H1693,Lung,Non-Small Cell Lung Carcinoma,687802
+SIDM00740,NCI-H1703,Lung,Squamous Cell Lung Carcinoma,908474
+SIDM00735,NCI-H2029,Lung,Small Cell Lung Carcinoma,688011
+SIDM00709,NCI-H2085,Lung,Non-Small Cell Lung Carcinoma,687812
+SIDM00699,NCI-H2141,Lung,Small Cell Lung Carcinoma,688014
+SIDM00731,NCI-H2196,Lung,Small Cell Lung Carcinoma,908481
+SIDM00729,NCI-H2228,Lung,Non-Small Cell Lung Carcinoma,687816
+SIDM00728,NCI-H2291,Lung,Non-Small Cell Lung Carcinoma,724874
+SIDM01070,HCC-366,Lung,Non-Small Cell Lung Carcinoma,1240144
+SIDM00686,KLE,Endometrium,Endometrial Carcinoma,924187
+SIDM00766,NCI-H1876,Lung,Small Cell Lung Carcinoma,1330972
+SIDM00734,NCI-H1437,Lung,Non-Small Cell Lung Carcinoma,687794
+SIDM00121,CCRF-CEM,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,905952
+SIDM00732,D-263MG,Central Nervous System,Glioblastoma,946368
+SIDM00882,HCC1419,Breast,Breast Carcinoma,907045
+SIDM00806,HOS,Bone,Osteosarcoma,907060
+SIDM00695,HT-144,Skin,Melanoma,907067
+SIDM00679,HT-3,Cervix,Cervical Carcinoma,907068
+SIDM00694,HuTu-80,Small Intestine,Other Solid Cancers,907073
+SIDM00693,J82,Bladder,Bladder Carcinoma,753566
+SIDM00689,JM1,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,1327768
+SIDM00685,LN-18,Central Nervous System,Glioblastoma,1240168
+SIDM00630,MDA-MB-415,Breast,Breast Carcinoma,924240
+SIDM00750,NCI-H1568,Lung,Non-Small Cell Lung Carcinoma,1298348
+SIDM00749,NCI-H1573,Lung,Non-Small Cell Lung Carcinoma,908472
+SIDM00748,NCI-H1581,Lung,Non-Small Cell Lung Carcinoma,908471
+SIDM00747,NCI-H1623,Lung,Non-Small Cell Lung Carcinoma,687798
+SIDM00746,NCI-H1648,Lung,Non-Small Cell Lung Carcinoma,687799
+SIDM00745,NCI-H1650,Lung,Non-Small Cell Lung Carcinoma,687800
+SIDM00743,NCI-H1666,Lung,Non-Small Cell Lung Carcinoma,908473
+SIDM00792,NCI-H1688,Lung,Small Cell Lung Carcinoma,1298349
+SIDM00741,NCI-H1694,Lung,Small Cell Lung Carcinoma,688006
+SIDM00739,NCI-H1734,Lung,Non-Small Cell Lung Carcinoma,722058
+SIDM00738,NCI-H1755,Lung,Non-Small Cell Lung Carcinoma,908475
+SIDM00768,NCI-H1869,Lung,Non-Small Cell Lung Carcinoma,1240183
+SIDM00715,NCI-H2030,Lung,Non-Small Cell Lung Carcinoma,722045
+SIDM00710,NCI-H2081,Lung,Small Cell Lung Carcinoma,908480
+SIDM00708,NCI-H2087,Lung,Non-Small Cell Lung Carcinoma,724834
+SIDM00706,NCI-H209,Lung,Small Cell Lung Carcinoma,688013
+SIDM00704,NCI-H211,Lung,Small Cell Lung Carcinoma,1240189
+SIDM00716,NCI-H2170,Lung,Squamous Cell Lung Carcinoma,687815
+SIDM00733,NCI-H2171,Lung,Small Cell Lung Carcinoma,688015
+SIDM00730,NCI-H2227,Lung,Small Cell Lung Carcinoma,688018
+SIDM00727,NCI-H2342,Lung,Non-Small Cell Lung Carcinoma,687819
+SIDM00726,NCI-H2347,Lung,Non-Small Cell Lung Carcinoma,687820
+SIDM00723,NCI-H2444,Lung,Non-Small Cell Lung Carcinoma,1298356
+SIDM00722,NCI-H2452,Lung,Mesothelioma,908462
+SIDM00814,SW13,Adrenal Gland,Other Solid Cancers,909744
+SIDM00782,T84,Large Intestine,Colorectal Carcinoma,909761
+SIDM00807,5637,Bladder,Bladder Carcinoma,687452
+SIDM00801,A101D,Skin,Melanoma,910921
+SIDM00798,A204,Soft Tissue,Rhabdomyosarcoma,910784
+SIDM00797,A2058,Skin,Melanoma,906792
+SIDM00796,A253,Head and Neck,Head and Neck Carcinoma,906794
+SIDM00794,A388,Skin,Other Solid Cancers,910697
+SIDM00810,A427,Lung,Non-Small Cell Lung Carcinoma,910851
+SIDM00895,BC-3,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,910918
+SIDM00893,BT-20,Breast,Breast Carcinoma,906801
+SIDM00917,CESS,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,910688
+SIDM00952,CRO-AP2,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,906807
+SIDM00886,DB,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,906832
+SIDM00831,Detroit562,Head and Neck,Head and Neck Carcinoma,906837
+SIDM00861,ES-2,Ovary,Ovarian Carcinoma,1240128
+SIDM00860,FADU,Head and Neck,Head and Neck Carcinoma,906863
+SIDM00857,G-361,Skin,Melanoma,906865
+SIDM00856,G-401,Kidney,Other Solid Cancers,907299
+SIDM00855,G-402,Soft Tissue,Other Sarcomas,907298
+SIDM00854,GA-10,Haematopoietic and Lymphoid,Burkitt's Lymphoma,1303896
+SIDM00874,HCC1937,Breast,Breast Carcinoma,749714
+SIDM00872,HCC1954,Breast,Breast Carcinoma,749709
+SIDM00870,HCC202,Breast,Breast Carcinoma,1290906
+SIDM00774,HCC2157,Breast,Breast Carcinoma,749715
+SIDM00772,HCC2218,Breast,Breast Carcinoma,749716
+SIDM00829,HL-60,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,905938
+SIDM00828,HT-1080,Soft Tissue,Other Sarcomas,907064
+SIDM00785,KG-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,907278
+SIDM00776,LS-123,Large Intestine,Colorectal Carcinoma,907792
+SIDM00751,NCI-H1563,Lung,Non-Small Cell Lung Carcinoma,753600
+SIDM00771,NCI-H1792,Lung,Non-Small Cell Lung Carcinoma,724868
+SIDM00755,NCI-H1793,Lung,Non-Small Cell Lung Carcinoma,908463
+SIDM00769,NCI-H1838,Lung,Non-Small Cell Lung Carcinoma,687807
+SIDM00763,NCI-H1915,Lung,Non-Small Cell Lung Carcinoma,1240184
+SIDM00761,NCI-H196,Lung,Small Cell Lung Carcinoma,1240186
+SIDM00759,NCI-H1975,Lung,Non-Small Cell Lung Carcinoma,924244
+SIDM00756,NCI-H2009,Lung,Non-Small Cell Lung Carcinoma,724873
+SIDM00753,NCI-H2023,Lung,Squamous Cell Lung Carcinoma,1240187
+SIDM00779,NCI-H716,Large Intestine,Colorectal Carcinoma,908458
+SIDM00820,RCC-ER,Kidney,Kidney Carcinoma,1524417
+SIDM00818,RCC-JF,Kidney,Kidney Carcinoma,1524415
+SIDM00817,RCC-JW,Kidney,Kidney Carcinoma,1524416
+SIDM00835,SW1116,Large Intestine,Colorectal Carcinoma,909746
+SIDM00812,SW1417,Large Intestine,Colorectal Carcinoma,909747
+SIDM00834,SW1463,Large Intestine,Colorectal Carcinoma,909748
+SIDM00841,SW620,Large Intestine,Colorectal Carcinoma,905962
+SIDM00833,SW837,Large Intestine,Colorectal Carcinoma,909755
+SIDM00815,UWB1.289,Ovary,Ovarian Carcinoma,1480374
+SIDM00877,HCC1599,Breast,Breast Carcinoma,749713
+SIDM01118,NCI-H740,Lung,Small Cell Lung Carcinoma,1331055
+SIDM00982,42-MG-BA,Central Nervous System,Glioblastoma,687561
+SIDM00983,647-V,Bladder,Bladder Carcinoma,906797
+SIDM00903,A549,Lung,Non-Small Cell Lung Carcinoma,905949
+SIDM00848,A673,Bone,Ewing's Sarcoma,684052
+SIDM00850,AGS,Stomach,Gastric Carcinoma,906790
+SIDM00898,AU565,Breast,Breast Carcinoma,910704
+SIDM00899,AsPC-1,Pancreas,Pancreatic Carcinoma,910702
+SIDM00896,BC-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,910919
+SIDM00987,BHT-101,Thyroid,Thyroid Gland Carcinoma,906696
+SIDM00963,BT-474,Breast,Breast Carcinoma,946359
+SIDM00892,BT-483,Breast,Breast Carcinoma,949093
+SIDM00905,C-4-I,Cervix,Cervical Carcinoma,687506
+SIDM00890,C32,Skin,Melanoma,906830
+SIDM00907,CA46,Haematopoietic and Lymphoid,Burkitt's Lymphoma,910703
+SIDM00941,CAKI-1,Kidney,Kidney Carcinoma,905963
+SIDM00936,CAL-29,Bladder,Bladder Carcinoma,1290730
+SIDM00931,CAL-62,Thyroid,Thyroid Gland Carcinoma,906828
+SIDM00928,CAL-85-1,Breast,Breast Carcinoma,910852
+SIDM00920,CAMA-1,Breast,Breast Carcinoma,946382
+SIDM00934,CAPAN-1,Pancreas,Pancreatic Carcinoma,753624
+SIDM01228,CHL-1,Skin,Melanoma,910853
+SIDM00910,CHP-212,Peripheral Nervous System,Neuroblastoma,906820
+SIDM00842,COLO-320-HSR,Large Intestine,Colorectal Carcinoma,910569
+SIDM00957,COLO-678,Large Intestine,Colorectal Carcinoma,910689
+SIDM00909,COLO-829,Skin,Melanoma,687448
+SIDM00923,Ca-Ski,Cervix,Cervical Carcinoma,906824
+SIDM00919,Caov-3,Ovary,Ovarian Carcinoma,906825
+SIDM00918,Caov-4,Ovary,Ovarian Carcinoma,949090
+SIDM00888,D-283MED,Central Nervous System,Other Solid Cancers,906834
+SIDM00950,DAN-G,Pancreas,Pancreatic Carcinoma,1290797
+SIDM00867,DBTRG-05MG,Central Nervous System,Glioblastoma,906835
+SIDM00865,DMS-114,Lung,Small Cell Lung Carcinoma,687983
+SIDM00981,DOHH-2,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,906842
+SIDM00864,DoTc2-4510,Cervix,Cervical Carcinoma,906843
+SIDM00853,GCT,Soft Tissue,Other Sarcomas,906999
+SIDM00852,H4,Central Nervous System,Glioma,907042
+SIDM00885,HCC1187,Breast,Breast Carcinoma,749711
+SIDM00875,HCC1806,Breast,Breast Carcinoma,907047
+SIDM00968,Hey,Ovary,Ovarian Carcinoma,1479988
+SIDM00967,OVCA420,Ovary,Ovarian Carcinoma,1480364
+SIDM00966,OVCA433,Ovary,Ovarian Carcinoma,1480367
+SIDM00844,Raji,Haematopoietic and Lymphoid,Burkitt's Lymphoma,909262
+SIDM00975,WM278,Skin,Melanoma,1240226
+SIDM00974,WM35,Skin,Melanoma,1299080
+SIDM00940,CAL-120,Breast,Breast Carcinoma,906826
+SIDM00997,8305C,Thyroid,Thyroid Gland Carcinoma,906795
+SIDM00996,8505C,Thyroid,Thyroid Gland Carcinoma,924102
+SIDM00986,BHY,Head and Neck,Head and Neck Carcinoma,753535
+SIDM00962,BV-173,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,910710
+SIDM00961,CADO-ES1,Bone,Ewing's Sarcoma,753539
+SIDM00939,CAL-12T,Lung,Non-Small Cell Lung Carcinoma,753540
+SIDM00937,CAL-27,Head and Neck,Oral Cavity Carcinoma,910916
+SIDM00942,CAL-33,Head and Neck,Oral Cavity Carcinoma,753541
+SIDM00935,CAL-39,Vulva,Other Solid Cancers,924107
+SIDM00932,CAL-54,Kidney,Kidney Carcinoma,910952
+SIDM00929,CAL-78,Bone,Chondrosarcoma,1290765
+SIDM00956,COLO-680N,Esophagus,Esophageal Squamous Cell Carcinoma,906817
+SIDM00954,COLO-824,Breast,Breast Carcinoma,906812
+SIDM00953,CPC-N,Lung,Small Cell Lung Carcinoma,753547
+SIDM00943,CAPAN-2,Pancreas,Pancreatic Carcinoma,910915
+SIDM00924,ChaGo-K-1,Lung,Other Solid Cancers,687596
+SIDM00949,DEL,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,906836
+SIDM00969,DOV13,Ovary,Ovarian Carcinoma,1479987
+SIDM00970,DSH1,Bladder,Bladder Carcinoma,753552
+SIDM01007,KARPAS-45,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,907272
+SIDM01005,KASUMI-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,907275
+SIDM01009,KELLY,Peripheral Nervous System,Neuroblastoma,753618
+SIDM01018,KM-H2,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,909976
+SIDM01024,KYSE-70,Esophagus,Esophageal Squamous Cell Carcinoma,753576
+SIDM00925,NCI-H441,Lung,Non-Small Cell Lung Carcinoma,908460
+SIDM00965,NCI-H446,Lung,Small Cell Lung Carcinoma,688023
+SIDM00927,NCI-H510A,Lung,Small Cell Lung Carcinoma,753605
+SIDM01000,WM-115,Skin,Melanoma,909784
+SIDM00976,WM1552C,Skin,Melanoma,1299078
+SIDM00973,WM793B,Skin,Melanoma,1299081
+SIDM01013,JVM-2,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,907269
+SIDM01082,SCC-25,Head and Neck,Oral Cavity Carcinoma,910701
+SIDM00999,639-V,Bladder,Bladder Carcinoma,906798
+SIDM00998,8-MG-BA,Central Nervous System,Glioblastoma,687562
+SIDM00995,A431,Skin,Other Solid Cancers,910925
+SIDM00992,B-CPAP,Thyroid,Thyroid Gland Carcinoma,924104
+SIDM00989,BFTC-905,Bladder,Bladder Carcinoma,910926
+SIDM00988,BFTC-909,Kidney,Kidney Carcinoma,910698
+SIDM01056,EFM-19,Breast,Breast Carcinoma,906851
+SIDM01052,EFO-21,Ovary,Ovarian Carcinoma,911905
+SIDM01047,EM-2,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,906855
+SIDM01042,EVSA-T,Breast,Breast Carcinoma,906862
+SIDM01055,GAMG,Central Nervous System,Glioblastoma,906868
+SIDM01073,HC-1,Haematopoietic and Lymphoid,Other Blood Cancers,907044
+SIDM01071,HCC-33,Lung,Small Cell Lung Carcinoma,1303901
+SIDM01067,HCC-827,Lung,Non-Small Cell Lung Carcinoma,1240146
+SIDM01064,HDLM-2,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,924110
+SIDM01062,HDQ-P1,Breast,Breast Carcinoma,1290922
+SIDM01060,IGR-1,Skin,Melanoma,907169
+SIDM01066,IGR-37,Skin,Melanoma,1240153
+SIDM01059,IPC-298,Skin,Melanoma,907171
+SIDM01038,JEKO-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1327765
+SIDM01015,JURL-MK1,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,1327771
+SIDM01012,JVM-3,Haematopoietic and Lymphoid,Other Blood Cancers,907270
+SIDM01011,KARPAS-1106P,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1327773
+SIDM01017,KARPAS-231,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,1327774
+SIDM01008,KARPAS-422,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,907274
+SIDM01003,KE-37,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,907277
+SIDM01019,KMOE-2,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,907280
+SIDM01032,KYSE-140,Esophagus,Esophageal Squamous Cell Carcinoma,753573
+SIDM01031,KYSE-150,Esophagus,Esophageal Squamous Cell Carcinoma,907317
+SIDM01030,KYSE-180,Esophagus,Esophageal Squamous Cell Carcinoma,907318
+SIDM01028,KYSE-410,Esophagus,Esophageal Squamous Cell Carcinoma,753574
+SIDM01027,KYSE-450,Esophagus,Esophageal Squamous Cell Carcinoma,907320
+SIDM01026,KYSE-510,Esophagus,Esophageal Squamous Cell Carcinoma,907321
+SIDM01025,KYSE-520,Esophagus,Esophageal Squamous Cell Carcinoma,753575
+SIDM00926,NCI-H2172,Lung,Non-Small Cell Lung Carcinoma,1298353
+SIDM01079,SH-4,Skin,Melanoma,909713
+SIDM01078,SHP-77,Lung,Small Cell Lung Carcinoma,724872
+SIDM01077,VCaP,Prostate,Prostate Carcinoma,1299075
+SIDM01034,KOPN-8,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,1330933
+SIDM01020,KMS-12-BM,Haematopoietic and Lymphoid,Plasma Cell Myeloma,907281
+SIDM01043,ESS-1,Endometrium,Other Sarcomas,907000
+SIDM01041,FLO-1,Esophagus,Esophageal Carcinoma,1503361
+SIDM01033,KU-19-19,Bladder,Bladder Carcinoma,907312
+SIDM01076,697,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,906800
+SIDM01048,EJM,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1297447
+SIDM01040,FU-OV-1,Ovary,Ovarian Carcinoma,1240129
+SIDM01036,JJN-3,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1327766
+SIDM01130,NCI-H520,Lung,Squamous Cell Lung Carcinoma,908443
+SIDM01127,NCI-H596,Lung,Non-Small Cell Lung Carcinoma,908459
+SIDM01125,NCI-H647,Lung,Non-Small Cell Lung Carcinoma,1240191
+SIDM01126,NCI-H64,Lung,Small Cell Lung Carcinoma,688026
+SIDM01124,NCI-H650,Lung,Non-Small Cell Lung Carcinoma,722066
+SIDM01122,NCI-H661,Lung,Non-Small Cell Lung Carcinoma,687829
+SIDM01121,NCI-H69,Lung,Small Cell Lung Carcinoma,688027
+SIDM01120,NCI-H720,Lung,Other Solid Cancers,687600
+SIDM01119,NCI-H727,Lung,Other Solid Cancers,724855
+SIDM01117,NCI-H748,Lung,Small Cell Lung Carcinoma,909194
+SIDM01116,NCI-H810,Lung,Non-Small Cell Lung Carcinoma,925341
+SIDM01131,NCI-H82,Lung,Small Cell Lung Carcinoma,688031
+SIDM01150,NCI-H838,Lung,Non-Small Cell Lung Carcinoma,910399
+SIDM01134,NCI-H841,Lung,Small Cell Lung Carcinoma,1240192
+SIDM01149,NCI-H847,Lung,Small Cell Lung Carcinoma,1240193
+SIDM01148,NCI-H929,Haematopoietic and Lymphoid,Plasma Cell Myeloma,724825
+SIDM01145,SNU-16,Stomach,Gastric Carcinoma,908446
+SIDM01144,SNU-5,Stomach,Gastric Carcinoma,908445
+SIDM01140,PA-1,Ovary,Ovarian Carcinoma,909255
+SIDM01138,PANC-03-27,Pancreas,Pancreatic Carcinoma,925346
+SIDM01092,RF-48,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,909697
+SIDM01089,RL,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,910861
+SIDM01085,RT4,Bladder,Bladder Carcinoma,687455
+SIDM01083,SCC-15,Head and Neck,Oral Cavity Carcinoma,910911
+SIDM01081,SCC-4,Head and Neck,Oral Cavity Carcinoma,910904
+SIDM01080,SCC-9,Head and Neck,Oral Cavity Carcinoma,909709
+SIDM01111,SK-ES-1,Bone,Ewing's Sarcoma,684072
+SIDM01110,SK-HEP-1,Liver,Hepatocellular Carcinoma,909719
+SIDM01109,SK-LMS-1,Soft Tissue,Other Sarcomas,909720
+SIDM01107,SK-MEL-1,Skin,Melanoma,909723
+SIDM01106,SK-MEL-24,Skin,Melanoma,909725
+SIDM01105,SK-MEL-3,Skin,Melanoma,909724
+SIDM01103,SK-MES-1,Lung,Squamous Cell Lung Carcinoma,909728
+SIDM01101,SK-N-AS,Peripheral Nervous System,Neuroblastoma,724828
+SIDM01100,SK-N-DZ,Peripheral Nervous System,Neuroblastoma,688086
+SIDM01099,SK-N-FI,Peripheral Nervous System,Neuroblastoma,688087
+SIDM01098,SK-N-SH,Peripheral Nervous System,Neuroblastoma,717431
+SIDM01097,SK-PN-DW,Central Nervous System,Other Solid Cancers,909731
+SIDM01093,SiHa,Cervix,Cervical Carcinoma,930297
+SIDM01182,UM-UC-3,Bladder,Bladder Carcinoma,724838
+SIDM01218,JEG-3,Placenta,Other Solid Cancers,907176
+SIDM01132,PFSK-1,Central Nervous System,Other Solid Cancers,683667
+SIDM01104,SK-MEL-31,Skin,Melanoma,909727
+SIDM01180,SNU-387,Liver,Hepatocellular Carcinoma,909736
+SIDM01001,DU-4475,Breast,Breast Carcinoma,906844
+SIDM01057,GDM-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,906870
+SIDM01210,KNS-81-FD,Central Nervous System,Glioblastoma,924188
+SIDM01220,LNZTA3WT4,Central Nervous System,Glioma,1240170
+SIDM01217,MY-M12,Haematopoietic and Lymphoid,Other Blood Cancers,1330960
+SIDM01133,NCI-H835,Lung,Other Solid Cancers,753607
+SIDM01147,NCI-N87,Stomach,Gastric Carcinoma,908461
+SIDM01141,OV-90,Ovary,Ovarian Carcinoma,1240197
+SIDM01096,SK-CO-1,Large Intestine,Colorectal Carcinoma,909718
+SIDM01181,SNU-398,Liver,Hepatocellular Carcinoma,1240217
+SIDM01194,SNU-449,Liver,Hepatocellular Carcinoma,909738
+SIDM01197,SNU-C1,Large Intestine,Colorectal Carcinoma,910905
+SIDM01198,ST486,Haematopoietic and Lymphoid,Burkitt's Lymphoma,910906
+SIDM01188,SU8686,Pancreas,Pancreatic Carcinoma,1240218
+SIDM01176,SUP-B15,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,1247871
+SIDM01177,SUP-B8,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,910209
+SIDM01154,SUP-T1,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,909743
+SIDM01155,SW1088,Central Nervous System,Glioma,909745
+SIDM01162,SW156,Kidney,Kidney Carcinoma,1240220
+SIDM01165,SW1990,Pancreas,Pancreatic Carcinoma,910907
+SIDM01175,SW684,Soft Tissue,Other Sarcomas,909754
+SIDM01174,SW756,Cervix,Cervical Carcinoma,724839
+SIDM01160,SW780,Bladder,Bladder Carcinoma,687457
+SIDM01157,SW954,Vulva,Other Solid Cancers,924247
+SIDM01178,SW962,Vulva,Other Solid Cancers,909758
+SIDM01161,SW982,Soft Tissue,Other Sarcomas,909759
+SIDM01084,Saos-2,Bone,Osteosarcoma,909707
+SIDM01184,T24,Bladder,Bladder Carcinoma,724812
+SIDM01171,T98G,Central Nervous System,Glioblastoma,687586
+SIDM01190,TCCSUP,Bladder,Bladder Carcinoma,687459
+SIDM01173,TE-441-T,Soft Tissue,Rhabdomyosarcoma,924248
+SIDM01172,THP-1,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,909771
+SIDM01170,TOV-112D,Ovary,Ovarian Carcinoma,1299070
+SIDM01193,U-118-MG,Central Nervous System,Glioma,687588
+SIDM01189,U-87-MG,Central Nervous System,Glioblastoma,687590
+SIDM01187,UACC-812,Breast,Breast Carcinoma,910910
+SIDM01186,UACC-893,Breast,Breast Carcinoma,909778
+SIDM01179,VA-ES-BJ,Soft Tissue,Other Sarcomas,688121
+SIDM00048,EMC-BAC-1,Lung,Non-Small Cell Lung Carcinoma,1503369
+SIDM00047,EMC-BAC-2,Lung,Non-Small Cell Lung Carcinoma,1503370
+SIDM00045,HSC-39,Stomach,Gastric Carcinoma,1322224
+SIDM00044,PCI-30,Head and Neck,Head and Neck Carcinoma,1298529
+SIDM00043,PCI-4B,Head and Neck,Head and Neck Carcinoma,1298531
+SIDM00042,PL4,Pancreas,Pancreatic Carcinoma,1298533
+SIDM00816,RCC-MF,Kidney,Kidney Carcinoma,1524419
+SIDM00023,TE-12,Esophagus,Esophageal Squamous Cell Carcinoma,946356
+SIDM00051,CHSA0011,Bone,Chondrosarcoma,1290767
+SIDM00793,EB-3,Haematopoietic and Lymphoid,Burkitt's Lymphoma,906847
+SIDM00280,ECC10,Stomach,Gastric Carcinoma,906848
+SIDM00367,SBC-3,Lung,Small Cell Lung Carcinoma,753610
+SIDM01095,SJRH30,Soft Tissue,Rhabdomyosarcoma,909716
+SIDM00041,STS-0421,Stomach,Gastric Carcinoma,1299061
+SIDM00040,TMK-1,Stomach,Gastric Carcinoma,1299069
+SIDM00120,DU-145,Prostate,Prostate Carcinoma,905935
+SIDM00126,K2,Skin,Melanoma,1298160
+SIDM00082,SK-MEL-2,Skin,Melanoma,905955
+SIDM00079,SK-OV-3,Ovary,Ovarian Carcinoma,905959
+SIDM00142,COLO-684,Endometrium,Endometrial Carcinoma,910691
+SIDM00151,IGROV-1,Ovary,Ovarian Carcinoma,905968
+SIDM00150,KM12,Large Intestine,Colorectal Carcinoma,905989
+SIDM00187,LB1047-RCC,Kidney,Kidney Carcinoma,753577
+SIDM00145,MOLT-4,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,905958
+SIDM00718,NCI-H358,Lung,Non-Small Cell Lung Carcinoma,908465
+SIDM00241,OCUB-M,Breast,Breast Carcinoma,909256
+SIDM00238,OVK-18,Ovary,Ovarian Carcinoma,1480371
+SIDM00214,SNU-407,Large Intestine,Colorectal Carcinoma,1660034
+SIDM00251,TGBC11TKB,Stomach,Gastric Carcinoma,909770
+SIDM00282,CW-2,Large Intestine,Colorectal Carcinoma,910554
+SIDM00327,L-428,Haematopoietic and Lymphoid,Hodgkin's Lymphoma,907322
+SIDM00364,P30-OHK,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,909252
+SIDM00399,SCC90,Head and Neck,Head and Neck Carcinoma,1299052
+SIDM00320,VMRC-LCD,Lung,Non-Small Cell Lung Carcinoma,713869
+SIDM00473,PE-CA-PJ15,Head and Neck,Oral Cavity Carcinoma,1240207
+SIDM00487,CCK-81,Large Intestine,Colorectal Carcinoma,1240123
+SIDM00333,MFE-319,Endometrium,Endometrial Carcinoma,1240174
+SIDM00438,MN-60,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,908143
+SIDM00447,REH,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,909696
+SIDM00560,MKN7,Stomach,Gastric Carcinoma,924250
+SIDM00498,SNU-C5,Large Intestine,Colorectal Carcinoma,1674021
+SIDM00539,ESO26,Esophagus,Esophageal Carcinoma,1503366
+SIDM00534,HT-115,Large Intestine,Colorectal Carcinoma,907289
+SIDM00334,MFE-296,Endometrium,Endometrial Carcinoma,908130
+SIDM00431,MOLT-16,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,908147
+SIDM00429,NALM-6,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,908158
+SIDM00493,NCI-H292,Lung,Other Solid Cancers,753604
+SIDM00459,OCI-LY7,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1659819
+SIDM00373,SNG-M,Endometrium,Endometrial Carcinoma,909735
+SIDM00819,RCC-FG2,Kidney,Kidney Carcinoma,1524414
+SIDM00680,LS-180,Large Intestine,Colorectal Carcinoma,998189
+SIDM00537,GP5d,Large Intestine,Colorectal Carcinoma,907291
+SIDM00803,769-P,Kidney,Kidney Carcinoma,910922
+SIDM00524,DMS-79,Lung,Small Cell Lung Carcinoma,753551
+SIDM00789,HCT-15,Large Intestine,Colorectal Carcinoma,905937
+SIDM00602,IM-95,Stomach,Gastric Carcinoma,1240155
+SIDM00582,KP-2,Pancreas,Pancreatic Carcinoma,1298218
+SIDM00660,LS-411N,Large Intestine,Colorectal Carcinoma,907794
+SIDM00654,NCI-H1048,Lung,Small Cell Lung Carcinoma,687995
+SIDM00754,NCI-H1781,Lung,Non-Small Cell Lung Carcinoma,1298350
+SIDM00760,NCI-H1963,Lung,Small Cell Lung Carcinoma,688010
+SIDM00703,NCI-H2110,Lung,Non-Small Cell Lung Carcinoma,1298351
+SIDM00721,NCI-H250,Lung,Small Cell Lung Carcinoma,924241
+SIDM00720,NCI-H28,Lung,Mesothelioma,908470
+SIDM00778,NCI-H747,Large Intestine,Colorectal Carcinoma,908457
+SIDM00572,NUGC-3,Stomach,Gastric Carcinoma,908455
+SIDM00781,SNU-C2B,Large Intestine,Colorectal Carcinoma,909740
+SIDM00770,NCI-H1836,Lung,Small Cell Lung Carcinoma,1240182
+SIDM00629,MDA-MB-436,Breast,Breast Carcinoma,1240172
+SIDM00608,KMS-11,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1659817
+SIDM00641,NAMALWA,Haematopoietic and Lymphoid,Burkitt's Lymphoma,908159
+SIDM00200,EW-12,Bone,Ewing's Sarcoma,949162
+SIDM00535,H-EMC-SS,Bone,Chondrosarcoma,907290
+SIDM00884,HCC1395,Breast,Breast Carcinoma,749712
+SIDM00661,HT,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,907063
+SIDM00845,Daudi,Haematopoietic and Lymphoid,Burkitt's Lymphoma,906831
+SIDM00863,EB2,Haematopoietic and Lymphoid,Burkitt's Lymphoma,906846
+SIDM00879,HCC1500,Breast,Breast Carcinoma,1303900
+SIDM00878,HCC1569,Breast,Breast Carcinoma,907046
+SIDM00808,JiyoyeP-2003,Haematopoietic and Lymphoid,Burkitt's Lymphoma,907268
+SIDM00839,LoVo,Large Intestine,Colorectal Carcinoma,907790
+SIDM00516,MZ7-mel,Skin,Melanoma,753596
+SIDM00837,SW48,Large Intestine,Colorectal Carcinoma,909751
+SIDM00901,AN3-CA,Endometrium,Endometrial Carcinoma,910781
+SIDM00889,C-33-A,Cervix,Cervical Carcinoma,687505
+SIDM00933,CAL-51,Breast,Breast Carcinoma,910927
+SIDM00948,DG-75,Haematopoietic and Lymphoid,Burkitt's Lymphoma,906838
+SIDM00947,DK-MG,Central Nervous System,Glioblastoma,906839
+SIDM01051,EFO-27,Ovary,Ovarian Carcinoma,906852
+SIDM01045,EN,Endometrium,Endometrial Carcinoma,1240127
+SIDM01072,HCC-15,Lung,Squamous Cell Lung Carcinoma,1240143
+SIDM01004,KCL-22,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,1330931
+SIDM01129,NCI-H524,Lung,Small Cell Lung Carcinoma,908483
+SIDM01128,NCI-H526,Lung,Small Cell Lung Carcinoma,688025
+SIDM01146,SNU-1,Stomach,Gastric Carcinoma,908444
+SIDM01203,NTERA-2-cl-D1,Testis,Other Solid Cancers,908454
+SIDM01136,PANC-08-13,Pancreas,Pancreatic Carcinoma,925347
+SIDM01090,RKO,Large Intestine,Colorectal Carcinoma,909698
+SIDM01088,RL95-2,Endometrium,Endometrial Carcinoma,930082
+SIDM01086,RS4-11,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,909703
+SIDM01112,SJSA-1,Bone,Osteosarcoma,909717
+SIDM01113,SK-UT-1,Uterus,Other Sarcomas,909732
+SIDM00971,ZR-75-30,Breast,Breast Carcinoma,909907
+SIDM01245,BE-13,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,906763
+SIDM01237,C3A,Liver,Hepatocellular Carcinoma,910850
+SIDM01248,CGTH-W-1,Thyroid,Thyroid Gland Carcinoma,910568
+SIDM00592,HO-1-N-1,Head and Neck,Oral Cavity Carcinoma,924111
+SIDM01206,IMR-5,Peripheral Nervous System,Neuroblastoma,907170
+SIDM01247,Ramos-2G6-4C10,Haematopoietic and Lymphoid,Burkitt's Lymphoma,910401
+SIDM01205,TUR,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,909773
+SIDM00900,ARH-77,Haematopoietic and Lymphoid,Non-Cancerous,906765
+SIDM01233,C2BBe1,Large Intestine,Colorectal Carcinoma,910700
+SIDM01259,GR-ST,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,906877
+SIDM01251,H9,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,907043
+SIDM00632,IM-9,Haematopoietic and Lymphoid,Non-Cancerous,753563
+SIDM00224,IST-MES1,Lung,Mesothelioma,907173
+SIDM01246,MC-IXC,Bone,Ewing's Sarcoma,908118
+SIDM01242,MMAc-SF,Skin,Melanoma,925339
+SIDM01164,SW1783,Central Nervous System,Glioma,909750
+SIDM00613,KALS-1,Central Nervous System,Glioblastoma,907271
+SIDM00344,LCLC-97TM1,Lung,Non-Small Cell Lung Carcinoma,946361
+SIDM01135,PANC-10-05,Pancreas,Pancreatic Carcinoma,925348
+SIDM00921,Calu-6,Lung,Non-Small Cell Lung Carcinoma,724859
+SIDM00541,HT55,Large Intestine,Colorectal Carcinoma,907287
+SIDM01159,SW872,Soft Tissue,Other Sarcomas,909756
+SIDM00406,SU-DHL-5,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331036
+SIDM00256,NB14,Peripheral Nervous System,Neuroblastoma,949178
+SIDM00511,COR-L279,Lung,Small Cell Lung Carcinoma,910937
+SIDM00664,Hs-766T,Pancreas,Pancreatic Carcinoma,1298141
+SIDM00215,SNU-283,Large Intestine,Colorectal Carcinoma,1659929
+SIDM00955,COLO-783,Skin,Melanoma,1240125
+SIDM00922,Calu-3,Lung,Non-Small Cell Lung Carcinoma,687777
+SIDM01068,HCC-78,Lung,Non-Small Cell Lung Carcinoma,1290908
+SIDM01039,JAR,Placenta,Other Solid Cancers,907175
+SIDM00148,MCF7,Breast,Breast Carcinoma,905946
+SIDM01265,MM1S,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1659818
+SIDM00091,OVCAR-5,Ovary,Ovarian Carcinoma,905969
+SIDM01137,PANC-04-03,Pancreas,Pancreatic Carcinoma,1298476
+SIDM00321,TYK-nu,Ovary,Ovarian Carcinoma,909774
+SIDM00633,MDA-MB-175-VII,Breast,Breast Carcinoma,908120
+SIDM00434,MOLP-8,Haematopoietic and Lymphoid,Plasma Cell Myeloma,1330950
+SIDM00958,CML-T1,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,910951
+SIDM00859,Farage,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1297449
+SIDM00783,HCT-116,Large Intestine,Colorectal Carcinoma,905936
+SIDM00588,HSC-4,Head and Neck,Oral Cavity Carcinoma,907062
+SIDM00663,Hs-939-T,Skin,Melanoma,1298144
+SIDM00713,NCI-H2052,Lung,Mesothelioma,688058
+SIDM00557,KP-N-RT-BM-1,Peripheral Nervous System,Neuroblastoma,924189
+SIDM00355,RERF-LC-MS,Lung,Non-Small Cell Lung Carcinoma,910931
+SIDM00697,NCI-H1436,Lung,Small Cell Lung Carcinoma,908469
+SIDM00618,JHH-1,Liver,Hepatocellular Carcinoma,1298151
+SIDM00550,KYSE-50,Esophagus,Esophageal Squamous Cell Carcinoma,1298222
+SIDM00762,NCI-H1944,Lung,Non-Small Cell Lung Carcinoma,1240185
+SIDM01169,TOV-21G,Ovary,Ovarian Carcinoma,1240222
+SIDM00343,LN-405,Central Nervous System,Glioblastoma,910694
+SIDM00614,JHH-7,Liver,Hepatocellular Carcinoma,1240160
+SIDM00499,22RV1,Prostate,Prostate Carcinoma,924100
+SIDM01016,Jurkat,Haematopoietic and Lymphoid,T-Lymphoblastic Leukemia,998184
+SIDM01010,KARPAS-299,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,907273
+SIDM00687,KATOIII,Stomach,Gastric Carcinoma,907276
+SIDM00603,KOSC-2,Head and Neck,Head and Neck Carcinoma,753570
+SIDM00683,LNCaP-Clone-FGC,Prostate,Prostate Carcinoma,907788
+SIDM00293,LU-139,Lung,Small Cell Lung Carcinoma,713878
+SIDM00003,M14,Skin,Melanoma,905975
+SIDM00437,MOLM-13,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330947
+SIDM00425,OVTOKO,Ovary,Ovarian Carcinoma,1298365
+SIDM01156,SW1271,Lung,Small Cell Lung Carcinoma,1299062
+SIDM00435,MOLM-16,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,1330948
+SIDM01023,MONO-MAC-6,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,908148
+SIDM00253,NB6,Peripheral Nervous System,Neuroblastoma,949173
+SIDM00758,NCI-H1993,Lung,Non-Small Cell Lung Carcinoma,908476
+SIDM00702,NCI-H2122,Lung,Non-Small Cell Lung Carcinoma,722046
+SIDM00700,NCI-H2135,Lung,Non-Small Cell Lung Carcinoma,1298352
+SIDM00144,NCI-H460,Lung,Non-Small Cell Lung Carcinoma,905943
+SIDM00444,OACM5-1,Esophagus,Esophageal Carcinoma,1503363
+SIDM00220,OC-314,Ovary,Ovarian Carcinoma,909257
+SIDM00092,OVCAR-4,Ovary,Ovarian Carcinoma,905990
+SIDM01114,PWR-1E,Prostate,Non-Cancerous,1330993
+SIDM00449,RCH-ACV,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,1330994
+SIDM00426,RH-41,Soft Tissue,Rhabdomyosarcoma,1240210
+SIDM00813,RPMI-6666,Haematopoietic and Lymphoid,Non-Cancerous,909701
+SIDM00382,SF126,Central Nervous System,Glioblastoma,909712
+SIDM01199,SNU-423,Liver,Hepatocellular Carcinoma,909737
+SIDM00832,SW948,Large Intestine,Colorectal Carcinoma,909757
+SIDM00249,TE-15,Esophagus,Esophageal Squamous Cell Carcinoma,753614
+SIDM01191,U-2-OS,Bone,Osteosarcoma,909776
+SIDM00417,U-266,Haematopoietic and Lymphoid,Plasma Cell Myeloma,753615
+SIDM01102,WIL2-NS,Haematopoietic and Lymphoid,Non-Cancerous,1331049
+SIDM00124,A498,Kidney,Kidney Carcinoma,905948
+SIDM00129,G-MEL,Skin,Melanoma,1240130
+SIDM00211,ALL-PO,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,910944
+SIDM00258,NB12,Peripheral Nervous System,Neuroblastoma,949172
+SIDM00345,LCLC-103H,Lung,Non-Small Cell Lung Carcinoma,753586
+SIDM00368,SBC-5,Lung,Small Cell Lung Carcinoma,713880
+SIDM00480,OAW-42,Ovary,Ovarian Carcinoma,910548
+SIDM00482,RPMI-8866,Haematopoietic and Lymphoid,Chronic Myelogenous Leukemia,910544
+SIDM00376,MHH-CALL-4,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,908133
+SIDM00655,NCCIT,Testis,Other Solid Cancers,908441
+SIDM01123,NCI-H660,Prostate,Prostate Carcinoma,1330975
+SIDM00684,LN-229,Central Nervous System,Glioblastoma,1240169
+SIDM00795,A375,Skin,Melanoma,906793
+SIDM00777,NCI-H508,Large Intestine,Colorectal Carcinoma,908442
+SIDM00846,HeLa,Cervix,Cervical Carcinoma,1298134
+SIDM00938,CAL-148,Breast,Breast Carcinoma,924106
+SIDM01002,EFM-192A,Breast,Breast Carcinoma,1290798
+SIDM01087,RPMI-7951,Skin,Melanoma,910903
+SIDM00210,A2780,Ovary,Ovarian Carcinoma,906804
+SIDM00388,MHH-PREB-1,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,908136
+SIDM00404,SU-DHL-16,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331034
+SIDM00412,WSU-NHL,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,909785
+SIDM00568,OCUM-1,Stomach,Gastric Carcinoma,1298358
+SIDM00244,NB69,Peripheral Nervous System,Neuroblastoma,908440
+SIDM00737,NCI-H1770,Lung,Non-Small Cell Lung Carcinoma,687804
+SIDM00363,P31-FUJ,Haematopoietic and Lymphoid,Acute Myeloid Leukemia,909253
+SIDM00096,SR,Haematopoietic and Lymphoid,T-Cell Non-Hodgkin's Lymphoma,905965
+SIDM00821,RCC-AB,Kidney,Kidney Carcinoma,1524418
+SIDM00985,BL-41,Haematopoietic and Lymphoid,Burkitt's Lymphoma,910706
+SIDM00509,COR-L311,Lung,Small Cell Lung Carcinoma,687980
+SIDM00672,Hep3B2-1-7,Liver,Hepatocellular Carcinoma,1240147
+SIDM01029,KYSE-270,Esophagus,Esophageal Squamous Cell Carcinoma,907319
+SIDM00331,MHH-CALL-2,Haematopoietic and Lymphoid,B-Lymphoblastic Leukemia,908132
+SIDM00407,SU-DHL-6,Haematopoietic and Lymphoid,B-Cell Non-Hodgkin's Lymphoma,1331037

@@ -1,0 +1,23 @@
+name: gauge
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - rdkit=2022.09.5
+  - pip:
+      - torch==2.5.1
+      - pandas==2.3.3
+      - numpy==1.26.4
+      - scikit-learn==1.7.2
+      - scipy==1.15.2
+      - statsmodels==0.14.6
+      - streamlit==1.58.0
+      - plotly==6.7.0
+      - networkx==3.4.2
+      - openai==2.42.0
+      - umap-learn==0.5.12
+      - openpyxl==3.1.5
+      - pyyaml==6.0.3
+      - pytest==9.1.0

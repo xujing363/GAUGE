@@ -1,0 +1,6 @@
+canonical_smiles,inchikey,generation_method,seed_drug_id,nearest_target_id,max_value_hat,mean_uncertainty_hat,n_state_scores,mean_rep_value_hat,rep_uncertainty_hat,mean_cohort_value_hat,cohort_max_value_hat,cohort_mean_uncertainty_hat,mean_value_hat,nearest_train_drug_id,kg_anchor_score,final_rank_score
+COC1(c2sc3c(N4CCOCC4)nc(-c4cnc(N)nc4)nc3c2C)COC1,XOZLHJMDLKDZAL-UHFFFAOYSA-N,mmpa,1926,TCGA-49-6761-01A,1.0,3.6086174e-05,9,1.0,2.5339424e-09,1.0,1.0,4.059663e-05,1.0,1926,0.7,0.940000011920929
+COc1nnc2ccc(N3CCC(c4ccc(OCCN5CCN(C)C(=O)C5C)cc4)CC3)nn12,RSMYFSPOTCDHHJ-UHFFFAOYSA-N,mmpa,1706,TCGA-49-6761-01A,1.0,3.4447286e-05,9,1.0,3.4828685e-11,1.0,1.0,3.8753195e-05,1.0,1706,0.7,0.940000011920929
+Cc1sc2c(c1C)C(c1ccc(Cl)cc1)=NC(CC(=O)Nc1ccc(O)cc1)c1nnc(C)n1-2,GNMUEVRJHCWKTO-UHFFFAOYSA-N,mmpa,1626,TCGA-49-6761-01A,1.0,7.781184e-06,9,1.0,1.8372186e-09,1.0,1.0,8.753602e-06,1.0,1626,0.7,0.940000011920929
+Cn1cnc2c(F)c(Nc3ccc(Br)cc3Cl)c(C(=O)NOCCO)cc21,CYOHGALHFOKKQC-UHFFFAOYSA-N,mmpa,1062,TCGA-49-6761-01A,1.0,1.6392882e-05,9,1.0,5.0897586e-10,1.0,1.0,1.8441928e-05,1.0,1062,0.7,0.940000011920929
+O=C(NOCC(O)CO)c1ccc(F)c(F)c1Nc1ccc(I)cc1F,SUDAHWBOROXANE-UHFFFAOYSA-N,mmpa,1060,TCGA-49-6761-01A,1.0,9.45611e-06,9,1.0,3.5091025e-10,1.0,1.0,1.063808e-05,1.0,1060,0.7,0.940000011920929

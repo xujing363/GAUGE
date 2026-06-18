@@ -1,0 +1,118 @@
+sample_submitter_id,case_submitter_id,project_id,primary_site,disease_type,vital_status,drug
+TCGA-05-4424-01A,TCGA-05-4424,TCGA-LUAD,Bronchus and lung,Adenomas and Adenocarcinomas,Alive,Erlotinib
+TCGA-06-0158-01A,TCGA-06-0158,TCGA-GBM,Brain,Gliomas,Dead,Carmustine
+TCGA-06-0166-01A,TCGA-06-0166,TCGA-GBM,Brain,Gliomas,Dead,Oxaliplatin
+TCGA-06-0169-01A,TCGA-06-0169,TCGA-GBM,Brain,Gliomas,Dead,Temozolomide
+TCGA-06-0174-01A,TCGA-06-0174,TCGA-GBM,Brain,Gliomas,Dead,Tipifarnib
+TCGA-20-0991-01A,TCGA-20-0991,TCGA-OV,Ovary,"Cystic, Mucinous and Serous Neoplasms",Alive,Carboplatin
+TCGA-34-5239-01A,TCGA-34-5239,TCGA-LUSC,Bronchus and lung,Squamous Cell Neoplasms,Alive,Docetaxel
+TCGA-3H-AB3L-01A,TCGA-3H-AB3L,TCGA-MESO,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,Dead,Dasatinib
+TCGA-3H-AB3U-01A,TCGA-3H-AB3U,TCGA-MESO,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,Dead,Dasatinib
+TCGA-3U-A98H-01A,TCGA-3U-A98H,TCGA-MESO,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,Dead,Tivantinib
+TCGA-44-2661-11A,TCGA-44-2661,TCGA-LUAD,Bronchus and lung,Adenomas and Adenocarcinomas,Alive,Letrozole
+TCGA-4G-AAZO-01A,TCGA-4G-AAZO,TCGA-CHOL,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alive,Gemcitabine
+TCGA-4X-A9FA-01A,TCGA-4X-A9FA,TCGA-THYM,Thymus,Thymic Epithelial Neoplasms,Alive,Azathioprine
+TCGA-4X-A9FD-01A,TCGA-4X-A9FD,TCGA-THYM,Thymus,Thymic Epithelial Neoplasms,Alive,Azathioprine
+TCGA-50-5930-01A,TCGA-50-5930,TCGA-LUAD,Bronchus and lung,Adenomas and Adenocarcinomas,Dead,Docetaxel
+TCGA-50-5930-11A,TCGA-50-5930,TCGA-LUAD,Bronchus and lung,Adenomas and Adenocarcinomas,Dead,Docetaxel
+TCGA-50-5936-11A,TCGA-50-5936,TCGA-LUAD,Bronchus and lung,"Cystic, Mucinous and Serous Neoplasms",Dead,Paclitaxel
+TCGA-56-7822-01A,TCGA-56-7822,TCGA-LUSC,Bronchus and lung,Squamous Cell Neoplasms,Dead,Oxaliplatin
+TCGA-68-7756-01A,TCGA-68-7756,TCGA-LUSC,Bronchus and lung,Squamous Cell Neoplasms,Alive,Carboplatin
+TCGA-85-A4CN-01A,TCGA-85-A4CN,TCGA-LUSC,Bronchus and lung,Squamous Cell Neoplasms,Alive,Erlotinib
+TCGA-A2-A0YC-01A,TCGA-A2-A0YC,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Anastrozole
+TCGA-A4-A57E-01A,TCGA-A4-A57E,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Everolimus
+TCGA-A4-A57E-11A,TCGA-A4-A57E,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Everolimus
+TCGA-A5-A1OH-01A,TCGA-A5-A1OH,TCGA-UCEC,Corpus uteri,"Cystic, Mucinous and Serous Neoplasms",Alive,Carboplatin
+TCGA-A8-A07Z-01A,TCGA-A8-A07Z,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Exemestane
+TCGA-A8-A099-01A,TCGA-A8-A099,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Exemestane
+TCGA-A8-A09E-01A,TCGA-A8-A09E,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Anastrozole
+TCGA-A8-A09R-01A,TCGA-A8-A09R,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Letrozole
+TCGA-AA-3994-01A,TCGA-AA-3994,TCGA-COAD,Colon,"Cystic, Mucinous and Serous Neoplasms",Alive,Capecitabine
+TCGA-AB-2872-03A,TCGA-AB-2872,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Alive,Tretinoin
+TCGA-AB-2897-03A,TCGA-AB-2897,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Alive,Tretinoin
+TCGA-AB-2910-03A,TCGA-AB-2910,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Dead,Hydroxyurea
+TCGA-AB-2911-03A,TCGA-AB-2911,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Alive,Hydroxyurea
+TCGA-AB-2934-03A,TCGA-AB-2934,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Alive,Hydroxyurea
+TCGA-AB-2956-03A,TCGA-AB-2956,TCGA-LAML,Hematopoietic and reticuloendothelial systems,Myeloid Leukemias,Dead,Hydroxyurea
+TCGA-AC-A3W7-01A,TCGA-AC-A3W7,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Letrozole
+TCGA-AC-A5XU-01A,TCGA-AC-A5XU,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Letrozole
+TCGA-AK-3425-01A,TCGA-AK-3425,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Alive,Bicalutamide
+TCGA-AL-A5DJ-01A,TCGA-AL-A5DJ,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Temsirolimus
+TCGA-AR-A2LE-01A,TCGA-AR-A2LE,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Tamoxifen
+TCGA-AZ-4323-01A,TCGA-AZ-4323,TCGA-COAD,Colon,Adenomas and Adenocarcinomas,Dead,Oxaliplatin
+TCGA-B0-5094-01A,TCGA-B0-5094,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Temsirolimus
+TCGA-B0-5694-11A,TCGA-B0-5694,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Pazopanib
+TCGA-B7-A5TI-01A,TCGA-B7-A5TI,TCGA-STAD,Stomach,Adenomas and Adenocarcinomas,Alive,Oxaliplatin
+TCGA-B8-4153-01B,TCGA-B8-4153,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Alive,Pazopanib
+TCGA-BH-A0B6-01A,TCGA-BH-A0B6,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Tamoxifen
+TCGA-BH-A0DK-01A,TCGA-BH-A0DK,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Tamoxifen
+TCGA-BH-A0HQ-01A,TCGA-BH-A0HQ,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Anastrozole
+TCGA-BH-A2L8-01A,TCGA-BH-A2L8,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Cyclophosphamide
+TCGA-BP-4988-01A,TCGA-BP-4988,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Fludarabine
+TCGA-BQ-5877-01A,TCGA-BQ-5877,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Tanespimycin
+TCGA-BQ-5877-11A,TCGA-BQ-5877,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Tanespimycin
+TCGA-BQ-5878-01A,TCGA-BQ-5878,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Alive,Sorafenib
+TCGA-BQ-5893-01A,TCGA-BQ-5893,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Everolimus
+TCGA-BR-7959-01A,TCGA-BR-7959,TCGA-STAD,Stomach,"Cystic, Mucinous and Serous Neoplasms",Alive,Etoposide
+TCGA-C5-A7CM-01A,TCGA-C5-A7CM,TCGA-CESC,Cervix uteri,Adenomas and Adenocarcinomas,Alive,Cisplatin
+TCGA-CE-A481-01A,TCGA-CE-A481,TCGA-THCA,Thyroid gland,Adenomas and Adenocarcinomas,Alive,Doxorubicin
+TCGA-CE-A482-01A,TCGA-CE-A482,TCGA-THCA,Thyroid gland,Adenomas and Adenocarcinomas,Alive,Doxorubicin
+TCGA-CJ-4881-01A,TCGA-CJ-4881,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Alive,Temsirolimus
+TCGA-CN-6013-01A,TCGA-CN-6013,TCGA-HNSC,Gum,Squamous Cell Neoplasms,Dead,Cisplatin
+TCGA-CV-5440-01A,TCGA-CV-5440,TCGA-HNSC,Larynx,Squamous Cell Neoplasms,Alive,Paclitaxel
+TCGA-CZ-4860-01A,TCGA-CZ-4860,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Sorafenib
+TCGA-CZ-5454-11A,TCGA-CZ-5454,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Sunitinib
+TCGA-CZ-5456-01A,TCGA-CZ-5456,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Alive,Pazopanib
+TCGA-CZ-5462-01A,TCGA-CZ-5462,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Sunitinib
+TCGA-CZ-5462-11A,TCGA-CZ-5462,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Dead,Sunitinib
+TCGA-D6-6517-01A,TCGA-D6-6517,TCGA-HNSC,Larynx,Squamous Cell Neoplasms,Alive,Methotrexate
+TCGA-D8-A4Z1-01A,TCGA-D8-A4Z1,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Tamoxifen
+TCGA-DB-5270-01A,TCGA-DB-5270,TCGA-LGG,Brain,Gliomas,Alive,Carmustine
+TCGA-DU-6393-01A,TCGA-DU-6393,TCGA-LGG,Brain,Gliomas,Dead,Carmustine
+TCGA-DU-A76K-01A,TCGA-DU-A76K,TCGA-LGG,Brain,Gliomas,Dead,Temozolomide
+TCGA-DV-5565-01A,TCGA-DV-5565,TCGA-KIRC,Kidney,Adenomas and Adenocarcinomas,Alive,Vandetanib
+TCGA-E1-A7YS-01A,TCGA-E1-A7YS,TCGA-LGG,Brain,Gliomas,Dead,Temozolomide
+TCGA-E2-A1IH-01A,TCGA-E2-A1IH,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Exemestane
+TCGA-EE-A29T-06A,TCGA-EE-A29T,TCGA-SKCM,Lymph nodes,Nevi and Melanomas,Alive,Vemurafenib
+TCGA-EE-A29V-06A,TCGA-EE-A29V,TCGA-SKCM,Skin,Nevi and Melanomas,Dead,Dacarbazine
+TCGA-EE-A2MN-06A,TCGA-EE-A2MN,TCGA-SKCM,Lymph nodes,Nevi and Melanomas,Dead,Dacarbazine
+TCGA-EE-A3JB-06A,TCGA-EE-A3JB,TCGA-SKCM,"Connective, subcutaneous and other soft tissues",Nevi and Melanomas,Alive,Melphalan
+TCGA-EW-A6SC-01A,TCGA-EW-A6SC,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Exemestane
+TCGA-EY-A547-01A,TCGA-EY-A547,TCGA-UCEC,Corpus uteri,Adenomas and Adenocarcinomas,Alive,Anastrozole
+TCGA-FC-A4JI-01A,TCGA-FC-A4JI,TCGA-PRAD,Prostate gland,Adenomas and Adenocarcinomas,Alive,Bicalutamide
+TCGA-G3-A3CH-01A,TCGA-G3-A3CH,TCGA-LIHC,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alive,Sorafenib
+TCGA-G3-A5SK-01A,TCGA-G3-A5SK,TCGA-LIHC,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alive,Doxorubicin
+TCGA-GN-A4U7-06A,TCGA-GN-A4U7,TCGA-SKCM,Lymph nodes,Nevi and Melanomas,Dead,Vemurafenib
+TCGA-HM-A6W2-01A,TCGA-HM-A6W2,TCGA-CESC,Ovary,Squamous Cell Neoplasms,Alive,Cisplatin
+TCGA-HT-7693-01A,TCGA-HT-7693,TCGA-LGG,Brain,Gliomas,Alive,Temozolomide
+TCGA-HU-8604-01A,TCGA-HU-8604,TCGA-STAD,Stomach,Adenomas and Adenocarcinomas,Alive,Doxifluridine
+TCGA-HU-8608-01A,TCGA-HU-8608,TCGA-STAD,Stomach,Adenomas and Adenocarcinomas,Alive,Doxifluridine
+TCGA-HU-A4G2-01A,TCGA-HU-A4G2,TCGA-STAD,Stomach,Adenomas and Adenocarcinomas,Alive,Doxifluridine
+TCGA-HU-A4H5-01A,TCGA-HU-A4H5,TCGA-STAD,Stomach,Adenomas and Adenocarcinomas,Alive,Doxifluridine
+TCGA-HZ-A49H-01A,TCGA-HZ-A49H,TCGA-PAAD,Pancreas,Ductal and Lobular Neoplasms,Alive,Gemcitabine
+TCGA-IB-7889-01A,TCGA-IB-7889,TCGA-PAAD,Pancreas,Ductal and Lobular Neoplasms,Dead,Gemcitabine
+TCGA-IB-A5SP-01A,TCGA-IB-A5SP,TCGA-PAAD,Pancreas,Ductal and Lobular Neoplasms,Alive,Gemcitabine
+TCGA-IG-A3YC-01A,TCGA-IG-A3YC,TCGA-ESCA,Esophagus,Squamous Cell Neoplasms,Alive,Etoposide
+TCGA-JW-A5VI-01A,TCGA-JW-A5VI,TCGA-CESC,Cervix uteri,Squamous Cell Neoplasms,Alive,Topotecan
+TCGA-KL-8339-01A,TCGA-KL-8339,TCGA-KICH,Kidney,Adenomas and Adenocarcinomas,Dead,Sunitinib
+TCGA-KN-8428-01A,TCGA-KN-8428,TCGA-KICH,Kidney,Adenomas and Adenocarcinomas,Dead,Sorafenib
+TCGA-LD-A74U-01A,TCGA-LD-A74U,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Docetaxel
+TCGA-LN-A49M-01A,TCGA-LN-A49M,TCGA-ESCA,Esophagus,Squamous Cell Neoplasms,Alive,Capecitabine
+TCGA-LN-A49O-01A,TCGA-LN-A49O,TCGA-ESCA,Esophagus,Squamous Cell Neoplasms,Alive,Capecitabine
+TCGA-LN-A7HV-01A,TCGA-LN-A7HV,TCGA-ESCA,Esophagus,Squamous Cell Neoplasms,Alive,Capecitabine
+TCGA-MI-A75H-01A,TCGA-MI-A75H,TCGA-LIHC,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alive,Doxorubicin
+TCGA-NA-A4QW-01A,TCGA-NA-A4QW,TCGA-UCS,Corpus uteri,Complex Mixed and Stromal Neoplasms,Alive,Paclitaxel
+TCGA-PL-A8LZ-01A,TCGA-PL-A8LZ,TCGA-BRCA,Breast,Ductal and Lobular Neoplasms,Alive,Paclitaxel
+TCGA-QM-A5NM-01A,TCGA-QM-A5NM,TCGA-UCS,Corpus uteri,Complex Mixed and Stromal Neoplasms,Alive,Ifosfamide
+TCGA-SX-A7SM-01A,TCGA-SX-A7SM,TCGA-KIRP,Kidney,Adenomas and Adenocarcinomas,Dead,Pazopanib
+TCGA-V4-A9EL-01A,TCGA-V4-A9EL,TCGA-UVM,Eye and adnexa,Nevi and Melanomas,Dead,Dacarbazine
+TCGA-V4-A9EO-01A,TCGA-V4-A9EO,TCGA-UVM,Eye and adnexa,Nevi and Melanomas,Dead,Dacarbazine
+TCGA-VS-A8EK-01A,TCGA-VS-A8EK,TCGA-CESC,Cervix uteri,Squamous Cell Neoplasms,Dead,Cisplatin
+TCGA-WE-A8K6-06A,TCGA-WE-A8K6,TCGA-SKCM,Lymph nodes,Nevi and Melanomas,Alive,Vemurafenib
+TCGA-WE-A8ZR-06A,TCGA-WE-A8ZR,TCGA-SKCM,Lymph nodes,Nevi and Melanomas,Dead,Vemurafenib
+TCGA-WZ-A7V4-01A,TCGA-WZ-A7V4,TCGA-TGCT,Testis,Germ Cell Neoplasms,Alive,Carboplatin
+TCGA-YU-A912-01A,TCGA-YU-A912,TCGA-TGCT,Testis,Germ Cell Neoplasms,Alive,Bleomycin
+TCGA-YU-A94D-01A,TCGA-YU-A94D,TCGA-TGCT,Testis,Germ Cell Neoplasms,Alive,Bleomycin
+TCGA-YU-AA61-01A,TCGA-YU-AA61,TCGA-TGCT,Testis,Germ Cell Neoplasms,Alive,Bleomycin
+TCGA-ZG-A8QZ-01A,TCGA-ZG-A8QZ,TCGA-PRAD,Prostate gland,Adenomas and Adenocarcinomas,Alive,Bicalutamide
+TCGA-ZG-A9N3-01A,TCGA-ZG-A9N3,TCGA-PRAD,Prostate gland,Adenomas and Adenocarcinomas,Alive,Bicalutamide

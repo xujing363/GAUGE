@@ -1,0 +1,72 @@
+{
+  "mode": "gdsc_cell_split",
+  "display_name": "GDSC \u2014 known compound library (cell-line split, recommended default)",
+  "source_run_dir": "/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/GDSCv2_seed/true_seed7",
+  "split_type": "random_cell_line_held_out",
+  "state_dim": 2003,
+  "n_known_cell_lines": 944,
+  "n_known_drugs": 283,
+  "kg_sources": [
+    "ChEMBL",
+    "DRKG",
+    "PrimeKG"
+  ],
+  "selected_fusion_weight": 2.0,
+  "reported_metrics_this_seed": [
+    {
+      "metric_source": "gdsc",
+      "split": "test",
+      "n": 45026,
+      "raw_auc_rmse": 0.2941330657916216,
+      "raw_auc_mae": 0.1637764570851983,
+      "overall_pcc": 0.7945210446376779,
+      "within_drug_spearman_mean": 0.2527307325496853,
+      "within_drug_spearman_n_drugs": 283.0,
+      "within_drug_pcc_mean": 0.2744395500736455,
+      "within_drug_pcc_n_drugs": 283.0,
+      "within_cell_pcc_mean": 0.8102128941369328,
+      "within_cell_pcc_n_cells": 190.0,
+      "value_rmse": 0.2762693676775405,
+      "value_spearman": 0.3557414300074026,
+      "within_drug_value_spearman": 0.3383226660077813,
+      "within_drug_value_n_drugs": 283.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "train",
+      "n": 159249,
+      "raw_auc_rmse": 0.2779721112231801,
+      "raw_auc_mae": 0.1520276363700763,
+      "overall_pcc": 0.9386180116375684,
+      "within_drug_spearman_mean": 0.5750536942833486,
+      "within_drug_spearman_n_drugs": 283.0,
+      "within_drug_pcc_mean": 0.6053702672727466,
+      "within_drug_pcc_n_drugs": 283.0,
+      "within_cell_pcc_mean": 0.94338751447615,
+      "within_cell_pcc_n_cells": 660.0,
+      "value_rmse": 0.1779121313844588,
+      "value_spearman": 0.7982935860502254,
+      "within_drug_value_spearman": 0.7857549264901964,
+      "within_drug_value_n_drugs": 283.0
+    },
+    {
+      "metric_source": "gdsc",
+      "split": "val",
+      "n": 23121,
+      "raw_auc_rmse": 0.2854192408220106,
+      "raw_auc_mae": 0.1590689631515605,
+      "overall_pcc": 0.7992042532161624,
+      "within_drug_spearman_mean": 0.2172197742894374,
+      "within_drug_spearman_n_drugs": 283.0,
+      "within_drug_pcc_mean": 0.2479821188954712,
+      "within_drug_pcc_n_drugs": 283.0,
+      "within_cell_pcc_mean": 0.8169864039382391,
+      "within_cell_pcc_n_cells": 94.0,
+      "value_rmse": 0.2778939321715261,
+      "value_spearman": 0.3262554382383221,
+      "within_drug_value_spearman": 0.3238857185224643,
+      "within_drug_value_n_drugs": 283.0
+    }
+  ],
+  "notes": "GDSC1/2. input_projection_mode=hvg (top-2000-variance genes selected on the training cell lines; identity projection, no PCA dimensionality reduction) + 3 train-only cell-level AUC statistics."
+}
