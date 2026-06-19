@@ -1,9 +1,0 @@
-drug_pair,dataset,n,R,NR,tcga_ref,pearson_r,compl_AUC,compl_p,pcp_AUC,pcp_p,max_AUC,compl_wins
-Dabrafenib+Trametinib,RNAseq,28,14,14,TCGA-SKCM,0.5584,0.7449,0.01454,0.7449,0.01454,0.7704,0
-Dabrafenib+Trametinib,Microarray,15,4,11,TCGA-SKCM,0.5584,0.6136,0.28571,0.6136,0.28571,0.6591,0
-Cisplatin+Gemcitabine,RNAseq,59,40,19,TCGA-LUAD,0.7729,0.5763,0.17547,0.6171,0.07555,0.6289,0
-Cyclophosphamide+Epirubicin,Microarray,37,11,26,pan,-0.3052,0.4685,0.62388,0.4685,0.62388,0.5699,0
-Docetaxel+Epirubicin,Microarray,58,27,31,pan,0.4356,0.4492,0.74867,0.4492,0.74867,0.4695,0
-MK-2206+Paclitaxel,Microarray,60,18,42,TCGA-BRCA,0.2783,0.4259,0.81896,0.4259,0.81896,0.4762,0
-Cisplatin+Vinorelbine,RNAseq,23,18,5,TCGA-LUAD,0.3933,0.4222,0.70632,0.4222,0.70632,0.4111,0
-Docetaxel+Gemcitabine,RNAseq,20,11,9,TCGA-SARC,0.7455,0.2626,0.96588,0.2424,0.97588,0.3838,1

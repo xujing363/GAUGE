@@ -1,5 +1,0 @@
-cancer,n_pairs,spearman_rho_kg_score_vs_syn,spearman_p,complementarity_vs_syn_spearman
-Melanoma,119,-0.0095,0.9182,0.2543
-NSCLC,119,0.0437,0.6372,0.1341
-Breast,119,-0.0144,0.8761,0.3341
-Ovarian,119,-0.0372,0.6879,0.2564

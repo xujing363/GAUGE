@@ -1,5 +1,0 @@
-cancer,auc_allcell,auc_testonly,delta_auc,n_cells_allcell,n_cells_testonly,perm_p_allcell,perm_p_testonly
-Melanoma,0.6545,0.6191,0.0353,54,12,0.0032,0.0152
-NSCLC,0.5795,0.5706,0.0089,84,18,0.069,0.1016
-Breast,0.7054,0.6724,0.033,51,13,0.0004,0.0016
-Ovarian,0.6557,0.6313,0.0244,40,11,0.0028,0.012

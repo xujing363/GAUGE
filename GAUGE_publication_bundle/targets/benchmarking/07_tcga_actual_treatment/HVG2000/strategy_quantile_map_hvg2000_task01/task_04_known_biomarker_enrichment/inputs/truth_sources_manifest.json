@@ -1,9 +1,0 @@
-{
-  "official_biomarkers": {
-    "task08_biomarker_truth": "task_08_tcga_patient_explanations_and_kg_consistency/outputs/biomarker_truth_table.csv",
-    "task08_biomarker_panel_summary": "task_08_tcga_patient_explanations_and_kg_consistency/outputs/biomarker_panel_summary.csv",
-    "task10_ranked_biomarkers": "task_10_kg_biomarker_discovery/outputs/kg_biomarker_ranked.csv",
-    "task10_shortlist_biomarkers": "task_10_kg_biomarker_discovery/outputs/kg_biomarker_shortlist.csv"
-  },
-  "strategy_name": "quantile_map_hvg2000_task01"
-}

@@ -1,5 +1,0 @@
-task_dir: strategy_quantile_map_hvg2000_task01/task_01_dataset_profile_and_prediction_export
-task_title: Strategy Quantile Map Task01 Dataset Profile And Prediction Export
-task_purpose: Export task01-style tables from the local quantile-map aligned TCGA evaluation result.
-strategy_result_dir: strategy_quantile_map_hvg2000_task01/results
-baseline_result_dir: results/hvg2000_tcga_from_source_20260524
