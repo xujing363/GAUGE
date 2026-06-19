@@ -1,4 +1,0 @@
-coverage_group,alpha_ChEMBL,alpha_DRKG,alpha_PrimeKG
-ChEMBL only,1.0,0.0,0.0
-ChEMBL+PrimeKG,0.47598714153209193,0.0,0.5240128651604546
-No KG,0.0,0.0,0.0

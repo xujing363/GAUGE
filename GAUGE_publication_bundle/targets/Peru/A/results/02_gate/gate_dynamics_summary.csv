@@ -1,2 +1,0 @@
-n_drugs_total,n_kg_silent,n_kg_active,drkg_weight_all_zero,chembl_mean_weight,primekg_mean_weight,tl_mean_norm,tl_within_drug_std
-274,156,118,True,0.5902771485053887,0.4052183191149922,3.1633431646823884,0.20192695984807676

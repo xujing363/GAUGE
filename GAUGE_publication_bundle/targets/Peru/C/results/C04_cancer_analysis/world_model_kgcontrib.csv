@@ -1,4 +1,0 @@
-kg_prior,spearman_r,p_value,n_pairs,interpretation
-ChEMBL,-0.0171,0.0,114000,higher KG prior weight → smaller gene perturbation effect
-DRKG,,,114000,higher KG prior weight → smaller gene perturbation effect
-PrimeKG,-0.0173,0.0,114000,higher KG prior weight → smaller gene perturbation effect
