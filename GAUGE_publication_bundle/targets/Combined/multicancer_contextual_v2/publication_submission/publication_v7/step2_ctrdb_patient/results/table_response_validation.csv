@@ -1,0 +1,19 @@
+label,n,n_pos,n_neg,auc,perm_p,mw_p,data_type,score
+Pooled|Complementarity v5 (pcp×(1-r)),361,196,165,0.4815,0.73,0.72739,Pooled,complementarity
+RNAseq|Complementarity v5 (pcp×(1-r)),185,130,55,0.6989,0.00033,1e-05,RNAseq,complementarity
+Microarray|Complementarity v5 (pcp×(1-r)),176,66,110,0.4293,0.941,0.9417,Microarray,complementarity
+Pooled|Personalized co-activity (pcp),361,196,165,0.5025,0.46067,0.46752,Pooled,pcp
+RNAseq|Personalized co-activity (pcp),185,130,55,0.6211,0.00467,0.00466,RNAseq,pcp
+Microarray|Personalized co-activity (pcp),176,66,110,0.4401,0.91433,0.90838,Microarray,pcp
+Pooled|Additive (A+B),361,196,165,0.5122,0.34333,0.34517,Pooled,additive
+RNAseq|Additive (A+B),185,130,55,0.6385,0.00133,0.00148,RNAseq,additive
+Microarray|Additive (A+B),176,66,110,0.4439,0.895,0.89348,Microarray,additive
+Pooled|Max single agent,361,196,165,0.5494,0.05633,0.05279,Pooled,max_single
+RNAseq|Max single agent,185,130,55,0.6849,0.00033,4e-05,RNAseq,max_single
+Microarray|Max single agent,176,66,110,0.4616,0.79333,0.80348,Microarray,max_single
+Pooled|Drug A alone,361,196,165,0.5362,0.12,0.1182,Pooled,base_score_A
+RNAseq|Drug A alone,185,130,55,0.6916,0.00033,2e-05,RNAseq,base_score_A
+Microarray|Drug A alone,176,66,110,0.4,0.98633,0.98679,Microarray,base_score_A
+Pooled|Drug B alone,361,196,165,0.5108,0.36933,0.36211,Pooled,base_score_B
+RNAseq|Drug B alone,185,130,55,0.571,0.06367,0.0637,RNAseq,base_score_B
+Microarray|Drug B alone,176,66,110,0.5236,0.28433,0.30117,Microarray,base_score_B

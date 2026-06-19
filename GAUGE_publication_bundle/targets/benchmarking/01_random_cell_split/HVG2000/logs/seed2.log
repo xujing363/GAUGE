@@ -1,0 +1,56 @@
+[START] benchmark=HVG2000
+[START] pid=3593080  device=cuda:6  seeds=91 8 62 25 33
+[START] epochs=config  batch_size=config  eval_batch_size=config/auto
+[START] base_run_name=full_20260527_130215_pid3593080
+[START] lock_path=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/.device_locks/cuda_6.lock
+[SEED] seed=91  run_name=full_20260527_130215_pid3593080_seed91
+/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py:633: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  pd.concat(mapping_frames, ignore_index=True).to_csv(result_dir / "mapping_audit.csv", index=False)
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+
+real	27m58.101s
+user	28m6.589s
+sys	0m23.434s
+[DONE] seed=91  results_dir=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260527_130215_pid3593080_seed91
+[SEED] seed=8  run_name=full_20260527_130215_pid3593080_seed8
+/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py:633: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  pd.concat(mapping_frames, ignore_index=True).to_csv(result_dir / "mapping_audit.csv", index=False)
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+
+real	18m45.289s
+user	18m58.553s
+sys	0m18.583s
+[DONE] seed=8  results_dir=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260527_130215_pid3593080_seed8
+[SEED] seed=62  run_name=full_20260527_130215_pid3593080_seed62
+/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py:633: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  pd.concat(mapping_frames, ignore_index=True).to_csv(result_dir / "mapping_audit.csv", index=False)
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+
+real	18m15.773s
+user	18m28.231s
+sys	0m19.249s
+[DONE] seed=62  results_dir=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260527_130215_pid3593080_seed62
+[SEED] seed=25  run_name=full_20260527_130215_pid3593080_seed25
+/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py:633: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  pd.concat(mapping_frames, ignore_index=True).to_csv(result_dir / "mapping_audit.csv", index=False)
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+
+real	20m39.002s
+user	20m47.415s
+sys	0m24.440s
+[DONE] seed=25  results_dir=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260527_130215_pid3593080_seed25
+[SEED] seed=33  run_name=full_20260527_130215_pid3593080_seed33
+/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py:633: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  pd.concat(mapping_frames, ignore_index=True).to_csv(result_dir / "mapping_audit.csv", index=False)
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+
+real	21m58.474s
+user	22m4.246s
+sys	0m21.641s
+[DONE] seed=33  results_dir=/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260527_130215_pid3593080_seed33
+[ALL DONE] base_run_name=full_20260527_130215_pid3593080

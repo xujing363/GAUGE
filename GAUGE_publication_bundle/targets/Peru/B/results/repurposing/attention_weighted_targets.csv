@@ -1,0 +1,158 @@
+DRUG_NAME,drug_id,source,target_name,relation,edge_type,alpha_source,n_drug_cells
+Erlotinib,1168,ChEMBL,730,INHIBITOR,action_type_target,0.4406854733870968,930
+Erlotinib,1168,ChEMBL,721,INHIBITOR,has_action_type,0.4406854733870968,930
+Erlotinib,1168,ChEMBL,730,INHIBITOR,acts_on_target,0.4406854733870968,930
+Erlotinib,1168,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.4406854733870968,930
+Erlotinib,1168,ChEMBL,731,Epidermal growth factor receptor erbB1 inhibitor,drug_has_mechanism,0.4406854733870968,930
+Erlotinib,1168,ChEMBL,730,Epidermal growth factor receptor erbB1 inhibitor,mechanism_targets_target,0.4406854733870968,930
+Erlotinib,1168,PrimeKG,975,carrier,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,977,carrier,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,995,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1005,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1006,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1008,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1010,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1014,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1020,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1021,enzyme,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1091,target,drug_protein,0.5593145328817204,930
+Erlotinib,1168,PrimeKG,1121,target,drug_protein,0.5593145328817204,930
+Gefitinib,1010,ChEMBL,730,INHIBITOR,action_type_target,0.4491990045980707,933
+Gefitinib,1010,ChEMBL,721,INHIBITOR,has_action_type,0.4491990045980707,933
+Gefitinib,1010,ChEMBL,731,Epidermal growth factor receptor erbB1 inhibitor,drug_has_mechanism,0.4491990045980707,933
+Gefitinib,1010,PrimeKG,975,carrier,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,977,carrier,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1005,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1006,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1010,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1012,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1017,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1021,enzyme,drug_protein,0.5508010012540193,933
+Gefitinib,1010,PrimeKG,1091,target,drug_protein,0.5508010012540193,933
+Osimertinib,1919,ChEMBL,730,INHIBITOR,action_type_target,0.48799851860515026,932
+Osimertinib,1919,ChEMBL,721,INHIBITOR,has_action_type,0.48799851860515026,932
+Osimertinib,1919,ChEMBL,731,Epidermal growth factor receptor erbB1 inhibitor,drug_has_mechanism,0.48799851860515026,932
+Osimertinib,1919,PrimeKG,1008,enzyme,drug_protein,0.5120014871137339,932
+Osimertinib,1919,PrimeKG,1010,enzyme,drug_protein,0.5120014871137339,932
+Osimertinib,1919,PrimeKG,1091,target,drug_protein,0.5120014871137339,932
+Venetoclax,1909,ChEMBL,890,INHIBITOR,action_type_target,0.4546772072990354,933
+Venetoclax,1909,ChEMBL,721,INHIBITOR,has_action_type,0.4546772072990354,933
+Venetoclax,1909,ChEMBL,890,INHIBITOR,acts_on_target,0.4546772072990354,933
+Venetoclax,1909,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.4546772072990354,933
+Venetoclax,1909,ChEMBL,891,Apoptosis regulator Bcl-2 inhibitor,drug_has_mechanism,0.4546772072990354,933
+Venetoclax,1909,ChEMBL,890,Apoptosis regulator Bcl-2 inhibitor,mechanism_targets_target,0.4546772072990354,933
+Venetoclax,1909,PrimeKG,1010,enzyme,drug_protein,0.5453228013933548,933
+Venetoclax,1909,PrimeKG,1062,target,drug_protein,0.5453228013933548,933
+Trametinib,1372,ChEMBL,922,INHIBITOR,action_type_target,0.424805214367694,941
+Trametinib,1372,ChEMBL,721,INHIBITOR,has_action_type,0.424805214367694,941
+Trametinib,1372,ChEMBL,922,INHIBITOR,acts_on_target,0.424805214367694,941
+Trametinib,1372,ChEMBL,771,PROTEIN FAMILY,target_has_target_type,0.424805214367694,941
+Trametinib,1372,ChEMBL,923,Dual specificity mitogen-activated protein kinase kinase; MEK1/2 inhibitor,drug_has_mechanism,0.424805214367694,941
+Trametinib,1372,ChEMBL,922,Dual specificity mitogen-activated protein kinase kinase; MEK1/2 inhibitor,mechanism_targets_target,0.424805214367694,941
+Trametinib,1372,PrimeKG,1010,enzyme,drug_protein,0.5751947927205101,941
+Trametinib,1372,PrimeKG,1014,enzyme,drug_protein,0.5751947927205101,941
+Trametinib,1372,PrimeKG,1113,target,drug_protein,0.5751947927205101,941
+Trametinib,1372,PrimeKG,1214,target,drug_protein,0.5751947927205101,941
+Crizotinib,1083,ChEMBL,760,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,721,INHIBITOR,has_action_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,760,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,761,Hepatocyte growth factor receptor inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,760,Hepatocyte growth factor receptor inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,762,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,762,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,763,ALK tyrosine kinase receptor inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,762,ALK tyrosine kinase receptor inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,930,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,930,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,928,CHIMERIC PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,931,EML4-ALK inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,930,EML4-ALK inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,932,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,932,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,928,CHIMERIC PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,933,NPM/ALK (Nucleophosmin/ALK tyrosine kinase receptor) inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,932,NPM/ALK (Nucleophosmin/ALK tyrosine kinase receptor) inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,938,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,938,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,939,Proto-oncogene tyrosine-protein kinase ROS inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,938,Proto-oncogene tyrosine-protein kinase ROS inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,940,INHIBITOR,action_type_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,940,INHIBITOR,acts_on_target,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,941,Macrophage-stimulating protein receptor inhibitor,drug_has_mechanism,0.42333931978746014,941
+Crizotinib,1083,ChEMBL,940,Macrophage-stimulating protein receptor inhibitor,mechanism_targets_target,0.42333931978746014,941
+Crizotinib,1083,PrimeKG,1005,enzyme,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1010,enzyme,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1022,enzyme,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1023,enzyme,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1029,enzyme,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1065,target,drug_protein,0.5766606868437832,941
+Crizotinib,1083,PrimeKG,1119,target,drug_protein,0.5766606868437832,941
+Talazoparib,1259,ChEMBL,900,INHIBITOR,action_type_target,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,721,INHIBITOR,has_action_type,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,900,INHIBITOR,acts_on_target,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,901,Poly [ADP-ribose] polymerase-1 inhibitor,drug_has_mechanism,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,900,Poly [ADP-ribose] polymerase-1 inhibitor,mechanism_targets_target,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,892,INHIBITOR,action_type_target,0.4973655365735768,931
+Talazoparib,1259,ChEMBL,893,Poly [ADP-ribose] polymerase 2 inhibitor,drug_has_mechanism,0.4973655365735768,931
+Talazoparib,1259,PrimeKG,1156,target,drug_protein,0.5026344703222341,931
+Talazoparib,1259,PrimeKG,1204,target,drug_protein,0.5026344703222341,931
+Ruxolitinib,1507,ChEMBL,754,INHIBITOR,action_type_target,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,721,INHIBITOR,has_action_type,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,754,INHIBITOR,acts_on_target,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,755,Tyrosine-protein kinase JAK1 inhibitor,drug_has_mechanism,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,754,Tyrosine-protein kinase JAK1 inhibitor,mechanism_targets_target,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,756,INHIBITOR,action_type_target,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,756,INHIBITOR,acts_on_target,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,722,SINGLE PROTEIN,target_has_target_type,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,757,Tyrosine-protein kinase JAK2 inhibitor,drug_has_mechanism,0.3716292737257143,875
+Ruxolitinib,1507,ChEMBL,756,Tyrosine-protein kinase JAK2 inhibitor,mechanism_targets_target,0.3716292737257143,875
+Ruxolitinib,1507,PrimeKG,1010,enzyme,drug_protein,0.6283707336228572,875
+Ruxolitinib,1507,PrimeKG,1183,target,drug_protein,0.6283707336228572,875
+Ruxolitinib,1507,PrimeKG,1206,target,drug_protein,0.6283707336228572,875
+Cisplatin,1005,ChEMBL,796,INHIBITOR,action_type_target,0.5442025423149394,743
+Cisplatin,1005,ChEMBL,721,INHIBITOR,has_action_type,0.5442025423149394,743
+Cisplatin,1005,ChEMBL,798,DNA inhibitor,drug_has_mechanism,0.5442025423149394,743
+Cisplatin,1005,PrimeKG,975,carrier,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,979,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,983,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,986,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,987,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,988,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,993,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,996,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1000,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1002,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1007,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1012,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1022,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1039,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1040,enzyme,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1072,target,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1118,target,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1187,target,drug_protein,0.45579746493943474,743
+Cisplatin,1005,PrimeKG,1235,target,drug_protein,0.45579746493943474,743
+Cytarabine,1006,ChEMBL,796,INHIBITOR,action_type_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,721,INHIBITOR,has_action_type,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,798,DNA inhibitor,drug_has_mechanism,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,799,INHIBITOR,action_type_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,799,INHIBITOR,acts_on_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,797,NUCLEIC-ACID,target_has_target_type,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,800,RNA inhibitor,drug_has_mechanism,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,799,RNA inhibitor,mechanism_targets_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,801,INHIBITOR,action_type_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,801,INHIBITOR,acts_on_target,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,771,PROTEIN FAMILY,target_has_target_type,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,802,DNA polymerase (alpha/delta/epsilon) inhibitor,drug_has_mechanism,0.3754043124517907,726
+Cytarabine,1006,ChEMBL,801,DNA polymerase (alpha/delta/epsilon) inhibitor,mechanism_targets_target,0.3754043124517907,726
+Cytarabine,1006,PrimeKG,994,enzyme,drug_protein,0.624595695261708,726
+Cytarabine,1006,PrimeKG,1009,enzyme,drug_protein,0.624595695261708,726
+Cytarabine,1006,PrimeKG,1010,enzyme,drug_protein,0.624595695261708,726
+Cytarabine,1006,PrimeKG,1013,enzyme,drug_protein,0.624595695261708,726
+Cytarabine,1006,PrimeKG,1037,enzyme,drug_protein,0.624595695261708,726
+Cytarabine,1006,PrimeKG,1051,target,drug_protein,0.624595695261708,726

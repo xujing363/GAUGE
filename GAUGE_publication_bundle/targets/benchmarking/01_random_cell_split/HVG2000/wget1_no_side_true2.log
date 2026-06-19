@@ -1,0 +1,37 @@
+[START] benchmark=HVG2000
+[START] device=cuda:1 epochs=config batch_size=config eval_batch_size=config/auto
+[START] run_name=full_20260524_141018
+[CONFIG] epochs=50 batch_size=512 eval_batch_size=null
+[EFFECTIVE] epochs=50 batch_size=512 eval_batch_size=16384
+Traceback (most recent call last):
+  File "/mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/scripts/run.py", line 21, in <module>
+    main(["--benchmark-dir", str(ROOT), *sys.argv[1:], "run"])
+  File "/mnt/raid5/xujing/KG/GAUGE/benchmark_cli.py", line 307, in main
+    model = train_model(
+  File "/mnt/raid5/xujing/KG/GAUGE/train.py", line 1683, in train_model
+    out = model_runner(
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/raid5/xujing/KG/GAUGE/model.py", line 473, in forward
+    kg_payload = self.kg_action_encoder(
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/raid5/xujing/KG/GAUGE/model.py", line 291, in forward
+    branch_payload = self.branch_embeddings(
+  File "/mnt/raid5/xujing/KG/GAUGE/model.py", line 234, in branch_embeddings
+    h = layer(h, edge_index, edge_type, training_edge_dropout=edge_dropout)
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/mnt/raid5/xujing/miniconda3/envs/kg_GAUGE/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/mnt/raid5/xujing/KG/GAUGE/model.py", line 65, in forward
+    msg = self.msg(h.index_select(0, src)) + self.rel(edge_type.clamp_min(0))
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 30.00 MiB. GPU 1 has a total capacity of 79.10 GiB of which 7.31 MiB is free. Process 577202 has 27.88 GiB memory in use. Process 2503922 has 25.95 GiB memory in use. Including non-PyTorch memory, this process has 22.90 GiB memory in use. Process 2646584 has 2.32 GiB memory in use. Of the allocated memory 21.28 GiB is allocated by PyTorch, and 1.04 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+real	25m43.385s
+user	25m31.713s
+sys	0m10.594s

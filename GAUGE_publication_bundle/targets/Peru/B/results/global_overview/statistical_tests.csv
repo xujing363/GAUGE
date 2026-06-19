@@ -1,0 +1,3 @@
+test,stat,pval,kg_covered_mean,no_kg_mean,n_kg_covered,n_no_kg,n
+KG_covered_vs_no_kg_spearman,298.0,0.5119864615231277,0.33762797091581925,0.3377253986352456,23.0,26.0,
+degree_vs_spearman_correlation,-0.036642824319546165,0.8681663555254486,,,,,23.0

@@ -1,0 +1,16 @@
+/mnt/raid5/xujing/KG/Peru/A/scripts/06_publication_figures.py:554: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  ax.boxplot([unknown, known], labels=["Non-target\ngenes", "Known\ntarget genes"],
+======================================================================
+Script 06: Publication-Quality Figures
+======================================================================
+  Output directory: /mnt/raid5/xujing/KG/Peru/A/figures
+  Saved: figA_global_heatmap.pdf
+  SKIP Fig B: gate_baseline_by_drug.csv not found
+  Saved: figC_cancer_type_perturbation.pdf
+  Saved: figD_drug_family_specificity.pdf
+  SKIP Fig E: network_ablation_perturbation.csv not found
+  Saved: figF_known_target_validation.pdf
+  Saved: fig_main_summary.pdf
+
+All figures saved to /mnt/raid5/xujing/KG/Peru/A/figures
+Script 06 complete.

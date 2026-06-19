@@ -1,0 +1,28 @@
+Generating figures → /mnt/raid5/xujing/KG/DrugDesign_Sec/cnm/figures
+
+[1] Fig 1: Drug-split validation...
+  Saved fig01_drug_split_validation.pdf/.png
+
+[2] Fig 2: TCGA indication recovery...
+  Saved fig02_tcga_indication_recovery.pdf/.png
+
+[3] Fig 3: MoA structural validity...
+  Saved fig03_moa_structural_validity.pdf/.png
+
+[4] Fig 4: Drug generation (if results available)...
+  Saved fig04_drug_generation.pdf/.png
+
+[5] Supplementary: MoA holdout heatmap...
+  Saved supp_holdout_moa_heatmap.pdf/.png
+
+Done. Figures saved to /mnt/raid5/xujing/KG/DrugDesign_Sec/cnm/figures
+  fig01_drug_split_validation.pdf
+  fig01_drug_split_validation.png
+  fig02_tcga_indication_recovery.pdf
+  fig02_tcga_indication_recovery.png
+  fig03_moa_structural_validity.pdf
+  fig03_moa_structural_validity.png
+  fig04_drug_generation.pdf
+  fig04_drug_generation.png
+  supp_holdout_moa_heatmap.pdf
+  supp_holdout_moa_heatmap.png

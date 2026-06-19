@@ -1,0 +1,6 @@
+label,n,n_pos,n_neg,auc,perm_p,mw_p,cancer_type,n_responders,n_non_responders
+Breast cancer,186,86,100,0.5228,0.29933,0.29666,Breast cancer,86,100
+Lung cancer,43,35,8,0.525,0.41633,0.42117,Lung cancer,35,8
+Melanoma,42,17,25,0.4941,0.54933,0.53064,Melanoma,17,25
+Soft tissue tumours,19,11,8,0.3068,0.92067,0.92412,Soft tissue tumours,11,8
+Urinary bladder cancer,44,29,15,0.6506,0.056,0.05377,Urinary bladder cancer,29,15

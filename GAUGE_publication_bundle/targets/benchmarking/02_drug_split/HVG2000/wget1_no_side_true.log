@@ -1,0 +1,5 @@
+[START] benchmark=HVG2000
+[START] pid=3951925
+[START] device=cuda:6 epochs=config batch_size=config eval_batch_size=config/auto
+[START] run_name=full_20260523_153222_pid3951925
+[START] lock_path=/mnt/raid5/xujing/KG/benchmarking/02_drug_split/HVG2000/results/.device_locks/cuda_6.lock

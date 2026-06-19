@@ -1,0 +1,4 @@
+{
+  "official_indication_tables": "/mnt/raid5/xujing/KG/KG_GAUGE_PublicData/drug/PrimeKG/kg.csv",
+  "project_disease_map": "inputs/project_disease_map.csv"
+}

@@ -1,0 +1,132 @@
+{
+  "n_drugs_analyzed": 17,
+  "n_drugs_with_kg": 12,
+  "per_moa": {
+    "EGFR inhibitor": {
+      "n_drugs_in_kg": 7,
+      "mean_pearson_r_fp_vs_kg": 0.7807,
+      "mean_spearman_r_fp_vs_kg": 0.7633,
+      "mean_abs_delta_vh": 0.02555,
+      "drugs": [
+        {
+          "drug_name": "gefitinib",
+          "split": "train",
+          "pearson_r": 0.7473,
+          "spearman_r": 0.7292,
+          "mean_vh_fp": 0.4895,
+          "mean_vh_kg": 0.4622,
+          "delta": -0.027321
+        },
+        {
+          "drug_name": "osimertinib",
+          "split": "train",
+          "pearson_r": 0.6546,
+          "spearman_r": 0.6351,
+          "mean_vh_fp": 0.4909,
+          "mean_vh_kg": 0.4675,
+          "delta": -0.023341
+        },
+        {
+          "drug_name": "afatinib",
+          "split": "train",
+          "pearson_r": 0.7968,
+          "spearman_r": 0.7698,
+          "mean_vh_fp": 0.4856,
+          "mean_vh_kg": 0.4557,
+          "delta": -0.029884
+        },
+        {
+          "drug_name": "erlotinib",
+          "split": "test",
+          "pearson_r": 0.8443,
+          "spearman_r": 0.8372,
+          "mean_vh_fp": 0.4944,
+          "mean_vh_kg": 0.4703,
+          "delta": -0.02409
+        },
+        {
+          "drug_name": "dacomitinib",
+          "split": "test",
+          "pearson_r": 0.7869,
+          "spearman_r": 0.7689,
+          "mean_vh_fp": 0.4877,
+          "mean_vh_kg": 0.4597,
+          "delta": -0.027986
+        },
+        {
+          "drug_name": "neratinib",
+          "split": "test",
+          "pearson_r": 0.8149,
+          "spearman_r": 0.8111,
+          "mean_vh_fp": 0.4867,
+          "mean_vh_kg": 0.4611,
+          "delta": -0.025592
+        },
+        {
+          "drug_name": "lapatinib",
+          "split": "train",
+          "pearson_r": 0.82,
+          "spearman_r": 0.7917,
+          "mean_vh_fp": 0.488,
+          "mean_vh_kg": 0.4674,
+          "delta": -0.020636
+        }
+      ]
+    },
+    "MEK inhibitor": {
+      "n_drugs_in_kg": 5,
+      "mean_pearson_r_fp_vs_kg": 0.7582,
+      "mean_spearman_r_fp_vs_kg": 0.7655,
+      "mean_abs_delta_vh": 0.007446,
+      "drugs": [
+        {
+          "drug_name": "trametinib",
+          "split": "train",
+          "pearson_r": 0.7824,
+          "spearman_r": 0.7876,
+          "mean_vh_fp": 0.4993,
+          "mean_vh_kg": 0.4853,
+          "delta": -0.013984
+        },
+        {
+          "drug_name": "cobimetinib",
+          "split": "train",
+          "pearson_r": 0.7768,
+          "spearman_r": 0.7682,
+          "mean_vh_fp": 0.499,
+          "mean_vh_kg": 0.4911,
+          "delta": -0.007927
+        },
+        {
+          "drug_name": "selumetinib",
+          "split": "train",
+          "pearson_r": 0.7184,
+          "spearman_r": 0.7301,
+          "mean_vh_fp": 0.501,
+          "mean_vh_kg": 0.4954,
+          "delta": -0.005681
+        },
+        {
+          "drug_name": "PD-0325901",
+          "split": "train",
+          "pearson_r": 0.7769,
+          "spearman_r": 0.7887,
+          "mean_vh_fp": 0.5008,
+          "mean_vh_kg": 0.4955,
+          "delta": -0.005329
+        },
+        {
+          "drug_name": "AZD8330",
+          "split": "test",
+          "pearson_r": 0.7367,
+          "spearman_r": 0.753,
+          "mean_vh_fp": 0.4986,
+          "mean_vh_kg": 0.4943,
+          "delta": -0.004308
+        }
+      ]
+    }
+  },
+  "overall_mean_pearson_r": 0.7713,
+  "overall_mean_spearman_r": 0.7642
+}

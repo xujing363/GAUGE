@@ -1,0 +1,88 @@
+{
+  "LUAD": {
+    "n_analogues": 305,
+    "n_improved": 4,
+    "parent_reversal_score": 0.2732,
+    "mean_reversal_all": 0.0446,
+    "mean_reversal_improved": 0.0339,
+    "mean_delta_reversal_improved": -0.2393,
+    "n_improved_with_positive_delta_reversal": 0,
+    "improved_details": [
+      {
+        "DRUG_NAME": "erlotinib_analogue_0305",
+        "delta_improvement": 0.009268,
+        "reversal_score": 0.0327,
+        "delta_reversal": -0.2405,
+        "best_lincs_sim": 0.158,
+        "best_lincs_name": "erlotinib"
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0231",
+        "delta_improvement": 0.005908,
+        "reversal_score": 0.0349,
+        "delta_reversal": -0.2383,
+        "best_lincs_sim": 0.168,
+        "best_lincs_name": "erlotinib"
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0030",
+        "delta_improvement": 0.002193,
+        "reversal_score": 0.0364,
+        "delta_reversal": -0.2368,
+        "best_lincs_sim": 0.176,
+        "best_lincs_name": "erlotinib"
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0031",
+        "delta_improvement": 0.000474,
+        "reversal_score": 0.0317,
+        "delta_reversal": -0.2416,
+        "best_lincs_sim": 0.153,
+        "best_lincs_name": "erlotinib"
+      }
+    ]
+  },
+  "SKCM": {
+    "n_analogues": 271,
+    "n_improved": 4,
+    "parent_reversal_score": 0.4745,
+    "mean_reversal_all": 0.0356,
+    "mean_reversal_improved": 0.0313,
+    "mean_delta_reversal_improved": -0.4432,
+    "n_improved_with_positive_delta_reversal": 0,
+    "improved_details": [
+      {
+        "DRUG_NAME": "trametinib_analogue_0145",
+        "delta_improvement": 0.004751,
+        "reversal_score": 0.0316,
+        "delta_reversal": -0.4429,
+        "best_lincs_sim": 0.116,
+        "best_lincs_name": "trametinib"
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0173",
+        "delta_improvement": 0.00238,
+        "reversal_score": 0.0365,
+        "delta_reversal": -0.438,
+        "best_lincs_sim": 0.134,
+        "best_lincs_name": "trametinib"
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0032",
+        "delta_improvement": 0.001699,
+        "reversal_score": 0.0279,
+        "delta_reversal": -0.4467,
+        "best_lincs_sim": 0.102,
+        "best_lincs_name": "trametinib"
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0368",
+        "delta_improvement": 0.001046,
+        "reversal_score": 0.0293,
+        "delta_reversal": -0.4452,
+        "best_lincs_sim": 0.108,
+        "best_lincs_name": "trametinib"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+seed_drug,cancer_type,DRUG_NAME,DRUG_ID,smiles,delta_improvement,mean_value_hat,tanimoto,type
+erlotinib,TCGA-LUAD,erlotinib_analogue_0305,90305,C#Cc1cccc([C@]23O[C@H]2[C@@H]2O[C@]24[C@]2(O[C@H]2C[C@H]2C5=C(CC[C@@]24C)C(=O)OC5)[C@@H]3O)c1,0.0092683876266478,0.485101,0.1578947368421052,improved_analogue
+erlotinib,TCGA-LUAD,erlotinib_analogue_0231,90231,C#Cc1cccc([C@@H]2C[C@@H]3O[C@]3(C)CCC[C@H](C)[C@H](O)[C@@H](C)C(=O)C(C)(C)[C@@H](O)CC(=O)N2)c1,0.0059083876266479,0.488461,0.1684210526315789,improved_analogue
+erlotinib,TCGA-LUAD,erlotinib_analogue_0030,90030,COc1ccc(C)c(C#Cc2cnc3[nH]ncc3c2)c1,0.0021933876266478,0.492176,0.1756756756756756,improved_analogue
+erlotinib,TCGA-LUAD,erlotinib_analogue_0031,90031,Cc1ccc(-c2ccc(C)c(C#Cc3cnc4[nH]ncc4c3)c2)cc1C#Cc1cnc2[nH]ncc2c1,0.0004743876266479,0.493895,0.1527777777777778,improved_analogue
+trametinib,TCGA-SKCM,trametinib_analogue_0145,90145,C[C@]12CCC3=C(COC3=O)[C@@H]1C[C@@H]1O[C@@]13[C@H](O)[C@@]1(c4ccc(I)cc4F)O[C@H]1[C@@H]1O[C@@]132,0.0047508732051848,0.494528,0.1160714285714285,improved_analogue
+trametinib,TCGA-SKCM,trametinib_analogue_0173,90173,Cc1ccc(-c2ccc(I)cc2F)cc1C#Cc1cnc2[nH]ncc2c1,0.0023798732051849,0.496899,0.134020618556701,improved_analogue
+trametinib,TCGA-SKCM,trametinib_analogue_0032,90032,Cc1ccc(-c2ccc(C)c(C#Cc3cnc4[nH]ncc4c3)c2)cc1C#Cc1cnc2[nH]ncc2c1,0.0016988732051848,0.49758,0.1022727272727272,improved_analogue
+trametinib,TCGA-SKCM,trametinib_analogue_0368,90368,Cc1ccc(C2CC2)cc1C#Cc1cnc2[nH]ncc2c1,0.0010458732051848,0.498233,0.1075268817204301,improved_analogue

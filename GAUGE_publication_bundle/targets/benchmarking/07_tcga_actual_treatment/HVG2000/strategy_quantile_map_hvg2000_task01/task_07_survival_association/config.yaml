@@ -1,0 +1,45 @@
+task_dir: strategy_quantile_map_hvg2000_task01/task_07_survival_association
+task_title: Strategy Quantile Map Task 07 Survival Association
+task_purpose: Run OS-focused survival association analyses using TCGA-supported survival
+  fields.
+module: task_07_survival_association
+source_snapshot_dir: task_00_source_snapshot
+source_run_dir: /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260524_140841
+analysis_scope:
+  pan_cancer: true
+  within_cancer: true
+cohort_filters:
+  single_agent_response_only: true
+  tcga_expression_source: /mnt/raid5/xujing/Agent/Datasets/TCGA/h5ad_outputs/tcga_gene_expression_tpm_therapies_split.h5ad
+thresholds:
+  response_min_responder: 5
+  response_min_nonresponder: 5
+  response_min_total: 15
+  sensitive_resistant_quantiles:
+  - 0.2
+  - 0.8
+  robustness_quantiles:
+  - 0.05
+  - 0.1
+  - 0.5
+  - 0.9
+  - 0.95
+validation:
+  subtype_min_labeled_patients: 10
+  mutation_min_total_mutations: 3
+  mutation_min_cluster_mutations: 2
+  survival_min_cluster_size: 10
+  survival_min_events: 5
+  indication_min_cluster_size: 10
+  multiple_testing_method: bh
+truth_sources:
+  tcga_os_fields: /mnt/raid5/xujing/Agent/Datasets/TCGA/h5ad_outputs/tcga_gene_expression_tpm_therapies_split.h5ad
+input_tables:
+  task01_predictions: task_01_dataset_profile_and_prediction_export/outputs/patient_drug_predictions.csv
+  task01_actual_scores: task_01_dataset_profile_and_prediction_export/outputs/actual_treatment_scores.csv
+  task01_response_scores: task_01_dataset_profile_and_prediction_export/outputs/response_episode_scores.csv
+  task01_mapping_audit: task_01_dataset_profile_and_prediction_export/outputs/mapping_audit.csv
+  task01_survival_metrics: task_01_dataset_profile_and_prediction_export/outputs/os_survival_metrics.csv
+output_prefix: task_07_survival_association
+figure_preset: tcga_full_exploration_default
+strategy_name: quantile_map_hvg2000_task01

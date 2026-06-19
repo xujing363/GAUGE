@@ -1,0 +1,70 @@
+{
+  "EGFR": {
+    "pdb_id": "4HJO",
+    "seed_drug": "erlotinib",
+    "parent_vina_score": -7.52011,
+    "n_docked_analogues": 10,
+    "n_improved_analogues": 4,
+    "n_better_than_parent_vina": 6,
+    "improved_details": [
+      {
+        "DRUG_NAME": "erlotinib_analogue_0305",
+        "delta_improvement": 0.009268,
+        "vina_score": -8.125,
+        "delta_vina": -0.605
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0231",
+        "delta_improvement": 0.005908,
+        "vina_score": -5.379,
+        "delta_vina": 2.141
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0030",
+        "delta_improvement": 0.002193,
+        "vina_score": -8.31,
+        "delta_vina": -0.79
+      },
+      {
+        "DRUG_NAME": "erlotinib_analogue_0031",
+        "delta_improvement": 0.000474,
+        "vina_score": -10.82,
+        "delta_vina": -3.3
+      }
+    ]
+  },
+  "MAP2K1": {
+    "pdb_id": "4LMN",
+    "seed_drug": "trametinib",
+    "parent_vina_score": -10.9602,
+    "n_docked_analogues": 10,
+    "n_improved_analogues": 4,
+    "n_better_than_parent_vina": 0,
+    "improved_details": [
+      {
+        "DRUG_NAME": "trametinib_analogue_0145",
+        "delta_improvement": 0.004751,
+        "vina_score": -8.122,
+        "delta_vina": 2.838
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0173",
+        "delta_improvement": 0.00238,
+        "vina_score": -10.058,
+        "delta_vina": 0.903
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0032",
+        "delta_improvement": 0.001699,
+        "vina_score": -10.732,
+        "delta_vina": 0.229
+      },
+      {
+        "DRUG_NAME": "trametinib_analogue_0368",
+        "delta_improvement": 0.001046,
+        "vina_score": -8.863,
+        "delta_vina": 2.098
+      }
+    ]
+  }
+}

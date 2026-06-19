@@ -1,0 +1,332 @@
+patient_id,sample_id,project_id,label_family,subtype_label,label_source
+TCGA-OU-A5PI,TCGA-OU-A5PI-01A,TCGA-ACC,classification_of_tumor,primary,clinical_jsonl
+TCGA-OU-A5PI,TCGA-OU-A5PI-01A,TCGA-ACC,morphology,8370/3,clinical_jsonl
+TCGA-OU-A5PI,TCGA-OU-A5PI-01A,TCGA-ACC,primary_diagnosis,Adrenal cortical carcinoma,clinical_jsonl
+TCGA-PK-A5HB,TCGA-PK-A5HB-01A,TCGA-ACC,classification_of_tumor,primary,clinical_jsonl
+TCGA-PK-A5HB,TCGA-PK-A5HB-01A,TCGA-ACC,morphology,8370/3,clinical_jsonl
+TCGA-PK-A5HB,TCGA-PK-A5HB-01A,TCGA-ACC,primary_diagnosis,Adrenal cortical carcinoma,clinical_jsonl
+TCGA-BT-A20N,TCGA-BT-A20N-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-BT-A20N,TCGA-BT-A20N-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-BT-A20N,TCGA-BT-A20N-11A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-BT-A20N,TCGA-BT-A20N-11A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-BT-A20T,TCGA-BT-A20T-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-BT-A20T,TCGA-BT-A20T-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-BT-A20T,TCGA-BT-A20T-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-BT-A2LD,TCGA-BT-A2LD-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-BT-A2LD,TCGA-BT-A2LD-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-BT-A2LD,TCGA-BT-A2LD-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-BT-A2LD,TCGA-BT-A2LD-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-BT-A42E,TCGA-BT-A42E-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-BT-A42E,TCGA-BT-A42E-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-BT-A42E,TCGA-BT-A42E-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-BT-A42E,TCGA-BT-A42E-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-CU-A3YL,TCGA-CU-A3YL-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-CU-A3YL,TCGA-CU-A3YL-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-CU-A3YL,TCGA-CU-A3YL-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-CU-A3YL,TCGA-CU-A3YL-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A1A7,TCGA-DK-A1A7-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-A1A7,TCGA-DK-A1A7-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-A1A7,TCGA-DK-A1A7-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A1A7,TCGA-DK-A1A7-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A1AC,TCGA-DK-A1AC-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-A1AC,TCGA-DK-A1AC-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-A1AC,TCGA-DK-A1AC-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A1AC,TCGA-DK-A1AC-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A3IQ,TCGA-DK-A3IQ-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-DK-A3IQ,TCGA-DK-A3IQ-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A3IQ,TCGA-DK-A3IQ-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A3IU,TCGA-DK-A3IU-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-A3IU,TCGA-DK-A3IU-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-A3IU,TCGA-DK-A3IU-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A3IU,TCGA-DK-A3IU-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A3IV,TCGA-DK-A3IV-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-DK-A3IV,TCGA-DK-A3IV-01A,TCGA-BLCA,morphology,8140/3,clinical_jsonl
+TCGA-DK-A3IV,TCGA-DK-A3IV-01A,TCGA-BLCA,primary_diagnosis,"Adenocarcinoma, NOS",clinical_jsonl
+TCGA-DK-A3WW,TCGA-DK-A3WW-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-A3WW,TCGA-DK-A3WW-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-A3WW,TCGA-DK-A3WW-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A3WW,TCGA-DK-A3WW-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A3WX,TCGA-DK-A3WX-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-DK-A3WX,TCGA-DK-A3WX-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A3WX,TCGA-DK-A3WX-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A3WY,TCGA-DK-A3WY-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-A3WY,TCGA-DK-A3WY-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-A3WY,TCGA-DK-A3WY-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A3WY,TCGA-DK-A3WY-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A6B2,TCGA-DK-A6B2-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-DK-A6B2,TCGA-DK-A6B2-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-A6B2,TCGA-DK-A6B2-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-A6B5,TCGA-DK-A6B5-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-DK-A6B5,TCGA-DK-A6B5-01A,TCGA-BLCA,primary_diagnosis,"Papillary transitional cell carcinoma, non-invasive",clinical_jsonl
+TCGA-DK-A6B6,TCGA-DK-A6B6-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-DK-A6B6,TCGA-DK-A6B6-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-DK-AA6M,TCGA-DK-AA6M-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-DK-AA6M,TCGA-DK-AA6M-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6M,TCGA-DK-AA6M-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6P,TCGA-DK-AA6P-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-DK-AA6P,TCGA-DK-AA6P-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6P,TCGA-DK-AA6P-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6R,TCGA-DK-AA6R-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA6R,TCGA-DK-AA6R-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-AA6R,TCGA-DK-AA6R-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6R,TCGA-DK-AA6R-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6S,TCGA-DK-AA6S-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA6S,TCGA-DK-AA6S-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-AA6S,TCGA-DK-AA6S-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6S,TCGA-DK-AA6S-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6T,TCGA-DK-AA6T-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA6T,TCGA-DK-AA6T-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-AA6T,TCGA-DK-AA6T-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6T,TCGA-DK-AA6T-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6U,TCGA-DK-AA6U-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA6U,TCGA-DK-AA6U-01A,TCGA-BLCA,tumor_grade,Unknown,clinical_jsonl
+TCGA-DK-AA6U,TCGA-DK-AA6U-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6U,TCGA-DK-AA6U-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA6W,TCGA-DK-AA6W-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA6W,TCGA-DK-AA6W-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-AA6W,TCGA-DK-AA6W-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA6W,TCGA-DK-AA6W-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-DK-AA76,TCGA-DK-AA76-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-DK-AA76,TCGA-DK-AA76-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-DK-AA76,TCGA-DK-AA76-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-DK-AA76,TCGA-DK-AA76-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-E5-A2PC,TCGA-E5-A2PC-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-E5-A2PC,TCGA-E5-A2PC-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-E5-A2PC,TCGA-E5-A2PC-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-E5-A2PC,TCGA-E5-A2PC-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-E5-A4U1,TCGA-E5-A4U1-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-E5-A4U1,TCGA-E5-A4U1-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-E5-A4U1,TCGA-E5-A4U1-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-E5-A4U1,TCGA-E5-A4U1-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3B4,TCGA-FD-A3B4-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A3B4,TCGA-FD-A3B4-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A3B4,TCGA-FD-A3B4-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3B4,TCGA-FD-A3B4-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3SJ,TCGA-FD-A3SJ-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A3SJ,TCGA-FD-A3SJ-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A3SJ,TCGA-FD-A3SJ-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3SJ,TCGA-FD-A3SJ-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3SO,TCGA-FD-A3SO-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-FD-A3SO,TCGA-FD-A3SO-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3SO,TCGA-FD-A3SO-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3SP,TCGA-FD-A3SP-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A3SP,TCGA-FD-A3SP-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A3SP,TCGA-FD-A3SP-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3SP,TCGA-FD-A3SP-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3SQ,TCGA-FD-A3SQ-01A,TCGA-BLCA,classification_of_tumor,recurrence,clinical_jsonl
+TCGA-FD-A3SQ,TCGA-FD-A3SQ-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3SQ,TCGA-FD-A3SQ-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A3SS,TCGA-FD-A3SS-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A3SS,TCGA-FD-A3SS-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A3SS,TCGA-FD-A3SS-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A3SS,TCGA-FD-A3SS-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A43S,TCGA-FD-A43S-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A43S,TCGA-FD-A43S-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A43S,TCGA-FD-A43S-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A43S,TCGA-FD-A43S-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A43U,TCGA-FD-A43U-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A43U,TCGA-FD-A43U-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A43U,TCGA-FD-A43U-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A43U,TCGA-FD-A43U-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A5BS,TCGA-FD-A5BS-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A5BS,TCGA-FD-A5BS-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A5BS,TCGA-FD-A5BS-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A5BS,TCGA-FD-A5BS-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A5C1,TCGA-FD-A5C1-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-FD-A5C1,TCGA-FD-A5C1-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-FD-A5C1,TCGA-FD-A5C1-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A62S,TCGA-FD-A62S-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A62S,TCGA-FD-A62S-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A62S,TCGA-FD-A62S-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A62S,TCGA-FD-A62S-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FD-A6TC,TCGA-FD-A6TC-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FD-A6TC,TCGA-FD-A6TC-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FD-A6TC,TCGA-FD-A6TC-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FD-A6TC,TCGA-FD-A6TC-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FJ-A3Z7,TCGA-FJ-A3Z7-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FJ-A3Z7,TCGA-FJ-A3Z7-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FJ-A3Z7,TCGA-FJ-A3Z7-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FJ-A3Z7,TCGA-FJ-A3Z7-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-FJ-A3Z9,TCGA-FJ-A3Z9-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-FJ-A3Z9,TCGA-FJ-A3Z9-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-FJ-A3Z9,TCGA-FJ-A3Z9-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-FJ-A3Z9,TCGA-FJ-A3Z9-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-FJ-A871,TCGA-FJ-A871-01A,TCGA-BLCA,classification_of_tumor,recurrence,clinical_jsonl
+TCGA-FJ-A871,TCGA-FJ-A871-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-FJ-A871,TCGA-FJ-A871-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A2EC,TCGA-G2-A2EC-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A2EC,TCGA-G2-A2EC-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A2EC,TCGA-G2-A2EC-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A2EC,TCGA-G2-A2EC-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A2EF,TCGA-G2-A2EF-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A2EF,TCGA-G2-A2EF-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A2EF,TCGA-G2-A2EF-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A2EF,TCGA-G2-A2EF-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A2EJ,TCGA-G2-A2EJ-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A2EJ,TCGA-G2-A2EJ-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A2EJ,TCGA-G2-A2EJ-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A2EJ,TCGA-G2-A2EJ-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A2EK,TCGA-G2-A2EK-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A2EK,TCGA-G2-A2EK-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A2EK,TCGA-G2-A2EK-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A2EK,TCGA-G2-A2EK-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A2EL,TCGA-G2-A2EL-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-G2-A2EL,TCGA-G2-A2EL-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A2EL,TCGA-G2-A2EL-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A3IB,TCGA-G2-A3IB-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A3IB,TCGA-G2-A3IB-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A3IB,TCGA-G2-A3IB-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A3IB,TCGA-G2-A3IB-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-A3IE,TCGA-G2-A3IE-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-A3IE,TCGA-G2-A3IE-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-A3IE,TCGA-G2-A3IE-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-A3IE,TCGA-G2-A3IE-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-AA3C,TCGA-G2-AA3C-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-AA3C,TCGA-G2-AA3C-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-AA3C,TCGA-G2-AA3C-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-AA3C,TCGA-G2-AA3C-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-G2-AA3D,TCGA-G2-AA3D-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-G2-AA3D,TCGA-G2-AA3D-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-G2-AA3F,TCGA-G2-AA3F-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-G2-AA3F,TCGA-G2-AA3F-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-G2-AA3F,TCGA-G2-AA3F-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-G2-AA3F,TCGA-G2-AA3F-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GC-A3YS,TCGA-GC-A3YS-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-GC-A3YS,TCGA-GC-A3YS-01A,TCGA-BLCA,morphology,8140/3,clinical_jsonl
+TCGA-GC-A3YS,TCGA-GC-A3YS-01A,TCGA-BLCA,primary_diagnosis,"Adenocarcinoma, NOS",clinical_jsonl
+TCGA-GD-A3OS,TCGA-GD-A3OS-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-GD-A3OS,TCGA-GD-A3OS-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-GD-A3OS,TCGA-GD-A3OS-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GD-A3OS,TCGA-GD-A3OS-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GU-A42R,TCGA-GU-A42R-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-GU-A42R,TCGA-GU-A42R-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-GU-A42R,TCGA-GU-A42R-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GU-A42R,TCGA-GU-A42R-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A3JW,TCGA-GV-A3JW-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-GV-A3JW,TCGA-GV-A3JW-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A3JW,TCGA-GV-A3JW-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A3QF,TCGA-GV-A3QF-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-GV-A3QF,TCGA-GV-A3QF-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-GV-A3QF,TCGA-GV-A3QF-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A3QF,TCGA-GV-A3QF-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A3QH,TCGA-GV-A3QH-01A,TCGA-BLCA,classification_of_tumor,recurrence,clinical_jsonl
+TCGA-GV-A3QH,TCGA-GV-A3QH-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A3QH,TCGA-GV-A3QH-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A3QI,TCGA-GV-A3QI-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-GV-A3QI,TCGA-GV-A3QI-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A3QI,TCGA-GV-A3QI-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A3QK,TCGA-GV-A3QK-01B,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-GV-A3QK,TCGA-GV-A3QK-01B,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-GV-A3QK,TCGA-GV-A3QK-01B,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A3QK,TCGA-GV-A3QK-01B,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-GV-A40E,TCGA-GV-A40E-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-GV-A40E,TCGA-GV-A40E-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-GV-A40E,TCGA-GV-A40E-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-HQ-A2OE,TCGA-HQ-A2OE-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-HQ-A2OE,TCGA-HQ-A2OE-01A,TCGA-BLCA,tumor_grade,Unknown,clinical_jsonl
+TCGA-HQ-A2OE,TCGA-HQ-A2OE-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-HQ-A2OE,TCGA-HQ-A2OE-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-K4-A83P,TCGA-K4-A83P-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-K4-A83P,TCGA-K4-A83P-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-K4-A83P,TCGA-K4-A83P-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-K4-AAQO,TCGA-K4-AAQO-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-K4-AAQO,TCGA-K4-AAQO-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-K4-AAQO,TCGA-K4-AAQO-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-K4-AAQO,TCGA-K4-AAQO-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-KQ-A41P,TCGA-KQ-A41P-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-KQ-A41P,TCGA-KQ-A41P-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-LT-A5Z6,TCGA-LT-A5Z6-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-LT-A5Z6,TCGA-LT-A5Z6-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-LT-A5Z6,TCGA-LT-A5Z6-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-LT-A5Z6,TCGA-LT-A5Z6-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-SY-A9G5,TCGA-SY-A9G5-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-SY-A9G5,TCGA-SY-A9G5-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-SY-A9G5,TCGA-SY-A9G5-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-SY-A9G5,TCGA-SY-A9G5-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-UY-A8OB,TCGA-UY-A8OB-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-UY-A8OB,TCGA-UY-A8OB-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-UY-A8OB,TCGA-UY-A8OB-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-UY-A8OB,TCGA-UY-A8OB-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SH,TCGA-XF-A9SH-01A,TCGA-BLCA,classification_of_tumor,recurrence,clinical_jsonl
+TCGA-XF-A9SH,TCGA-XF-A9SH-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-A9SH,TCGA-XF-A9SH-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SK,TCGA-XF-A9SK-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-A9SK,TCGA-XF-A9SK-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-A9SK,TCGA-XF-A9SK-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-A9SK,TCGA-XF-A9SK-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SU,TCGA-XF-A9SU-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-XF-A9SU,TCGA-XF-A9SU-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-XF-A9SU,TCGA-XF-A9SU-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SV,TCGA-XF-A9SV-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-XF-A9SV,TCGA-XF-A9SV-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-XF-A9SV,TCGA-XF-A9SV-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SX,TCGA-XF-A9SX-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-XF-A9SX,TCGA-XF-A9SX-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-A9SX,TCGA-XF-A9SX-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9SY,TCGA-XF-A9SY-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-XF-A9SY,TCGA-XF-A9SY-01A,TCGA-BLCA,morphology,8140/3,clinical_jsonl
+TCGA-XF-A9SY,TCGA-XF-A9SY-01A,TCGA-BLCA,primary_diagnosis,"Adenocarcinoma, NOS",clinical_jsonl
+TCGA-XF-A9SZ,TCGA-XF-A9SZ-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-XF-A9SZ,TCGA-XF-A9SZ-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-A9SZ,TCGA-XF-A9SZ-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9T4,TCGA-XF-A9T4-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-A9T4,TCGA-XF-A9T4-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-A9T4,TCGA-XF-A9T4-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-A9T4,TCGA-XF-A9T4-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-A9T5,TCGA-XF-A9T5-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-XF-A9T5,TCGA-XF-A9T5-01A,TCGA-BLCA,primary_diagnosis,"Papillary transitional cell carcinoma, non-invasive",clinical_jsonl
+TCGA-XF-AAME,TCGA-XF-AAME-01A,TCGA-BLCA,classification_of_tumor,recurrence,clinical_jsonl
+TCGA-XF-AAME,TCGA-XF-AAME-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-AAME,TCGA-XF-AAME-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAMG,TCGA-XF-AAMG-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-AAMG,TCGA-XF-AAMG-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-AAMG,TCGA-XF-AAMG-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-AAMG,TCGA-XF-AAMG-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAMJ,TCGA-XF-AAMJ-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-XF-AAMR,TCGA-XF-AAMR-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-XF-AAMR,TCGA-XF-AAMR-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma, NOS",clinical_jsonl
+TCGA-XF-AAMY,TCGA-XF-AAMY-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-AAMY,TCGA-XF-AAMY-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-AAMY,TCGA-XF-AAMY-01A,TCGA-BLCA,morphology,8130/3,clinical_jsonl
+TCGA-XF-AAMY,TCGA-XF-AAMY-01A,TCGA-BLCA,primary_diagnosis,Papillary transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAN0,TCGA-XF-AAN0-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-AAN0,TCGA-XF-AAN0-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-AAN0,TCGA-XF-AAN0-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-AAN0,TCGA-XF-AAN0-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAN3,TCGA-XF-AAN3-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-AAN3,TCGA-XF-AAN3-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-AAN3,TCGA-XF-AAN3-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-AAN3,TCGA-XF-AAN3-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAN5,TCGA-XF-AAN5-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-XF-AAN5,TCGA-XF-AAN5-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-XF-AAN5,TCGA-XF-AAN5-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-XF-AAN5,TCGA-XF-AAN5-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-XF-AAN7,TCGA-XF-AAN7-01A,TCGA-BLCA,classification_of_tumor,Synchronous primary,clinical_jsonl
+TCGA-XF-AAN7,TCGA-XF-AAN7-01A,TCGA-BLCA,morphology,8140/3,clinical_jsonl
+TCGA-XF-AAN7,TCGA-XF-AAN7-01A,TCGA-BLCA,primary_diagnosis,"Adenocarcinoma, NOS",clinical_jsonl
+TCGA-YC-A89H,TCGA-YC-A89H-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-YC-A89H,TCGA-YC-A89H-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-YC-A89H,TCGA-YC-A89H-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-YC-A89H,TCGA-YC-A89H-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-YF-AA3L,TCGA-YF-AA3L-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-YF-AA3L,TCGA-YF-AA3L-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-YF-AA3L,TCGA-YF-AA3L-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-YF-AA3L,TCGA-YF-AA3L-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-ZF-AA4V,TCGA-ZF-AA4V-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-ZF-AA4V,TCGA-ZF-AA4V-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-ZF-AA4V,TCGA-ZF-AA4V-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-ZF-AA4V,TCGA-ZF-AA4V-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-ZF-AA51,TCGA-ZF-AA51-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-ZF-AA51,TCGA-ZF-AA51-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-ZF-AA51,TCGA-ZF-AA51-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-ZF-AA51,TCGA-ZF-AA51-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-ZF-AA53,TCGA-ZF-AA53-01A,TCGA-BLCA,classification_of_tumor,Prior primary,clinical_jsonl
+TCGA-ZF-AA53,TCGA-ZF-AA53-01A,TCGA-BLCA,morphology,8010/2,clinical_jsonl
+TCGA-ZF-AA53,TCGA-ZF-AA53-01A,TCGA-BLCA,primary_diagnosis,"Carcinoma in situ, NOS",clinical_jsonl
+TCGA-ZF-AA58,TCGA-ZF-AA58-01A,TCGA-BLCA,classification_of_tumor,primary,clinical_jsonl
+TCGA-ZF-AA58,TCGA-ZF-AA58-01A,TCGA-BLCA,tumor_grade,High Grade,clinical_jsonl
+TCGA-ZF-AA58,TCGA-ZF-AA58-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-ZF-AA58,TCGA-ZF-AA58-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl
+TCGA-ZF-AA5H,TCGA-ZF-AA5H-01A,TCGA-BLCA,classification_of_tumor,metastasis,clinical_jsonl
+TCGA-ZF-AA5H,TCGA-ZF-AA5H-01A,TCGA-BLCA,morphology,8120/3,clinical_jsonl
+TCGA-ZF-AA5H,TCGA-ZF-AA5H-01A,TCGA-BLCA,primary_diagnosis,Transitional cell carcinoma,clinical_jsonl

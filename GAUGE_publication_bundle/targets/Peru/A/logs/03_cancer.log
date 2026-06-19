@@ -1,0 +1,86 @@
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+======================================================================
+Script 03: Cancer-Type-Specific Perturbation Analysis
+======================================================================
+Loading prepared data from /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/data/processed/default/.cache/prepare/d78ee85a28b06384179852e5/prepared.pkl ...
+Loading result-dir artifacts from /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/true/artifacts.pkl ...
+Loading model from /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/true ...
+Loading config from /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/true/default.yaml ...
+  Test rows: 45026, Test cells: 190
+  Metadata for 190 test cells
+
+  Cancer type distribution (test set):
+    Non-Small Cell Lung Carcinoma            n=18
+    Breast Carcinoma                         n=13
+    Melanoma                                 n=12
+    Ovarian Carcinoma                        n=11
+    Neuroblastoma                            n=9
+    Small Cell Lung Carcinoma                n=9
+    B-Cell Non-Hodgkin's Lymphoma            n=8
+    Acute Myeloid Leukemia                   n=7
+    Other Solid Cancers                      n=6
+    T-Lymphoblastic Leukemia                 n=6
+    Glioblastoma                             n=6
+    Pancreatic Carcinoma                     n=5
+    Kidney Carcinoma                         n=5
+    Oral Cavity Carcinoma                    n=5
+    Hepatocellular Carcinoma                 n=5
+    Colorectal Carcinoma                     n=4
+    Esophageal Squamous Cell Carcinoma       n=4
+    B-Lymphoblastic Leukemia                 n=4
+    Ewing's Sarcoma                          n=4
+    Gastric Carcinoma                        n=4
+
+--- NSCLC: 29 test cells ---
+  Focus drugs: ['Erlotinib', 'Gefitinib', 'Lapatinib']
+  Focus genes: ['EGFR', 'ERBB2', 'MET']
+  * Erlotinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0038 n=28
+  * Gefitinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0015 n=28
+  * Lapatinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0035 n=29
+  * Lapatinib            ← ERBB2      [KNOWN TARGET] ΔAU=-0.0145 n=29
+
+--- Melanoma: 12 test cells ---
+  Focus drugs: ['Dabrafenib', 'Trametinib', 'Selumetinib']
+  Focus genes: ['CDKN2A']
+
+--- AML: 7 test cells ---
+  Focus drugs: ['Venetoclax', 'Cytarabine', 'Dasatinib']
+  Focus genes: ['BCL2', 'KIT']
+  * Venetoclax           ← BCL2       [KNOWN TARGET] ΔAU=-0.0281 n=7
+
+  SKIP CLL_DLBCL: only 0 test cells
+
+--- Breast: 13 test cells ---
+  Focus drugs: ['Lapatinib', 'Alpelisib', 'Palbociclib']
+  Focus genes: ['ERBB2', 'EGFR', 'CCND1']
+  * Lapatinib            ← ERBB2      [KNOWN TARGET] ΔAU=-0.0190 n=12
+  * Lapatinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0077 n=12
+
+--- Colorectal: 4 test cells ---
+  Focus drugs: ['Erlotinib', 'Gefitinib', 'Trametinib']
+  Focus genes: ['EGFR']
+  * Erlotinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0025 n=4
+  * Gefitinib            ← EGFR       [KNOWN TARGET] ΔAU=-0.0009 n=4
+
+--- Pancreatic: 5 test cells ---
+  Focus drugs: ['Erlotinib', 'Olaparib']
+  Focus genes: []
+
+--- Ovarian: 11 test cells ---
+  Focus drugs: ['Olaparib', 'Niraparib', 'Rucaparib']
+  Focus genes: []
+
+--- Known Target Rank within Cancer Type ---
+  AML          | Venetoclax           ← BCL2       | ΔAU=-0.0281 | n=7
+  Breast       | Lapatinib            ← ERBB2      | ΔAU=-0.0190 | n=12
+  NSCLC        | Lapatinib            ← ERBB2      | ΔAU=-0.0145 | n=29
+  Breast       | Lapatinib            ← EGFR       | ΔAU=-0.0077 | n=12
+  NSCLC        | Erlotinib            ← EGFR       | ΔAU=-0.0038 | n=28
+  NSCLC        | Lapatinib            ← EGFR       | ΔAU=-0.0035 | n=29
+  Colorectal   | Erlotinib            ← EGFR       | ΔAU=-0.0025 | n=4
+  NSCLC        | Gefitinib            ← EGFR       | ΔAU=-0.0015 | n=28
+  Colorectal   | Gefitinib            ← EGFR       | ΔAU=-0.0009 | n=4
+
+All outputs → /mnt/raid5/xujing/KG/Peru/A/results/03_cancer_type
+Script 03 complete.

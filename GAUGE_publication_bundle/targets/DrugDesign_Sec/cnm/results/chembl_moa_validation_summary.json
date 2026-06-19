@@ -1,0 +1,36 @@
+{
+  "n_drugs_with_moa": 83,
+  "n_moa_classes": 23,
+  "correlation_analysis": {
+    "overall_mean_within_moa_r": 0.7242,
+    "overall_mean_between_moa_r": 0.5443,
+    "delta_within_vs_between": 0.1799,
+    "mwu_within_gt_between_pval": 2.507201986243135e-47,
+    "n_within_pairs_total": 810,
+    "n_between_pairs_total": 16205
+  },
+  "holdout_moa_recovery": {
+    "n_holdout_drugs_with_moa": 130,
+    "n_positive_delta": 107,
+    "frac_positive_delta": 0.8231,
+    "mean_delta_same_vs_diff": 0.1722,
+    "wilcoxon_delta_gt_zero_pval": 3.1954598269091165e-15
+  },
+  "moa_class_distribution": {
+    "EGFR_inhibitor": 12,
+    "BCL2_inhibitor": 6,
+    "taxane": 5,
+    "ALK_inhibitor": 5,
+    "MEK_inhibitor": 5,
+    "BRAF_inhibitor": 4,
+    "CDK4_6_inhibitor": 4,
+    "mTOR_inhibitor": 4,
+    "multikinase_inhibitor": 4,
+    "topo1_inhibitor": 3,
+    "antimetabolite": 3,
+    "alkylating": 3,
+    "platinum": 3,
+    "vinca_alkaloid": 3,
+    "BCR_ABL_inhibitor": 3
+  }
+}

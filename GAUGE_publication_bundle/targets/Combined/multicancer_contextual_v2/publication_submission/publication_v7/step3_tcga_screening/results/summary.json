@@ -1,0 +1,14 @@
+{
+  "n_patients": 11370,
+  "n_drugs": 274,
+  "n_cancer_types": 33,
+  "n_combo_pairs_total": 1234233,
+  "pca_evr_pc1": 0.2673,
+  "pca_evr_pc2": 0.1798,
+  "km_significant_cancers": [
+    "TCGA-CESC"
+  ],
+  "cox_significant_cancers": [
+    "TCGA-CESC"
+  ]
+}

@@ -1,0 +1,95 @@
+task_dir: strategy_quantile_map_hvg2000_task01/task_13_tcga_consensus_subtype_clustering
+task_title: Strategy Quantile Map Task 13 TCGA Consensus Subtype Clustering
+task_purpose: Identify TCGA subtype clusters with consensus hierarchical clustering
+  and validate them against subtype, mechanism, drug/MoA, survival, and optional external
+  cohort projections.
+module: task_13_tcga_consensus_subtype_clustering
+source_snapshot_dir: task_00_source_snapshot
+source_run_dir: /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260524_140841
+analysis_scope:
+  pan_cancer: true
+  within_cancer: true
+cohort_filters:
+  single_agent_response_only: true
+  tcga_expression_source: /mnt/raid5/xujing/Agent/Datasets/TCGA/h5ad_outputs/tcga_gene_expression_tpm_therapies_split.h5ad
+thresholds:
+  response_min_responder: 5
+  response_min_nonresponder: 5
+  response_min_total: 15
+  sensitive_resistant_quantiles:
+  - 0.2
+  - 0.8
+  robustness_quantiles:
+  - 0.05
+  - 0.1
+  - 0.5
+  - 0.9
+  - 0.95
+validation:
+  subtype_min_labeled_patients: 10
+  mechanism_min_features: 5
+  drug_moa_min_episodes: 3
+  survival_min_cluster_size: 10
+  survival_min_events: 5
+  covariate_min_events: 5
+  survival_covariates:
+  - age_at_diagnosis
+  - sex_binary
+  - stage_broad
+  survival_strata:
+    pan_cancer: project_id
+    within_cancer: null
+  multiple_testing_method: bh
+truth_sources:
+  task08_patient_explanations: task_08_tcga_patient_explanations_and_kg_consistency/outputs/tcga_patient_drug_explanations.csv
+  task08_source_contribution: task_08_tcga_patient_explanations_and_kg_consistency/outputs/tcga_source_contribution_by_prediction.csv
+  task08_top_edges: task_08_tcga_patient_explanations_and_kg_consistency/outputs/tcga_top_edges_by_prediction.csv
+  task08_top_nodes: task_08_tcga_patient_explanations_and_kg_consistency/outputs/tcga_top_nodes_by_prediction.csv
+  task08_top_paths: task_08_tcga_patient_explanations_and_kg_consistency/outputs/tcga_top_paths_by_prediction.csv
+  task01_patient_drug_predictions: task_01_dataset_profile_and_prediction_export/outputs/patient_drug_predictions.csv
+  task01_patient_key_map: task_01_dataset_profile_and_prediction_export/outputs/patient_key_map.csv
+  subtype_truth_tables:
+  - name: brca_pam50
+    path: task_13_tcga_consensus_subtype_clustering/inputs/disabled_brca_pam50_not_materialized.csv
+  - name: tcga_joinable_clinicopathologic_labels
+    path: task_13_tcga_consensus_subtype_clustering/inputs/tcga_joinable_clinicopathologic_labels.csv
+  mutation_truth: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/mc3.v0.2.8.PUBLIC.nonsilentGene.xena
+  survival_truth: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/Survival_SupplementalTable_S1_20171025_xena_sp.xlsx
+  primekg_truth: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/drug/PrimeKG/kg.csv
+  biomarker_cgi: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/biomarkers_cgi.tsv
+  biomarker_mc3: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/mc3.v0.2.8.PUBLIC.nonsilentGene.xena
+  civic_feature_summaries: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/civicdb/01-May-2026-FeatureSummaries.tsv
+  civic_clinical_evidence: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/biomarker/civicdb/01-May-2026-AcceptedClinicalEvidenceSummaries.tsv
+  tcga_clinical_metadata_root: /mnt/raid5/xujing/Agent/Datasets/TCGA
+  external_cohort_tables:
+  - name: external_projection_optional_disabled
+    path: task_13_tcga_consensus_subtype_clustering/inputs/disabled_external_projection_not_materialized.csv
+input_tables:
+  task08_reference_audit: task_08_tcga_patient_explanations_and_kg_consistency/outputs/source_explain_reference_audit.csv
+  task01_patient_drug_predictions: task_01_dataset_profile_and_prediction_export/outputs/patient_drug_predictions.csv
+output_prefix: task_13_tcga_consensus_subtype_clustering
+figure_preset: tcga_full_exploration_default
+strategy_name: quantile_map_hvg2000_task01
+clustering:
+  random_seed: 7
+  primary_iterations: 1000
+  sensitivity_iterations: 20
+  resample_sample_fraction: 0.8
+  resample_feature_fraction: 0.8
+  pan_cancer_min_patients: 40
+  within_cancer_min_patients: 30
+  pan_cancer_k_min: 2
+  pan_cancer_k_max: 8
+  min_cluster_size_absolute: 5
+  min_cluster_size_fraction: 0.05
+  pac_lower_bound: 0.1
+  pac_upper_bound: 0.9
+  top_n_sources: 12
+  top_n_edge_types: 20
+  top_n_path_templates: 10
+  top_n_moa_labels: 25
+external_projection:
+  enabled: false
+  sample_col: sample_id
+  label_col: label
+  project_col: project_id

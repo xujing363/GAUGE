@@ -1,0 +1,7 @@
+2026-05-24 15:11:16,457 INFO Starting Task 07 survival association run
+2026-05-24 15:11:16,459 INFO Loading task inputs
+2026-05-24 15:11:16,861 INFO Building truth OS frame from /mnt/raid5/xujing/Agent/Datasets/TCGA/h5ad_outputs/tcga_gene_expression_tpm_therapies_split.h5ad
+2026-05-24 15:11:17,910 INFO Writing task-local outputs
+2026-05-24 15:11:17,948 INFO Rendering figures
+2026-05-24 15:11:18,771 INFO Computing parity and truth-validation summaries
+2026-05-24 15:11:20,418 INFO Task 07 completed

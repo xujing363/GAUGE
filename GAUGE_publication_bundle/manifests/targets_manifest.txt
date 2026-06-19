@@ -1,0 +1,9 @@
+benchmarking/01_random_cell_split/HVG2000/results/true
+benchmarking/02_drug_split/HVG2000/results/true
+benchmarking/07_tcga_actual_treatment/HVG2000/strategy_quantile_map_hvg2000_task01
+Combined/multicancer_contextual_v2/publication_submission/publication_v7
+DrugDesign_Sec/cnm
+DrugDesign_Sec/cnm_novelDrug
+Peru/A
+Peru/B
+Peru/C

@@ -1,0 +1,87 @@
+task_dir: strategy_quantile_map_hvg2000_task01/task_06_pathway_concordance
+task_title: Strategy Quantile Map Task 06 Pathway Concordance
+task_purpose: Test pre-registered canonical pathway programs for concordance with predicted sensitivity and response using strategy-local biomarker truth.
+module: task_06_pathway_concordance
+source_snapshot_dir: task_00_source_snapshot
+source_run_dir: /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260524_140841
+analysis_scope:
+  pan_cancer: true
+  within_cancer: true
+thresholds:
+  min_pathway_episode_count: 25
+  min_pathway_positive_sensitive: 8
+  min_within_project_episode_count: 20
+  min_within_project_pathway_episode_count: 5
+  min_within_project_positive_sensitive: 2
+validation:
+  multiple_testing_method: bh
+truth_sources:
+  official_pathway_programs: pre_registered_canonical_pathway_modules
+input_tables:
+  task08_biomarker_truth: task_08_tcga_patient_explanations_and_kg_consistency/outputs/biomarker_truth_table.csv
+  task10_ranked_biomarkers: task_10_kg_biomarker_discovery/outputs/kg_biomarker_ranked.csv
+output_prefix: task_06_pathway_concordance
+strategy_name: quantile_map_hvg2000_task01
+pathway_programs:
+  PI3K_AKT_MTOR:
+    - PIK3CA
+    - PIK3R1
+    - PTEN
+    - AKT1
+    - AKT2
+    - MTOR
+    - TSC1
+    - TSC2
+    - RICTOR
+    - RPTOR
+    - STK11
+  MAPK_SIGNALING:
+    - KRAS
+    - NRAS
+    - HRAS
+    - BRAF
+    - RAF1
+    - MAP2K1
+    - MAP2K2
+    - MAPK1
+    - MAPK3
+    - NF1
+    - DUSP4
+  RTK_SIGNALING:
+    - EGFR
+    - ERBB2
+    - ERBB3
+    - ERBB4
+    - MET
+    - FGFR1
+    - FGFR2
+    - FGFR3
+    - KIT
+    - PDGFRA
+    - KDR
+    - RET
+    - ALK
+    - ROS1
+  DNA_DAMAGE_REPAIR:
+    - BRCA1
+    - BRCA2
+    - ATM
+    - ATR
+    - CHEK1
+    - CHEK2
+    - PALB2
+    - RAD51
+    - BAP1
+    - ARID1A
+    - TP53
+  NOTCH_WNT_HEDGEHOG:
+    - NOTCH1
+    - NOTCH2
+    - FBXW7
+    - CTNNB1
+    - APC
+    - AXIN1
+    - SMO
+    - PTCH1
+    - SUFU
+    - GLI1

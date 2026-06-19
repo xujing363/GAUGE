@@ -1,0 +1,19 @@
+strategy_name: quantile_map_hvg2000_task01
+strategy_type: gene_wise_quantile_mapping
+description: Align TCGA HVG2000 expression to the empirical per-gene GDSC fit-cell distribution with quantile mapping, then rerun task01 metrics using the frozen HVG2000 source model.
+
+source_run_dir: /mnt/raid5/xujing/KG/benchmarking/01_random_cell_split/HVG2000/results/full_20260524_140841
+tcga_h5ad: /mnt/raid5/xujing/Agent/Datasets/TCGA/h5ad_outputs/tcga_gene_expression_tpm_therapies_split.h5ad
+gdsc_expression: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/GDSC/rnaseq_merged_rsem_tpm_20260323.csv
+gdsc_gene_identifiers: /mnt/raid5/xujing/KG/KG_GAUGE_PublicData/GDSC/gene_identifiers_20241212.csv
+
+device: cpu
+batch_size: 512
+min_group_size: 3
+top_k: 5
+
+output_dirs:
+  result_dir: strategy_quantile_map_hvg2000_task01/results
+  task01_export_dir: strategy_quantile_map_hvg2000_task01/task_01_dataset_profile_and_prediction_export/outputs
+
+baseline_result_dir: results/hvg2000_tcga_from_source_20260524

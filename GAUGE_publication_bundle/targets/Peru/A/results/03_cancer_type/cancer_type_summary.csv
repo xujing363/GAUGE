@@ -1,0 +1,8 @@
+cancer_type,n_test_cells,n_focus_drugs,n_focus_genes,n_known_target_pairs
+NSCLC,29,3,3,4
+Melanoma,12,3,1,0
+AML,7,3,2,1
+Breast,13,3,3,2
+Colorectal,4,3,1,2
+Pancreatic,5,2,0,0
+Ovarian,11,3,0,0

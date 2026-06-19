@@ -1,0 +1,6 @@
+cancer,nci_background_rate,nci_background_n_pairs,kg_n_pairs_matched,kg_n_synergistic,kg_synergy_rate,enrichment_ratio,binomial_p,auc_complementarity,auc_ci,auc_perm_p
+Melanoma,0.2067,5350,119,41,0.3445,1.667,3.39e-04,0.6545,0.538–0.767,0.0032
+NSCLC,0.2143,5352,119,46,0.3866,1.804,1.48e-05,0.5795,0.467–0.693,0.0702
+Breast,0.259,5347,119,39,0.3277,1.265,5.67e-02,0.7054,0.600–0.800,0.0002
+Ovarian,0.1871,5354,119,41,0.3445,1.841,3.49e-05,0.6557,0.542–0.758,0.0016
+POOLED,0.2168,—,476,167,0.3508,1.618,1.45e-11,0.6424,—,0.0002
