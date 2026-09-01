@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.5.0 — 2026-09-01
+Reference implementation, benchmark data and trained checkpoints (`benchmark/`).
+
+- **`benchmark/`** — the model itself, packaged so it can be retrained or
+  re-scored from a clean clone: `gauge_bench/model.py` (architecture, targets
+  and training objectives), `data.py`, `train.py`, `evaluate.py`, `metrics.py`.
+- **Benchmark data in a pickle-free format** — the GDSC2 contract (194,058
+  cell-line × drug responses, a 944 × 2,000 tumour-state matrix, and the
+  12,541-node / 86,376-edge ChEMBL + DRKG + PrimeKG graph) as parquet/npz, with
+  three held-out-compound partitions (drug entity, Bemis–Murcko scaffold,
+  Butina chemical cluster) × five seeds. The rebuilt loader reproduces the
+  original pipeline's predictions to 4.2e-7 across all 15 runs.
+- **15 trained checkpoints** with per-epoch history, metrics and run
+  configuration, plus per-seed and aggregate result tables.
+- Reproducibility is documented honestly: GPU training is not bit-reproducible
+  (atomic `index_add_` in the graph attention), so the published numbers are
+  reproduced by scoring the shipped checkpoints, not by retraining.
+- Test suite extended with `tests/test_benchmark.py` (dataset integrity,
+  drug-disjointness of every split/seed, and a CPU checkpoint round-trip
+  against the recorded metrics).
+
 ## 1.4.0 — 2026-06-18
 GAUGE Assistant expansion + a GAUGE-free drug-sensitivity knowledge base.
 

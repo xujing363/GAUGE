@@ -97,6 +97,7 @@ GAUGE/
 │   ├── bio_tools.py      Opt-in external biomedical DB tools (OpenTargets/PubChem/UniProt/ChEMBL/DGIdb/Reactome/cBioPortal/ClinicalTrials.gov/Europe PMC)
 │   └── vendor/drugwm/    Vendored minimal model code (no training code, no absolute paths)
 ├── models/                Self-contained exported model bundles (gdsc_cell_split, gdsc_drug_split, prism_secondary)
+├── benchmark/             Reference implementation, benchmark data and trained checkpoints (retrain everything from scratch)
 ├── example_data/          Demo data: real TCGA patients, DrugComb pairs, GTEx tissues, design candidates, expression templates
 ├── kg_types.py            Pickle-compatibility class for the bundled knowledge-graph artifacts
 ├── scripts/               Maintenance-only: re-export bundles / re-extract demo data from source repositories
@@ -106,6 +107,24 @@ GAUGE/
 ├── environment.yml, requirements.txt, pyproject.toml, Dockerfile
 └── run_gauge.sh / run_gauge.bat   one-command launchers
 ```
+
+## Reproducing the model
+
+The application ships ready-to-use checkpoints. If you want the model itself —
+the architecture, the benchmark data, and the weights behind the reported
+numbers — see [`benchmark/`](benchmark/README.md):
+
+```bash
+cd benchmark
+pip install -r requirements.txt
+python -m gauge_bench.train --split drug_split --seed 5 --out-dir runs/drug_split_seed5
+```
+
+It is self-contained: the GDSC2 benchmark (194,058 cell-line × drug responses,
+944 × 2,000 tumour-state matrix, a 12,541-node / 86,376-edge ChEMBL + DRKG +
+PrimeKG graph), the three held-out-compound splits × five seeds, and all 15
+trained checkpoints are in the repository — no external download, no pickled
+lab objects.
 
 ## Configuring the GAUGE Assistant
 

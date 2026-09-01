@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gauge-core"
-version = "1.4.0"
+version = "1.5.0"
 description = "GAUGE: state-adaptive knowledge-graph gating for cancer drug-response prediction (inference engine + software)"
 readme = "README.md"
 requires-python = ">=3.10"

@@ -1,0 +1,6 @@
+,test_overall_pcc,test_overall_pcc,test_within_drug_pcc,test_within_drug_pcc,test_within_drug_spearman,test_within_drug_spearman,test_within_cell_pcc,test_within_cell_pcc,test_raw_auc_rmse,test_raw_auc_rmse
+,mean,std,mean,std,mean,std,mean,std,mean,std
+split,,,,,,,,,,
+chemcluster_split,0.2479,0.0705,0.3071,0.0379,0.2902,0.0485,0.1631,0.0572,0.1526,0.0259
+drug_split,0.3284,0.0514,0.3271,0.0243,0.3068,0.0281,0.2409,0.0649,0.1554,0.0249
+scaffold_split,0.2984,0.0793,0.304,0.0318,0.2795,0.0346,0.2095,0.0874,0.1501,0.016

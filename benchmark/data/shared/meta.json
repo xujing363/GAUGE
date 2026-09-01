@@ -1,0 +1,14 @@
+{
+  "state_dim": 2000,
+  "n_cells": 944,
+  "n_drug_bank": 243,
+  "branch_names": [
+    "ChEMBL",
+    "DRKG",
+    "PrimeKG"
+  ],
+  "n_kg_nodes": 12541,
+  "n_kg_edges": 86376,
+  "n_pairs": 194058,
+  "fingerprint_bits": 2048
+}
