@@ -43,6 +43,10 @@ them exactly, score those checkpoints with `gauge_bench.evaluate` rather than
 retraining — the released data pipeline reproduces the shipped predictions to
 4.2e-7 (float32 round-trip precision) across all 15 runs.
 
+Retraining lands close but not on top: a fresh 50-epoch `drug_split` seed 5 run
+reaches test within-drug PCC 0.358 (shipped checkpoint: 0.351) and overall PCC
+0.263 (shipped: 0.296) — within the 0.051 seed-to-seed s.d. of that split.
+
 ## Model
 
 Three-stage architecture (`gauge_bench/model.py`):
