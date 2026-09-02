@@ -164,7 +164,13 @@ from gauge_core import load_bundle, predict_one, rank_drugs
 
 bundle = load_bundle("gdsc_cell_split")
 result = predict_one(bundle, "SIDM00003", "Camptothecin")
-print(result.value_hat, result.auc_hat, result.kg_alpha)
+
+# auc_hat: absolute predicted AUC, lower = more sensitive. Use this to compare
+#          different drugs (rank_drugs sorts on it).
+# value_hat: relative sensitive value (RTV) = within-drug percentile. Use this
+#          only to compare samples for a FIXED drug -- it is not comparable
+#          across drugs. See docs/FAQ.md.
+print(result.auc_hat, result.absolute_activity, result.value_hat, result.kg_alpha)
 ```
 
 `gauge_core` has no dependency on the original training repository or any

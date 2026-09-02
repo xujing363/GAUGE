@@ -59,9 +59,16 @@ def fit_state_projection(expr: pd.DataFrame, train_cell_lines: list[str], n_comp
     return genes, imputer, scaler, pca
 
 
-def project_expression(expr: pd.DataFrame, genes: list[str], imputer: SimpleImputer, scaler: StandardScaler, pca: PCA) -> np.ndarray:
+def project_expression(expr: pd.DataFrame, genes: list[str], imputer: SimpleImputer, scaler: StandardScaler, pca: PCA | None) -> np.ndarray:
     aligned = expr.reindex(columns=genes, fill_value=0.0).astype(np.float32)
-    return pca.transform(scaler.transform(imputer.transform(aligned)))
+    scaled = scaler.transform(imputer.transform(aligned))
+    # `pca is None` = direct HVG-identity state (no rotation): column i is the
+    # standardized expression of genes[i]. Bundles trained with
+    # `state_projection_policy_version=direct_hvg2000_no_pca_v1` persist
+    # artifacts.pca = None; PCA-based bundles are unaffected.
+    if pca is None:
+        return scaled
+    return pca.transform(scaled)
 
 
 def fit_relative_reward(responses: pd.DataFrame) -> tuple[dict[int, float], dict[int, np.ndarray]]:

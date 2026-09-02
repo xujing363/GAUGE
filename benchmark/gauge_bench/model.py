@@ -93,6 +93,14 @@ def build_relative_value_target(
 
     Lower AUC (greater sensitivity) -> higher RTV. The reference distribution is
     fitted on TRAINING cell lines only and then frozen.
+
+    NOTE: RTV is a *within-drug* percentile and must not be used to compare one
+    drug against another -- each drug is rank-normalised against its own
+    reference distribution, so the between-drug potency information a cross-drug
+    comparison needs has been divided out. It is a valid training target (it is
+    what the within-drug ranking losses optimise) and a valid read-out for
+    "how does this sample respond to this drug relative to other samples", but
+    cross-drug ranking must use the absolute AUC head instead.
     """
     out = frame.copy()
     out["relative_value_train"] = np.nan

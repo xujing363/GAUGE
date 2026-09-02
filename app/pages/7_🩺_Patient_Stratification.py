@@ -84,18 +84,25 @@ if st.button("🚀 Compare", type="primary", disabled=sample_input is None):
     except DrugNotFoundError as exc:
         st.error(str(exc))
     else:
-        vh_diff = result_a.value_hat - result_b.value_hat
-        preferred = result_a.drug.name if vh_diff > 0 else result_b.drug.name
+        # Choosing between two different drugs is a CROSS-DRUG comparison, so it
+        # is decided on the absolute predicted AUC (lower = more sensitive). The
+        # relative sensitive value is a within-drug percentile and would compare
+        # each drug only against its own reference distribution.
+        auc_diff = result_b.auc_hat - result_a.auc_hat  # > 0 favours drug A
+        preferred = result_a.drug.name if auc_diff > 0 else result_b.drug.name
 
         c1, c2, c3 = st.columns(3)
-        c1.metric(result_a.drug.name, f"{result_a.value_hat * 100:.0f} / 100")
-        c2.metric(result_b.drug.name, f"{result_b.value_hat * 100:.0f} / 100")
-        c3.metric("Model-preferred option", preferred, delta=f"Δ relative sensitive value = {abs(vh_diff) * 100:.1f}")
+        c1.metric(result_a.drug.name, f"AUC {result_a.auc_hat:.3f}")
+        c2.metric(result_b.drug.name, f"AUC {result_b.auc_hat:.3f}")
+        c3.metric("Model-preferred option", preferred, delta=f"Δ absolute AUC = {abs(auc_diff):.3f}")
 
         st.markdown(
-            f"GAUGE's relative sensitive value favours **{preferred}** for this sample "
-            f"(Δ relative sensitive value = {vh_diff:+.3f}, using the same definition as the paper's virtual-RCT "
-            "analysis: positive values favour the first-listed drug)."
+            f"GAUGE's **absolute predicted AUC** favours **{preferred}** for this sample "
+            f"(Δ absolute AUC = {auc_diff:+.3f} in favour of the first-listed drug; lower AUC = "
+            "more sensitive). Within-drug relative sensitive values for reference: "
+            f"{result_a.drug.name} {result_a.value_hat * 100:.0f}/100, "
+            f"{result_b.drug.name} {result_b.value_hat * 100:.0f}/100 \u2014 these are percentiles "
+            "inside each drug's own response distribution and must not be compared with each other."
         )
         if actual_drug_received:
             agreement = "agrees with" if preferred.lower() == actual_drug_received.lower() else "differs from"

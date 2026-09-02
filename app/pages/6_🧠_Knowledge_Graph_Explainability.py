@@ -71,7 +71,7 @@ if demo or st.button("🚀 Explain", type="primary", disabled=sample_input is No
                 st.plotly_chart(fig, use_container_width=True)
             with c2:
                 st.metric("Gate strength", f"{result.gate_strength:.2f}", help="0 = KG evidence ignored, 1 = fully relied upon")
-                st.metric("Predicted relative sensitive value", f"{result.value_hat * 100:.0f} / 100")
+                st.metric("Relative sensitive value (within this drug)", f"{result.value_hat * 100:.0f} / 100")
                 st.write("**Knowledge-graph coverage for this drug:**")
                 for source, has_it in result.drug.kg_coverage.items():
                     st.write(f"{'✅' if has_it else '⬜'} {source}")

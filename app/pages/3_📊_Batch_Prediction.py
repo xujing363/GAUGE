@@ -101,7 +101,7 @@ if st.button("🚀 Run batch prediction", type="primary", disabled=n_jobs == 0):
                     "DRUG_ID": drug_id,
                     "drug": result.drug.name,
                     "absolute_auc": result.auc_hat,
-                    "relative_sensitive_value": result.value_hat,
+                    "relative_sensitive_value_within_drug": result.value_hat,
                 }
             )
         progress.progress((i + 1) / len(selected_samples), text=f"Running predictions... ({i + 1}/{len(selected_samples)} samples)")
@@ -122,8 +122,11 @@ if "bp_results" in st.session_state:
     m2.metric("Samples", results["sample"].nunique())
     m3.metric("Drugs", results["drug"].nunique())
 
-    best = results.loc[results.groupby("sample")["relative_sensitive_value"].idxmax()]
-    pivot = results.pivot_table(index="sample", columns="drug", values="relative_sensitive_value")
+    # "best drug for this sample" and the sample x drug heatmap are CROSS-DRUG
+    # comparisons, so they are driven by the absolute predicted AUC (lower =
+    # more sensitive), not by the within-drug relative sensitive value.
+    best = results.loc[results.groupby("sample")["absolute_auc"].idxmin()]
+    pivot = results.pivot_table(index="sample", columns="drug", values="absolute_auc")
 
     tab_heat, tab_best, tab_drug, tab_table = st.tabs(
         ["🔥 Heatmap", "🏅 Best drug / sample", "💊 Drug comparison", "📋 Table"]
@@ -132,57 +135,66 @@ if "bp_results" in st.session_state:
     with tab_heat:
         if pivot.shape[0] >= 2 and pivot.shape[1] >= 2:
             fig = px.imshow(
-                pivot, color_continuous_scale="RdBu", aspect="auto",
-                labels=dict(color="relative sensitive value", x="drug", y="sample"),
-                title="Predicted relative sensitive value (sample × drug)",
+                pivot, color_continuous_scale="RdBu_r", aspect="auto",
+                labels=dict(color="absolute AUC", x="drug", y="sample"),
+                title="Predicted absolute AUC (sample × drug; lower = more sensitive)",
             )
             fig.update_layout(height=max(320, 26 * pivot.shape[0] + 120))
             st.plotly_chart(fig, use_container_width=True)
         else:
             # Heatmap needs a 2-D grid; with a single sample or drug, show a bar chart instead.
-            single = results.sort_values("relative_sensitive_value", ascending=False)
+            single = results.sort_values("absolute_auc", ascending=True)
             x, y = ("drug", "sample") if results["sample"].nunique() == 1 else ("sample", "drug")
             fig = px.bar(
-                single, x="relative_sensitive_value", y=x, color=y, orientation="h",
-                labels={"relative_sensitive_value": "Relative sensitive value", x: ""},
-                title="Predicted relative sensitive value",
+                single, x="absolute_auc", y=x, color=y, orientation="h",
+                labels={"absolute_auc": "Absolute AUC (lower = more sensitive)", x: ""},
+                title="Predicted absolute AUC",
             )
             fig.update_layout(height=max(320, 30 * len(single)))
             st.plotly_chart(fig, use_container_width=True)
 
     with tab_best:
-        st.caption("The single most promising drug GAUGE predicts for each sample.")
-        show_best = best[["sample", "drug", "relative_sensitive_value", "absolute_auc"]].sort_values(
-            "relative_sensitive_value", ascending=False
+        st.caption(
+            "The single most promising drug GAUGE predicts for each sample, chosen by the lowest "
+            "**absolute predicted AUC**. Comparing different drugs to one another requires the "
+            "absolute AUC; the relative sensitive value is a within-drug percentile and cannot "
+            "rank one drug against another."
+        )
+        show_best = best[["sample", "drug", "absolute_auc", "relative_sensitive_value_within_drug"]].sort_values(
+            "absolute_auc", ascending=True
         )
         st.dataframe(show_best, use_container_width=True, hide_index=True)
         fig_best = px.bar(
-            show_best, x="relative_sensitive_value", y="sample", color="drug", orientation="h",
-            title="Best predicted drug per sample", labels={"sample": ""},
+            show_best, x="absolute_auc", y="sample", color="drug", orientation="h",
+            title="Best predicted drug per sample (lowest absolute AUC)", labels={"sample": ""},
         )
         fig_best.update_layout(height=max(320, 30 * len(show_best)))
         st.plotly_chart(fig_best, use_container_width=True)
 
     with tab_drug:
-        st.caption("How each drug performs across the selected samples (mean ± spread).")
+        st.caption(
+            "How each drug performs across the selected samples (mean \u00b1 spread), on the "
+            "**absolute AUC** scale \u2014 the only one of the two read-outs that is comparable "
+            "between different drugs."
+        )
         agg = (
-            results.groupby("drug")["relative_sensitive_value"]
+            results.groupby("drug")["absolute_auc"]
             .agg(["mean", "min", "max", "count"]).reset_index()
-            .sort_values("mean", ascending=False)
+            .sort_values("mean", ascending=True)
         )
         fig_drug = px.bar(
             agg, x="mean", y="drug", orientation="h", color="mean",
-            color_continuous_scale="Viridis", error_x=(agg["max"] - agg["mean"]),
-            labels={"mean": "Mean relative sensitive value", "drug": ""},
-            title="Drug ranking across the cohort",
+            color_continuous_scale="Viridis_r", error_x=(agg["max"] - agg["mean"]),
+            labels={"mean": "Mean absolute AUC (lower = more sensitive)", "drug": ""},
+            title="Drug ranking across the cohort (by absolute AUC)",
         )
         fig_drug.update_layout(height=max(320, 30 * len(agg)))
         st.plotly_chart(fig_drug, use_container_width=True)
         if results["sample"].nunique() >= 2:
             fig_box = px.box(
-                results, x="drug", y="relative_sensitive_value", points="all",
-                labels={"relative_sensitive_value": "Relative sensitive value", "drug": ""},
-                title="Distribution of predicted response per drug",
+                results, x="drug", y="absolute_auc", points="all",
+                labels={"absolute_auc": "Absolute AUC (lower = more sensitive)", "drug": ""},
+                title="Distribution of predicted absolute AUC per drug",
             )
             st.plotly_chart(fig_box, use_container_width=True)
 

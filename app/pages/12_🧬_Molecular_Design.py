@@ -124,8 +124,8 @@ if st.button("🚀 Score candidates", type="primary", disabled=sample_input is N
             rows.append(
                 {
                     "smiles": moldesign.canonical(smi) or smi,
-                    "relative_sensitive_value": result.value_hat,
                     "absolute_auc": result.auc_hat,
+                    "relative_sensitive_value_within_drug": result.value_hat,
                     "nearest_drug": near.get("nearest_drug"),
                     "tanimoto": near.get("tanimoto"),
                     **{k: v for k, v in props.items() if k != "valid"},
@@ -134,7 +134,8 @@ if st.button("🚀 Score candidates", type="primary", disabled=sample_input is N
     if errors:
         st.warning(f"{len(errors)} candidate(s) could not be parsed:\n" + "\n".join(errors[:5]))
     if rows:
-        ranked = pd.DataFrame(rows).sort_values("relative_sensitive_value", ascending=False).reset_index(drop=True)
+        # Cross-compound ranking -> absolute AUC (lower = more sensitive), not RTV.
+        ranked = pd.DataFrame(rows).sort_values("absolute_auc", ascending=True).reset_index(drop=True)
         ranked.insert(0, "rank", range(1, len(ranked) + 1))
         st.session_state["md_ranked"] = ranked
 
@@ -146,26 +147,28 @@ if "md_ranked" in st.session_state:
 
     with tab_rank:
         fig = px.bar(
-            ranked.head(20).sort_values("relative_sensitive_value"), x="relative_sensitive_value", y="smiles", orientation="h",
-            color="relative_sensitive_value", color_continuous_scale="Viridis",
+            ranked.head(20).sort_values("absolute_auc", ascending=False), x="absolute_auc", y="smiles", orientation="h",
+            color="absolute_auc", color_continuous_scale="Viridis_r",
             hover_data=["nearest_drug", "tanimoto", "qed"],
-            labels={"relative_sensitive_value": "Predicted relative sensitive value", "smiles": ""},
+            labels={"absolute_auc": "Predicted absolute AUC (lower = more sensitive)", "smiles": ""},
         )
         fig.update_layout(height=max(320, 26 * min(len(ranked), 20)), yaxis=dict(tickfont=dict(size=9)))
         st.plotly_chart(fig, use_container_width=True)
         st.caption(
-            "Higher = better predicted response. Hover for the nearest known drug (Tanimoto) and QED drug-likeness."
+            "Lower absolute AUC = better predicted response. Ranking across different compounds uses the "
+            "absolute AUC, not the within-drug relative sensitive value. Hover for the nearest known drug "
+            "(Tanimoto) and QED drug-likeness."
         )
 
     with tab_struct:
-        st.caption("2-D structures of the top candidates (highest predicted relative sensitive value first).")
+        st.caption("2-D structures of the top candidates (lowest predicted absolute AUC first).")
         top = ranked.head(12)
         mols, legends = [], []
         for r in top.itertuples(index=False):
             m = Chem.MolFromSmiles(r.smiles)
             if m is not None:
                 mols.append(m)
-                legends.append(f"#{r.rank}  value={r.relative_sensitive_value:.3f}  QED={r.qed:.2f}")
+                legends.append(f"#{r.rank}  AUC={r.absolute_auc:.3f}  QED={r.qed:.2f}")
         if mols:
             grid = Draw.MolsToGridImage(mols, molsPerRow=3, subImgSize=(240, 200), legends=legends)
             st.image(grid, use_container_width=False)
@@ -174,7 +177,7 @@ if "md_ranked" in st.session_state:
 
     with tab_props:
         st.caption("Drug-likeness and physicochemical profile of each candidate.")
-        prop_cols = ["rank", "smiles", "relative_sensitive_value", "absolute_auc", "nearest_drug", "tanimoto",
+        prop_cols = ["rank", "smiles", "absolute_auc", "relative_sensitive_value_within_drug", "nearest_drug", "tanimoto",
                      "mol_weight", "logp", "qed", "tpsa", "h_donors", "h_acceptors", "rotatable_bonds", "rings", "lipinski_ok"]
         show = ranked[[c for c in prop_cols if c in ranked.columns]]
         st.dataframe(show, use_container_width=True, hide_index=True)
@@ -191,7 +194,9 @@ with st.expander("Reference: the published EGFR/ERBB lung-adenocarcinoma design 
     st.write(
         "These are real REINVENT4-generated candidates from the paper's design task, already "
         "scored and ranked by GAUGE against a TCGA lung-adenocarcinoma patient context. "
-        "`final_rank_score` blends GAUGE's relative_sensitive_value with a knowledge-graph anchor score."
+        "`final_rank_score` is the score published with that analysis; note it was computed before "
+        "cross-compound ranking was moved onto the absolute AUC, so it is reproduced here as-published "
+        "rather than recomputed."
     )
     demo_path = common.EXAMPLE_DATA_DIR / "example_design_ranked_candidates.csv"
     if demo_path.exists():

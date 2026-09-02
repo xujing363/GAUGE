@@ -171,7 +171,7 @@ def value_hat_gauge(value_hat: float) -> go.Figure:
             mode="gauge+number",
             value=value_hat * 100,
             number={"suffix": "%"},
-            title={"text": "Predicted relative sensitive value"},
+            title={"text": "Relative sensitive value (within this drug only)"},
             gauge={
                 "axis": {"range": [0, 100]},
                 "bar": {"color": "#2E86AB"},
@@ -190,9 +190,12 @@ def value_hat_gauge(value_hat: float) -> go.Figure:
 def interpretation_sentence(result) -> str:
     band = "high" if result.value_hat >= 0.66 else ("moderate" if result.value_hat >= 0.33 else "low")
     sentence = (
-        f"GAUGE predicts a **{band} relative sensitive value** "
-        f"({result.value_hat * 100:.0f}/100 on the cross-drug-comparable scale) for "
-        f"**{result.drug.name}** on this sample."
+        f"GAUGE predicts an **absolute AUC of {result.auc_hat:.3f}** for "
+        f"**{result.drug.name}** on this sample (lower = more sensitive; this is the "
+        f"quantity to use when comparing different drugs). Within this drug's own "
+        f"reference distribution the response is **{band}** "
+        f"(relative sensitive value {result.value_hat * 100:.0f}/100 \u2014 a within-drug "
+        f"percentile, not comparable across drugs)."
     )
     if not result.drug.known:
         sentence += (

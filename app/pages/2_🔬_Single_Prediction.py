@@ -112,7 +112,7 @@ if st.button("🚀 Predict", type="primary", disabled=resolved_sample_input is N
                     "sample": result.sample.label,
                     "drug": result.drug.name,
                     "absolute_auc": result.auc_hat,
-                    "relative_sensitive_value": result.value_hat,
+                    "relative_sensitive_value_within_drug": result.value_hat,
                     **({f"kg_alpha_{k}": v for k, v in result.kg_alpha.items()} if result.kg_alpha else {}),
                 }
             ]

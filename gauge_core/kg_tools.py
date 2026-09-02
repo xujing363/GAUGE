@@ -136,7 +136,7 @@ def explain_prediction(bundle: ModelBundle, uploaded: dict, cell_line: str, drug
     return {
         "cell_line": cell_line,
         "drug": result.drug.name,
-        "relative_sensitive_value": round(result.value_hat, 3),
+        "relative_sensitive_value_within_drug_only": round(result.value_hat, 3),
         "predicted_absolute_auc": round(result.auc_hat, 3),
         "kg_source_attention": kg_alpha,
         "dominant_knowledge_graph": dominant,

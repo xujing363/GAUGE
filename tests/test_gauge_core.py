@@ -85,3 +85,47 @@ def test_score_combination_modes(bundle):
     for mode in ("activity_product", "bliss", "complementarity"):
         out = score_combination(bundle, cell_id, ids[0], ids[1], mode=mode)
         assert np.isfinite(out["combination_score"])
+
+
+# ── RTV must never drive a cross-drug comparison ──────────────────────────────
+
+def test_absolute_activity_is_monotone_in_auc_and_unclipped():
+    from gauge_core import absolute_activity
+
+    # strictly decreasing in AUC, and NOT clipped: PRISM reports AUC > 1, and
+    # clipping would tie every such drug at one value and destroy the ranking.
+    assert float(absolute_activity(0.2)) > float(absolute_activity(0.9))
+    assert float(absolute_activity(1.2)) < 0.0
+    assert float(absolute_activity(2.5)) < float(absolute_activity(1.2))
+
+
+def test_rank_drugs_orders_by_absolute_auc_not_rtv(bundle):
+    cell_id = bundle.cell_state_matrix.index[0]
+    ranked = rank_drugs(bundle, cell_id, lambda_u=0.0)
+    # With no uncertainty penalty the planner order is exactly absolute AUC
+    # ascending (lower AUC = more sensitive).
+    assert ranked["auc_hat"].is_monotonic_increasing
+    assert "absolute_activity" in ranked.columns
+    # ...and it is genuinely a different order from ranking by RTV, i.e. this
+    # is not a no-op rename.
+    assert not ranked["value_hat"].is_monotonic_decreasing
+
+
+def test_rank_candidates_refuses_to_score_without_absolute_auc():
+    import pandas as pd
+    import pytest as _pytest
+    from drugwm.planner import rank_candidates
+
+    frame = pd.DataFrame({"entity_id": ["a"], "value_hat": [0.9], "uncertainty": [0.1]})
+    with _pytest.raises(KeyError, match="auc_hat"):
+        rank_candidates(frame)
+
+
+def test_combination_uses_absolute_activity_not_rtv(bundle):
+    drug_ids = bundle.drug_library["DRUG_ID"].astype(int).tolist()[:2]
+    cell_id = bundle.cell_state_matrix.index[0]
+    out = score_combination(bundle, cell_id, drug_ids[0], drug_ids[1])
+    assert "absolute_activity_a" in out and "absolute_activity_b" in out
+    a = min(max(1.0 - out["auc_hat_a"], 0.0), 1.0)
+    b = min(max(1.0 - out["auc_hat_b"], 0.0), 1.0)
+    assert out["combination_score"] == pytest.approx(a + b - a * b)

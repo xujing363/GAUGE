@@ -10,9 +10,9 @@ import pandas as pd
 import torch
 
 from drugwm.features import morgan_fp, project_expression  # noqa: E402
-from drugwm.planner import rank_candidates  # noqa: E402
+from drugwm.planner import absolute_activity, rank_candidates  # noqa: E402
 
-from .bundle import ModelBundle
+from .bundle import STAT_COLS, ModelBundle
 
 KG_BRANCH_NAMES = ("ChEMBL", "DRKG", "PrimeKG")
 
@@ -51,6 +51,7 @@ class ResolvedSample:
 class PredictionResult:
     auc_hat: float
     value_hat: float
+    absolute_activity: float
     uncertainty: float
     raw_auc_base: float
     cell_residual_hat: float
@@ -141,15 +142,28 @@ def resolve_sample(bundle: ModelBundle, sample: str | pd.Series | dict[str, floa
     coverage = n_present / max(len(genes), 1)
     expr_df = pd.DataFrame([expr])
     projected = project_expression(expr_df, genes, bundle.artifacts.imputer, bundle.artifacts.scaler, bundle.artifacts.pca)
-    extra_stats = np.array(
-        [
-            bundle.global_auc_stats["global_auc_train_mean"],
-            bundle.global_auc_stats["global_auc_train_median"],
-            0.0,
-        ],
-        dtype=np.float32,
-    )
-    vector = np.concatenate([projected[0].astype(np.float32), extra_stats])
+    base = projected[0].astype(np.float32)
+    # Most bundles append three train-only cell statistics to the projected
+    # state (state_dim = n_components + 3). Bundles trained with
+    # `cell_train_statistics_features=()` do not, and their state_dim equals
+    # the projection width; appending there would over-run the state encoder.
+    if base.shape[0] + len(STAT_COLS) == bundle.state_dim:
+        extra_stats = np.array(
+            [
+                bundle.global_auc_stats["global_auc_train_mean"],
+                bundle.global_auc_stats["global_auc_train_median"],
+                0.0,
+            ],
+            dtype=np.float32,
+        )
+        vector = np.concatenate([base, extra_stats])
+    elif base.shape[0] == bundle.state_dim:
+        vector = base
+    else:
+        raise SampleResolutionError(
+            f"projected state width {base.shape[0]} is incompatible with this bundle's "
+            f"state_dim {bundle.state_dim} ({bundle.mode})."
+        )
     return ResolvedSample(
         label="custom sample",
         state_vector=vector,
@@ -223,6 +237,7 @@ def predict_one(bundle: ModelBundle, sample: str | pd.Series | dict[str, float],
     return PredictionResult(
         auc_hat=auc_hat,
         value_hat=float(out["value_hat"].item()),
+        absolute_activity=float(absolute_activity(auc_hat)),
         uncertainty=float(out["uncertainty"].item()),
         raw_auc_base=float(out["raw_auc_base"].item()),
         cell_residual_hat=float(out["cell_residual_hat"].item()),
@@ -240,7 +255,13 @@ def rank_drugs(
     candidate_drug_ids: list[int] | None = None,
     lambda_u: float = 0.1,
 ) -> pd.DataFrame:
-    """Rank all (or a chosen subset of) bundled library drugs for one sample."""
+    """Rank all (or a chosen subset of) bundled library drugs for one sample.
+
+    Ranking is a cross-drug comparison, so it is scored from the absolute
+    predicted AUC (`absolute_activity`), never from the within-drug relative
+    sensitive value (`value_hat` / RTV). The returned frame keeps `value_hat`
+    as a within-drug read-out, but sorting by it would be invalid.
+    """
     resolved_sample = resolve_sample(bundle, sample)
     lib = bundle.drug_library
     if candidate_drug_ids is not None:
@@ -278,12 +299,20 @@ def score_combination(
       - "activity_product": A_eff * B_eff
       - "bliss": A_eff + B_eff - A_eff * B_eff  (Bliss independence)
       - "complementarity": A_eff * B_eff * (1 - corr-free proxy)
-    Effective single-agent "activity" is the predicted relative sensitive
-    value (value_hat), already on a common [0, 1] cross-drug scale.
+    Effective single-agent "activity" is `absolute_activity` = 1 - AUC_hat,
+    clipped to [0, 1] *for the combination algebra only* (Bliss independence
+    requires probabilities). This puts both agents on a common, genuinely
+    cross-drug scale.
+    The relative sensitive value (RTV / `value_hat`) is deliberately NOT used
+    here: it is a within-drug percentile, so combining two drugs' RTVs would
+    multiply two numbers measured against two different reference
+    distributions.
     """
     pred_a = predict_one(bundle, sample, drug_a)
     pred_b = predict_one(bundle, sample, drug_b)
-    a, b = pred_a.value_hat, pred_b.value_hat
+    # Bliss/product algebra needs [0, 1]; clip here (and only here).
+    a = min(max(pred_a.absolute_activity, 0.0), 1.0)
+    b = min(max(pred_b.absolute_activity, 0.0), 1.0)
     if mode == "activity_product":
         combo = a * b
     elif mode == "bliss":
@@ -295,8 +324,13 @@ def score_combination(
     return {
         "drug_a": pred_a.drug.name,
         "drug_b": pred_b.drug.name,
-        "value_hat_a": a,
-        "value_hat_b": b,
+        "absolute_activity_a": a,
+        "absolute_activity_b": b,
+        "auc_hat_a": pred_a.auc_hat,
+        "auc_hat_b": pred_b.auc_hat,
+        # within-drug read-outs, kept for reference; not comparable across drugs
+        "value_hat_a": pred_a.value_hat,
+        "value_hat_b": pred_b.value_hat,
         "combination_score": float(combo),
         "mode": mode,
         "prediction_a": pred_a,

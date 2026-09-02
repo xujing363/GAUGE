@@ -26,16 +26,26 @@ outputs described below.
 
 Every prediction returns:
 
-1. **Relative sensitive value** (`value_hat`, 0–100 on the gauge chart). A
-   sigmoid-bounded score, comparable *across different drugs*. This is the
-   headline number — higher means GAUGE expects this tumour to respond
-   better to this drug relative to the typical cell line tested against it.
-2. **Predicted absolute AUC** (`auc_hat`, technical). The model's raw
-   dose-response-curve estimate. It can fall slightly outside the natural
-   [0, 1] range (and, for PRISM, is on a different real-valued scale
-   entirely) because it is an unconstrained regression output — this is
-   expected model behaviour, not an error. Use `value_hat` for cross-drug
-   and cross-dataset comparison.
+1. **Predicted absolute AUC** (`auc_hat`). The model's dose-response-curve
+   estimate, on the same scale for every compound. **Lower = more
+   sensitive.** This is the number to use whenever you compare *different
+   drugs* — drug ranking, best-drug-per-sample, molecule design, choosing
+   between two treatment options. It can fall outside the natural [0, 1]
+   range (PRISM in particular reports AUC > 1 for compounds a line outgrows)
+   because it is an unconstrained regression output; that is expected model
+   behaviour, not an error.
+2. **Relative sensitive value** (RTV, `value_hat`, 0–100 on the gauge chart).
+   A **within-drug percentile**: `RTV = 1 - rank_d(AUC) / N_d`, i.e. where
+   this sample falls inside *that one drug's own* response distribution over
+   the training cell lines. Higher means this tumour responds better than
+   most cell lines tested against **this same drug**.
+
+> **RTV is not comparable across drugs.** The rank-normalisation is performed
+> separately inside each drug's own reference distribution, which removes
+> exactly the between-drug potency information a cross-drug comparison needs:
+> the best-responding line for a weak drug and the best-responding line for a
+> potent drug both score RTV ≈ 1. Use the absolute AUC to compare drugs, and
+> RTV only to compare samples against one another for a fixed drug.
 
 ## Pages
 
@@ -46,7 +56,7 @@ Every prediction returns:
 | **Drug Ranking** | Rank the whole library (or a subset) for one sample | "What should I try next?" |
 | **Combination Scoring** | Pairwise combination heuristics from single-agent predictions, plus a tab that checks them against **real DrugComb** synergy measurements | Combination prioritisation, NOT a synergy assay replacement |
 | **KG Explainability** | Source-level attention + gate strength for one prediction | Understanding *why* |
-| **Patient Stratification** | Compare two treatment options (vh_diff) using real, de-identified **TCGA** patient demo samples, or your own data | Hypothesis generation only — see in-app caveats |
+| **Patient Stratification** | Compare two treatment options (by absolute AUC) using real, de-identified **TCGA** patient demo samples, or your own data | Hypothesis generation only — see in-app caveats |
 | **Pharmacogenomic Explorer** | Real GDSC/PRISM response distributions, a gene-expression-vs-drug-response biomarker scatter, and drug-similarity clustering — no GAUGE model involved | Sanity-checking a biomarker, understanding the underlying screen |
 | **KG Network Viewer** | Renders the actual ChEMBL/DRKG/PrimeKG graph neighbourhood around a chosen drug | Seeing the literal prior knowledge GAUGE reasons over |
 | **Molecular Design Scoring** | Score/rank candidate SMILES against a context sample; includes the paper's real EGFR/ERBB lung-adenocarcinoma design output | Generative-design reward scoring |

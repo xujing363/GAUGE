@@ -39,7 +39,7 @@ def test_tool_predict_known_pair(bundle):
     drug_id = int(bundle.drug_library.iloc[0]["DRUG_ID"])
     out = _tool_predict(bundle, {}, cell_id, drug_id)
     assert "error" not in out
-    assert 0.0 <= out["relative_sensitive_value"] <= 1.0
+    assert 0.0 <= out["relative_sensitive_value_within_drug_only"] <= 1.0
     assert out["kg_source_attention"] is not None
 
 
@@ -105,7 +105,7 @@ def test_explain_prediction_local_tool(bundle):
     drug_name = bundle.drug_library.iloc[0]["DRUG_NAME"]
     out = explain_prediction(bundle, {}, cell_id, drug_name)
     assert "error" not in out
-    assert 0.0 <= out["relative_sensitive_value"] <= 1.0
+    assert 0.0 <= out["relative_sensitive_value_within_drug_only"] <= 1.0
     # dominant KG is one of the three (or None when the drug lacks KG coverage)
     assert out["dominant_knowledge_graph"] in {"ChEMBL", "DRKG", "PrimeKG", None}
 
@@ -163,3 +163,17 @@ def test_agent_report_mode_round_trip(bundle):
     )
     assert result.reply and len(result.reply) > 100
     assert any(tc.name in {"predict_drug_response", "explain_prediction"} for tc in result.tool_calls)
+
+
+def test_agent_rank_tool_is_scored_on_absolute_auc(bundle):
+    """The assistant must not recommend drugs off the within-drug RTV."""
+    from gauge_core.agent import _tool_rank
+
+    out = _tool_rank(bundle, {}, bundle.cell_state_matrix.index[0], top_k=10)
+    assert "error" not in out
+    assert "absolute predicted AUC" in out["ranked_by"]
+    assert "never the within-drug RTV" in out["ranked_by"]
+    assert "not be used to rank" in out["note"]
+    # The ranking must not simply be the RTV order.
+    rtvs = [row["relative_sensitive_value_within_drug_only"] for row in out["ranked_drugs"]]
+    assert rtvs != sorted(rtvs, reverse=True)

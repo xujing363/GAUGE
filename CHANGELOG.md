@@ -1,5 +1,58 @@
 # Changelog
 
+## 1.6.0 — 2026-09-02
+Cross-drug comparisons moved off the within-drug RTV, and a retrained
+`prism_drug_split` bundle.
+
+- **BREAKING (semantics): the relative sensitive value (RTV) is no longer used
+  for any cross-drug comparison.** RTV is defined as a within-drug percentile,
+  `RTV = 1 - rank_d(AUC) / N_d`, rank-normalised inside each drug's own frozen
+  training reference distribution. That normalisation divides out exactly the
+  between-drug potency information a cross-drug comparison needs — a weak
+  drug's best-responding cell line and a potent drug's best-responding cell
+  line both score RTV ≈ 1 — so ranking drugs by it was invalid. Everything that
+  compares *different drugs* now scores on the **absolute predicted AUC**
+  (lower = more sensitive):
+  - `drugwm.planner.rank_candidates` — new `absolute_activity(auc_hat) = 1 - AUC`
+    (deliberately unclipped: PRISM genuinely reports AUC > 1, and clipping
+    would tie every such drug). `planner_score` is now built from it, and the
+    function raises `KeyError` if `auc_hat` is absent rather than silently
+    falling back to RTV.
+  - `gauge_core.score_combination` — single-agent activity is `1 - AUC`
+    (clipped to [0, 1] for the Bliss/product algebra only).
+  - `PredictionResult` gains `absolute_activity`; `gauge_core.absolute_activity`
+    is exported.
+  - App pages **Drug Ranking**, **Batch Prediction** (best-drug-per-sample,
+    heatmap, per-drug aggregate), **Molecular Design**, **Patient
+    Stratification** and **Combination Scoring** all rank/compare on absolute
+    AUC. RTV is retained everywhere as a clearly-labelled within-drug column.
+  - The **GAUGE Assistant** tools return absolute AUC first and carry an
+    explicit note, so the assistant cannot recommend a drug off the RTV.
+  - Renamed output columns/keys: `relative_sensitive_value` →
+    `relative_sensitive_value_within_drug` (app exports) /
+    `relative_sensitive_value_within_drug_only` (assistant + KG tools).
+- **Docs corrected.** `docs/USER_GUIDE.md` and `docs/FAQ.md` previously stated
+  that RTV was "comparable across different drugs" and was "the one intended
+  for cross-drug comparison". Both statements were wrong and have been
+  replaced, with the measured `auc_hat` range per bundle so the calibration
+  limits of the absolute head are visible (the two residual-fused bundles run
+  out of range: `prism_cell_split` 22.8 % of drugs outside [0, 1.5]).
+- **`models/prism_drug_split` retrained** with chemical-pathway dropout
+  (`chem_dropout=0.6`; inference and `state_dict` layout unchanged). Against a
+  matched `chem_dropout=0.0` control on byte-identical prepared data (same
+  seed, same prepare/KG cache keys, identical split audit), held-out-drug test
+  within-drug PCC rises 0.2312 → 0.2804 and within-drug Spearman 0.2352 →
+  0.2761 (n = 136,167 rows / 298 drugs). The bundle also moves to a
+  structurally de-duplicated split and to a direct HVG-2000 state
+  (`state_dim` 2000, no train-response-derived cell statistics), so
+  `gauge_core` now supports bundles with no PCA rotation and no cell-statistic
+  block. The other three bundles are unchanged.
+- Test suite extended with five regressions pinning the RTV rule: activity is
+  monotone and unclipped, `rank_drugs` orders by absolute AUC (and is *not* the
+  RTV order), `rank_candidates` refuses to score without `auc_hat`, the
+  combination algebra matches `1 - AUC`, and the assistant's ranking tool is
+  AUC-scored.
+
 ## 1.5.0 — 2026-09-01
 Reference implementation, benchmark data and trained checkpoints (`benchmark/`).
 

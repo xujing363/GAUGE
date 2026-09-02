@@ -13,6 +13,7 @@ from . import _drugwm_path  # noqa: F401  must run before numpy/pandas/torch imp
 from .bundle import ModelBundle, load_bundle
 from .predict import (
     PredictionResult,
+    absolute_activity,
     predict_one,
     rank_drugs,
     resolve_drug,
@@ -24,6 +25,7 @@ __all__ = [
     "ModelBundle",
     "load_bundle",
     "PredictionResult",
+    "absolute_activity",
     "predict_one",
     "rank_drugs",
     "resolve_drug",
@@ -31,4 +33,4 @@ __all__ = [
     "score_combination",
 ]
 
-__version__ = "1.3.0"
+__version__ = "1.4.0"

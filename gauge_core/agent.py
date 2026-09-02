@@ -208,8 +208,11 @@ def _tool_predict(bundle: ModelBundle, uploaded: dict, cell_line: str, drug: str
     except (DrugNotFoundError, SampleResolutionError) as exc:
         return {"error": str(exc)}
     return {
-        "relative_sensitive_value": round(result.value_hat, 3),
+        # Absolute AUC is the cross-drug-comparable read-out (lower = more
+        # sensitive); RTV is a within-drug percentile and must not be used to
+        # compare different drugs.
         "predicted_absolute_auc": round(result.auc_hat, 3),
+        "relative_sensitive_value_within_drug_only": round(result.value_hat, 3),
         "kg_source_attention": {k: round(v, 3) for k, v in result.kg_alpha.items()} if result.kg_alpha else None,
         "drug_known_in_library": result.drug.known,
         "sample_is_uploaded": cell_line in uploaded,
@@ -223,10 +226,22 @@ def _tool_rank(bundle: ModelBundle, uploaded: dict, cell_line: str, top_k: int =
         ranked = rank_drugs(bundle, sample)
     except (DrugNotFoundError, SampleResolutionError) as exc:
         return {"error": str(exc)}
-    top = ranked.head(int(top_k))[["DRUG_NAME", "value_hat", "auc_hat"]].round(3).rename(
-        columns={"value_hat": "relative_sensitive_value", "auc_hat": "absolute_auc"}
+    top = ranked.head(int(top_k))[["DRUG_NAME", "auc_hat", "value_hat"]].round(3).rename(
+        columns={"auc_hat": "absolute_auc", "value_hat": "relative_sensitive_value_within_drug_only"}
     )
-    return {"ranked_drugs": top.to_dict(orient="records")}
+    return {
+        "ranked_drugs": top.to_dict(orient="records"),
+        "ranked_by": (
+            "planner_score = (1 - absolute_auc) - 0.1 * uncertainty; the activity term is the "
+            "absolute predicted AUC (lower AUC = more sensitive), never the within-drug RTV"
+        ),
+        "note": (
+            "relative_sensitive_value_within_drug_only is a within-drug percentile "
+            "(rank of this sample inside that drug's own response distribution). It is "
+            "NOT comparable across drugs and must not be used to rank or recommend one "
+            "drug over another -- use absolute_auc for that."
+        ),
+    }
 
 
 def _tool_combo(bundle: ModelBundle, uploaded: dict, cell_line: str, drug_a: str, drug_b: str, mode: str = "bliss") -> dict[str, Any]:
@@ -238,9 +253,12 @@ def _tool_combo(bundle: ModelBundle, uploaded: dict, cell_line: str, drug_a: str
     return {
         "drug_a": out["drug_a"],
         "drug_b": out["drug_b"],
-        "relative_sensitive_value_a": round(out["value_hat_a"], 3),
-        "relative_sensitive_value_b": round(out["value_hat_b"], 3),
+        "absolute_auc_a": round(out["auc_hat_a"], 3),
+        "absolute_auc_b": round(out["auc_hat_b"], 3),
+        "single_agent_activity_a": round(out["absolute_activity_a"], 3),
+        "single_agent_activity_b": round(out["absolute_activity_b"], 3),
         "combination_score": round(out["combination_score"], 3),
+        "activity_definition": "1 - absolute AUC, clipped to [0, 1]; cross-drug comparable",
         "mode": mode,
     }
 

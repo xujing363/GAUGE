@@ -58,7 +58,9 @@ class ModelBundle:
         """True if state-vector column i is literally (standardized) expression
         of artifacts.genes[i] (HVG-identity projection), as opposed to a PCA
         rotation that mixes many genes per component."""
-        return type(self.artifacts.pca).__name__ == "IdentityProjection"
+        # `None` and `IdentityProjection` both mean "no rotation was applied";
+        # which one a run persists depends on its state-projection policy version.
+        return self.artifacts.pca is None or type(self.artifacts.pca).__name__ == "IdentityProjection"
 
     def gene_proxy_series(self, gene: str) -> pd.Series | None:
         """Standardized expression proxy for one gene across all known cell

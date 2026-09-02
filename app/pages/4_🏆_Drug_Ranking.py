@@ -58,10 +58,14 @@ top_k = st.slider("Show top N", 5, 50, 15, key="dr_topk")
 
 if demo or st.button("🚀 Rank drugs", type="primary", disabled=sample_input is None or len(candidate_ids) == 0):
     with st.spinner(f"Scoring {len(candidate_ids)} drugs..."):
-        # Rank purely by relative sensitive value (value_hat), as in the paper.
+        # Ranking different drugs against each other is a CROSS-DRUG comparison,
+        # so it is scored on the absolute predicted AUC (lower = more sensitive).
+        # The relative sensitive value (RTV) is a within-drug percentile and is
+        # deliberately not used to order the table -- it is kept as a reference
+        # column only.
         ranked = rank_drugs(bundle, sample_input, candidate_drug_ids=candidate_ids, lambda_u=0.0)
-    ranked = ranked.sort_values("value_hat", ascending=False).reset_index(drop=True).rename(
-        columns={"value_hat": "relative_sensitive_value", "auc_hat": "absolute_auc"}
+    ranked = ranked.sort_values("auc_hat", ascending=True).reset_index(drop=True).rename(
+        columns={"value_hat": "relative_sensitive_value_within_drug", "auc_hat": "absolute_auc"}
     )
     ranked.insert(0, "rank", ranked.index + 1)
     st.session_state["dr_ranked"] = ranked
@@ -71,17 +75,23 @@ if "dr_ranked" in st.session_state:
     top = ranked.head(top_k)
     st.subheader(f"Top {len(top)} drugs")
     fig = px.bar(
-        top.sort_values("relative_sensitive_value"),
-        x="relative_sensitive_value",
+        top.sort_values("absolute_auc", ascending=False),
+        x="absolute_auc",
         y="DRUG_NAME",
         orientation="h",
-        color="relative_sensitive_value",
-        color_continuous_scale="Viridis",
-        labels={"relative_sensitive_value": "Relative sensitive value (higher = more promising)", "DRUG_NAME": "Drug"},
+        color="absolute_auc",
+        color_continuous_scale="Viridis_r",
+        labels={"absolute_auc": "Predicted absolute AUC (lower = more sensitive)", "DRUG_NAME": "Drug"},
     )
     fig.update_layout(height=max(320, 28 * len(top)))
     st.plotly_chart(fig, use_container_width=True)
-    display_cols = ["rank", "DRUG_NAME", "DRUG_ID", "relative_sensitive_value", "absolute_auc"]
+    st.caption(
+        "Ranked by **absolute predicted AUC** (lower = more sensitive), which is on a common "
+        "scale for every compound. The relative sensitive value is shown for reference only: "
+        "it is a within-drug percentile (rank of this sample inside *that drug's* own response "
+        "distribution), so it cannot be used to compare one drug against another."
+    )
+    display_cols = ["rank", "DRUG_NAME", "DRUG_ID", "absolute_auc", "relative_sensitive_value_within_drug"]
     st.dataframe(
         top[[c for c in display_cols if c in top.columns]],
         use_container_width=True,

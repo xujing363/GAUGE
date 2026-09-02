@@ -125,8 +125,10 @@ with tab_score:
                     {
                         "drug_a": name_a,
                         "drug_b": name_b,
-                        "relative_sensitive_value_a": out["value_hat_a"],
-                        "relative_sensitive_value_b": out["value_hat_b"],
+                        "absolute_auc_a": out["auc_hat_a"],
+                        "absolute_auc_b": out["auc_hat_b"],
+                        "activity_a": out["absolute_activity_a"],
+                        "activity_b": out["absolute_activity_b"],
                         "combination_score": out["combination_score"],
                     }
                 )
@@ -135,6 +137,12 @@ with tab_score:
     if "cs_results" in st.session_state:
         results = st.session_state["cs_results"]
         st.subheader("Results")
+        st.caption(
+            "Single-agent activity is `1 - absolute AUC` (clipped to [0, 1] for the Bliss/product "
+            "algebra), so the two agents are on a common cross-drug scale. The within-drug relative "
+            "sensitive value is not used here: it is a percentile inside each drug's own reference "
+            "distribution, so multiplying two of them would combine two different yardsticks."
+        )
         st.dataframe(results, use_container_width=True)
         if len(chosen_names) > 2:
             names = sorted(set(results["drug_a"]) | set(results["drug_b"]))
